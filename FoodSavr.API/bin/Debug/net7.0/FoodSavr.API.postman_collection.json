@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "b5cf8f36-7e52-485e-bd25-095095df668e",
+		"name": "FoodSavr.API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17621848"
+	},
+	"item": [
+		{
+			"name": "GetIngredients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{portNumber}}/api/foodsavr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{portNumber}}",
+					"path": [
+						"api",
+						"foodsavr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetIngredient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:{{portNumber}}/api/foodsavr/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{portNumber}}",
+					"path": [
+						"api",
+						"foodsavr",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
