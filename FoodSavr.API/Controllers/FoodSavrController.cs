@@ -38,5 +38,25 @@ namespace FoodSavr.API
             return Ok(ingredientCount);
         }
 
+        [HttpPost("ingredientCreate")]
+        public ActionResult<IngredientDataStore> CreateIngredient(
+            int categoryId,
+            string ingredientName,
+            IngredientForCreationDto ingredient)
+        {
+            var ingredientCategory = IngredientCategoryDataStore.Current.IngredientCategories.FirstOrDefault(c => c.Id == categoryId);
+
+            var ingredientExists = IngredientDataStore.Current.Ingredients.FirstOrDefault(
+                i => i.Name.ToLower() ==  ingredientName.ToLower());
+
+
+            if (ingredientExists != null)
+            {
+                return NotFound(); //CHANGE TO MESSAGE WITH INGREDIENT ALREADY EXISTS
+            }
+
+            return Ok(ingredientExists);
+        }
+
     }
 }

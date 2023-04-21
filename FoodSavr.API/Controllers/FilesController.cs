@@ -22,7 +22,7 @@ namespace FoodSavr.API.Controllers
         }
 
         [HttpGet("{fileId}")]
-        public ActionResult GetFile(string fileId, string tableName)
+        public ActionResult GetFile(string fileId, string fileName)
         {
             StringBuilder table = new StringBuilder();
 

@@ -1,6 +1,6 @@
 ﻿namespace FoodSavr.API.Models
 {
-    public class IngredientDto
+    public class IngredientCategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
