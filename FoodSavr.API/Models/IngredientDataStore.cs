@@ -2,7 +2,10 @@
 {
     public class IngredientDataStore
     {
-        public List<IngredientDto> Ingredients { get; set; }
+        public ICollection<IngredientDto> Ingredients { get; set; } 
+            = new List<IngredientDto>();
+
+        public int NumberOfIngredients{ get { return Ingredients.Count; }}
         public static IngredientDataStore Current { get; } = new IngredientDataStore();
         public IngredientDataStore() 
         {
