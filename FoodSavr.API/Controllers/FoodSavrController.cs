@@ -16,6 +16,7 @@ namespace FoodSavr.API
 
             return Ok (ingredientsToReturn);
         }
+
         [HttpGet("{id}")]
         public ActionResult<IngredientDto> GetIngredient(int id)
         {
@@ -25,6 +26,7 @@ namespace FoodSavr.API
             
             return Ok (ingredientToReturn);
         }
+
         [HttpGet("ingredientcount")]
         public ActionResult<int> GetIngredientCount()
         {

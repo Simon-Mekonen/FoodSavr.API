@@ -32,3 +32,4 @@ C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\obj\Debug\ne
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\obj\Debug\net7.0\FoodSavr.API.genruntimeconfig.cache
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\obj\Debug\net7.0\ref\FoodSavr.API.dll
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\FoodSavr.API.postman_collection.json
+C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\samplePdf.pdf
