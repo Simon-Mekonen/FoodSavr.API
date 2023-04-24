@@ -5,8 +5,10 @@
         public ICollection<IngredientDto> Ingredients { get; set; }
             = new List<IngredientDto>();
 
-        public int NumberOfIngredients { get { return Ingredients.Count; } }
+        public int MaxIngredientId { get { return Ingredients.Max(i => i.Id); } }
         public static IngredientDataStore Current { get; } = new IngredientDataStore();
+        public int NumberOfIngredients { get { return Ingredients.Count(); } }
+
         public IngredientDataStore()
         {
             // init dummy data
@@ -49,6 +51,19 @@
                     Name = "Avokado"
                 },
             };
+        }
+        public static bool IngredientExists(string ingredientName)
+        {
+            var firstOrDefaultIngredient = IngredientDataStore.Current.Ingredients.FirstOrDefault(
+                i => i.Name.ToLower() == ingredientName.ToLower());
+            
+            bool ingredientExists = true;
+
+            if (firstOrDefaultIngredient == null)
+            {
+                ingredientExists = false;
+            }
+            return ingredientExists;
         }
     }
 

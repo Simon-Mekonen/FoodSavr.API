@@ -5,6 +5,7 @@
         public ICollection<IngredientCategoryDto> IngredientCategories { get; set; }
             = new List<IngredientCategoryDto>();
         public static IngredientCategoryDataStore Current { get; } = new IngredientCategoryDataStore();
+        public int MaxCategoryId { get { return IngredientCategories.Max(c => c.Id);  } }
         public IngredientCategoryDataStore()
         {
             IngredientCategories = new List<IngredientCategoryDto>()
