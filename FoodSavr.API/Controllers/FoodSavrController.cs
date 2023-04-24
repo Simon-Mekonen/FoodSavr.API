@@ -40,27 +40,25 @@ namespace FoodSavr.API
             return Ok(ingredientCount);
         }
 
-        [HttpPost("PostIngredient")]
+        [HttpPost("CreateIngredient")]
         public ActionResult<IngredientDataStore> CreateIngredient(
-            string? categoryName,
-            string ingredientName,
             IngredientForCreationDto ingredient)
         {
+
             // Quit if ingredient exists
-            bool ingredientExists = IngredientDataStore.IngredientExists(ingredientName);
+            bool ingredientExists = IngredientDataStore.IngredientExists(ingredient.Name);
             if (ingredientExists)
             {
-                return NotFound("ingredient exists"); //CHANGE TO MESSAGE WITH INGREDIENT ALREADY EXISTS
+                return BadRequest("ingredient exists"); //CHANGE TO MESSAGE WITH INGREDIENT ALREADY EXISTS
             }
 
             // Add category if not exists
-            var ingredientCategoryItem = IngredientCategoryDataStore.Current.IngredientCategories.FirstOrDefault(c => c.Name.ToLower() == categoryName.ToLower());
-            
+            var ingredientCategoryItem = IngredientCategoryDataStore.Current.IngredientCategories.FirstOrDefault(c => c.Name.ToLower() == ingredient.Category.ToLower());
             if (ingredientCategoryItem == null)
             {
                 ingredientCategoryItem = new IngredientCategoryDto()
                 {
-                    Name = categoryName,
+                    Name = ingredient.Category,
                     Id = IngredientCategoryDataStore.Current.MaxCategoryId + 1,
                 };
                 IngredientCategoryDataStore.Current.IngredientCategories.Add(ingredientCategoryItem);
@@ -70,18 +68,43 @@ namespace FoodSavr.API
             var newIngredient = new IngredientDto()
             {
                 Id = IngredientDataStore.Current.MaxIngredientId + 1,
-                Name = ingredientName,
+                Name = ingredient.Name.ToLower().Trim(),
                 IngredientCategoryId = ingredientCategoryItem.Id
             };
             IngredientDataStore.Current.Ingredients.Add(newIngredient);
 
-            return CreatedAtRoute("GetIngredient", 
-                new
-                {
-                    Id = newIngredient.Id,
-                }, 
-                ingredient);
+            return CreatedAtRoute("GetIngredient", new { Id = newIngredient.Id}, newIngredient);
         }
 
+        [HttpPut]
+        //need to add check so ingredient name doesent exist already
+        //need to check that category name doesent already exist
+        //add these to functions on existing classes
+        public ActionResult UpdateIngredient(IngredientForUpdateDto ingredient)
+        {
+            // find the ingredient
+            var ingredientItem = IngredientDataStore.Current.Ingredients.FirstOrDefault(i => i.Id == ingredient.Id);
+            if (ingredientItem == null) 
+            {
+                return NotFound("Ingredient id was not found");
+            }
+
+            var ingredientCategoryItem = IngredientCategoryDataStore.Current.IngredientCategories.FirstOrDefault(c => c.Name.ToLower() == ingredient.Category.ToLower());
+
+            if (ingredientCategoryItem == null)
+            {
+                ingredientCategoryItem = new IngredientCategoryDto()
+                {
+                    Name = ingredient.Category,
+                    Id = IngredientCategoryDataStore.Current.MaxCategoryId + 1,
+                };
+                IngredientCategoryDataStore.Current.IngredientCategories.Add(ingredientCategoryItem);
+            }
+
+            ingredientItem.Name = ingredient.Name ?? ingredientItem.Name;
+            ingredientItem.IngredientCategoryId = ingredientCategoryItem.Id;
+
+            return CreatedAtRoute("GetIngredient", new { Id = ingredient.Id }, ingredientItem);
+        }
     }
 }
