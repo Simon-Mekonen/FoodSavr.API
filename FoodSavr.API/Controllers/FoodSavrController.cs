@@ -44,7 +44,7 @@ namespace FoodSavr.API
         public ActionResult<IngredientDataStore> CreateIngredient(
             string? categoryName,
             string ingredientName,
-            IngredientDto ingredient)
+            IngredientForCreationDto ingredient)
         {
             // Quit if ingredient exists
             bool ingredientExists = IngredientDataStore.IngredientExists(ingredientName);
@@ -74,12 +74,13 @@ namespace FoodSavr.API
                 IngredientCategoryId = ingredientCategoryItem.Id
             };
             IngredientDataStore.Current.Ingredients.Add(newIngredient);
+
             return CreatedAtRoute("GetIngredient", 
                 new
                 {
-                    id = newIngredient.Id,
+                    Id = newIngredient.Id,
                 }, 
-                newIngredient);
+                ingredient);
         }
 
     }
