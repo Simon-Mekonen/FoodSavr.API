@@ -47,3 +47,4 @@ C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\ne
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\Serilog.Sinks.Console.dll
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\appSettings.Production.json

@@ -732,3 +732,70 @@
 2023-04-26 09:00:26.749 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
 2023-04-26 09:00:26.755 +02:00 [DBG] Connection id "0HMQ64FKS3IUH" completed keep alive response.
 2023-04-26 09:00:26.759 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - - - 204 - - 194.9843ms
+2023-04-26 09:13:15.260 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 09:13:15.499 +02:00 [DBG] Hosting starting
+2023-04-26 09:13:15.792 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 09:13:15.797 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 09:13:15.801 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 09:13:15.804 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 09:13:15.808 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 09:13:15.812 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 09:13:15.815 +02:00 [INF] Hosting environment: Production
+2023-04-26 09:13:15.818 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 09:13:15.821 +02:00 [DBG] Hosting started
+2023-04-26 09:13:17.916 +02:00 [DBG] Connection id "0HMQ64MQR4PO6" received FIN.
+2023-04-26 09:13:17.933 +02:00 [DBG] Connection id "0HMQ64MQR4PO6" accepted.
+2023-04-26 09:13:17.937 +02:00 [DBG] Connection id "0HMQ64MQR4PO6" started.
+2023-04-26 09:13:17.941 +02:00 [DBG] Connection id "0HMQ64MQR4PO7" accepted.
+2023-04-26 09:13:17.953 +02:00 [DBG] Connection id "0HMQ64MQR4PO7" started.
+2023-04-26 09:13:17.975 +02:00 [DBG] Connection id "0HMQ64MQR4PO6" sending FIN because: "The client closed the connection."
+2023-04-26 09:13:17.988 +02:00 [DBG] Connection id "0HMQ64MQR4PO6" disconnecting.
+2023-04-26 09:13:17.998 +02:00 [DBG] Connection id "0HMQ64MQR4PO6" stopped.
+2023-04-26 09:13:18.040 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5225/api/foodsavr/2 - -
+2023-04-26 09:13:18.084 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 09:13:18.097 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 09:13:18.104 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-26 09:13:18.124 +02:00 [DBG] Connection id "0HMQ64MQR4PO7" completed keep alive response.
+2023-04-26 09:13:18.133 +02:00 [DBG] Connection id "0HMQ64MQR4PO8" accepted.
+2023-04-26 09:13:18.137 +02:00 [DBG] Connection id "0HMQ64MQR4PO8" received FIN.
+2023-04-26 09:13:18.135 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" accepted.
+2023-04-26 09:13:18.153 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5225/api/foodsavr/2 - - - 307 0 - 115.9334ms
+2023-04-26 09:13:18.153 +02:00 [DBG] Connection id "0HMQ64MQR4PO8" started.
+2023-04-26 09:13:18.162 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" started.
+2023-04-26 09:13:18.172 +02:00 [DBG] Connection id "0HMQ64MQR4PO8" sending FIN because: "The client closed the connection."
+2023-04-26 09:13:18.185 +02:00 [DBG] Connection id "0HMQ64MQR4PO8" disconnecting.
+2023-04-26 09:13:18.198 +02:00 [DBG] Connection id "0HMQ64MQR4PO8" stopped.
+2023-04-26 09:13:18.254 +02:00 [DBG] Connection 0HMQ64MQR4PO9 established using the following protocol: "Tls13"
+2023-04-26 09:13:18.263 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - -
+2023-04-26 09:13:18.322 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-26 09:13:18.335 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-26 09:13:18.345 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 09:13:18.356 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 09:13:18.433 +02:00 [INF] Route matched with {action = "DeleteIngredient", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 09:13:18.447 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 09:13:18.453 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 09:13:18.461 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 09:13:18.468 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 09:13:18.474 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 09:13:18.484 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 09:13:18.491 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 09:13:18.504 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-26 09:13:18.510 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-26 09:13:18.519 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 09:13:18.527 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 09:13:18.533 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-26 09:13:18.541 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-26 09:13:18.554 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-04-26 09:13:18.564 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API) in 76.2714ms
+2023-04-26 09:13:18.571 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 09:13:18.585 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" completed keep alive response.
+2023-04-26 09:13:18.596 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - - - 204 - - 331.4183ms
+2023-04-26 09:13:27.001 +02:00 [INF] Application is shutting down...
+2023-04-26 09:13:27.004 +02:00 [DBG] Hosting stopping
+2023-04-26 09:13:27.062 +02:00 [DBG] Connection id "0HMQ64MQR4PO7" disconnecting.
+2023-04-26 09:13:27.062 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" disconnecting.
+2023-04-26 09:13:27.072 +02:00 [DBG] Connection id "0HMQ64MQR4PO7" stopped.
+2023-04-26 09:13:27.077 +02:00 [DBG] Connection id "0HMQ64MQR4PO7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-04-26 09:13:27.079 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" stopped.
+2023-04-26 09:13:27.089 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-04-26 09:13:27.100 +02:00 [DBG] Hosting stopped
