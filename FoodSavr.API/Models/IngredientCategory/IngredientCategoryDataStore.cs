@@ -1,10 +1,10 @@
-﻿namespace FoodSavr.API.Models
+﻿using System.Xml.Linq;
+
+namespace FoodSavr.API.Models
 {
     public class IngredientCategoryDataStore
     {
-        public ICollection<IngredientCategoryDto> IngredientCategories { get; set; }
-            = new List<IngredientCategoryDto>();
-        public static IngredientCategoryDataStore Current { get; } = new IngredientCategoryDataStore();
+        public List<IngredientCategoryDto> IngredientCategories { get; set; }
         public int MaxCategoryId { get { return IngredientCategories.Max(c => c.Id);  } }
         public IngredientCategoryDataStore()
         {
@@ -27,5 +27,22 @@
                 }
             };
         }
-    }
+
+        // Create ingredient category if not exists (refactor)
+        public IngredientCategoryDto CreateNewCategory(string name)
+        {
+            var ingredientCategoryItem = IngredientCategories.FirstOrDefault(c => c.Name.ToLower() == name.ToLower());
+            if (ingredientCategoryItem == null)
+            {
+                ingredientCategoryItem = new IngredientCategoryDto()
+                {
+                    Name = name,
+                    Id = MaxCategoryId + 1,
+                };
+            IngredientCategories.Add(ingredientCategoryItem);
+
+            }
+            return ingredientCategoryItem;
+        }
+}
 }

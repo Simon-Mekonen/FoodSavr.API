@@ -2,11 +2,9 @@
 {
     public class IngredientDataStore
     {
-        public ICollection<IngredientDto> Ingredients { get; set; }
-            = new List<IngredientDto>();
+        public List<IngredientDto> Ingredients { get; set; }
 
         public int MaxIngredientId { get { return Ingredients.Max(i => i.Id); } }
-        public static IngredientDataStore Current { get; } = new IngredientDataStore();
         public int NumberOfIngredients { get { return Ingredients.Count(); } }
 
         public IngredientDataStore()
@@ -49,21 +47,33 @@
                     Id = 6,
                     IngredientCategoryId = 1,
                     Name = "Avokado"
-                },
+                }
             };
         }
-        public static bool IngredientExists(string ingredientName)
+        public IngredientDto FindIngredientItem(string name)
         {
-            var firstOrDefaultIngredient = IngredientDataStore.Current.Ingredients.FirstOrDefault(
-                i => i.Name.ToLower() == ingredientName.ToLower());
-            
-            bool ingredientExists = true;
+            var firstOrDefaultIngredient = Ingredients.FirstOrDefault(i => i.Name.ToLower() == name.ToLower());
 
-            if (firstOrDefaultIngredient == null)
+            return firstOrDefaultIngredient;
+        }
+        public IngredientDto FindIngredientItem(int id)
+        {
+            var firstOrDefaultIngredient = Ingredients.FirstOrDefault(i => i.Id == id);
+
+            return firstOrDefaultIngredient;
+        }
+        public IngredientDto CreateNewIngredient(string name, int categoryId)
+        {
+            var newIngredient = new IngredientDto()
             {
-                ingredientExists = false;
-            }
-            return ingredientExists;
+                Id = MaxIngredientId + 1,
+                Name = name.ToLower().Trim(),
+                IngredientCategoryId = categoryId
+            };
+            Ingredients.Add(newIngredient);
+
+            return newIngredient;
+
         }
     }
 

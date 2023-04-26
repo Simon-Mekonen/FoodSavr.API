@@ -1,0 +1,734 @@
+2023-04-26 07:21:05.108 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 07:21:05.275 +02:00 [DBG] Hosting starting
+2023-04-26 07:21:05.545 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 07:21:05.556 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 07:21:05.561 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 07:21:05.564 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 07:21:05.566 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 07:21:05.568 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 07:21:05.571 +02:00 [INF] Hosting environment: Development
+2023-04-26 07:21:05.573 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 07:21:05.576 +02:00 [DBG] Hosting started
+2023-04-26 07:21:36.607 +02:00 [DBG] Connection id "0HMQ62ODMFJCG" received FIN.
+2023-04-26 07:21:36.619 +02:00 [DBG] Connection id "0HMQ62ODMFJCG" accepted.
+2023-04-26 07:21:36.625 +02:00 [DBG] Connection id "0HMQ62ODMFJCG" started.
+2023-04-26 07:21:36.638 +02:00 [DBG] Connection id "0HMQ62ODMFJCH" accepted.
+2023-04-26 07:21:36.643 +02:00 [DBG] Connection id "0HMQ62ODMFJCH" started.
+2023-04-26 07:21:36.663 +02:00 [DBG] Connection id "0HMQ62ODMFJCG" sending FIN because: "The client closed the connection."
+2023-04-26 07:21:36.675 +02:00 [DBG] Connection id "0HMQ62ODMFJCG" disconnecting.
+2023-04-26 07:21:36.683 +02:00 [DBG] Connection id "0HMQ62ODMFJCG" stopped.
+2023-04-26 07:21:36.747 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:21:36.788 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 07:21:36.828 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:21:36.842 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 07:21:36.851 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:21:36.880 +02:00 [DBG] Connection id "0HMQ62ODMFJCH" completed keep alive response.
+2023-04-26 07:21:36.892 +02:00 [DBG] Connection id "0HMQ62ODMFJCI" accepted.
+2023-04-26 07:21:36.906 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 149.5842ms
+2023-04-26 07:21:36.906 +02:00 [DBG] Connection id "0HMQ62ODMFJCJ" accepted.
+2023-04-26 07:21:36.893 +02:00 [DBG] Connection id "0HMQ62ODMFJCI" received FIN.
+2023-04-26 07:21:36.913 +02:00 [DBG] Connection id "0HMQ62ODMFJCI" started.
+2023-04-26 07:21:36.932 +02:00 [DBG] Connection id "0HMQ62ODMFJCJ" started.
+2023-04-26 07:21:36.942 +02:00 [DBG] Connection id "0HMQ62ODMFJCI" sending FIN because: "The client closed the connection."
+2023-04-26 07:21:36.954 +02:00 [DBG] Connection id "0HMQ62ODMFJCI" disconnecting.
+2023-04-26 07:21:36.965 +02:00 [DBG] Connection id "0HMQ62ODMFJCI" stopped.
+2023-04-26 07:21:37.052 +02:00 [DBG] Connection 0HMQ62ODMFJCJ established using the following protocol: "Tls13"
+2023-04-26 07:21:37.066 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:21:37.075 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:21:37.132 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:21:37.138 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:21:37.152 +02:00 [DBG] Connection id "0HMQ62ODMFJCJ" completed keep alive response.
+2023-04-26 07:21:37.158 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 91.5834ms
+2023-04-26 07:21:39.490 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:21:39.497 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:21:39.504 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:21:39.511 +02:00 [DBG] Connection id "0HMQ62ODMFJCH" completed keep alive response.
+2023-04-26 07:21:39.519 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:21:39.520 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 29.6945ms
+2023-04-26 07:21:39.525 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:21:39.536 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:21:39.541 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:21:39.544 +02:00 [DBG] Connection id "0HMQ62ODMFJCJ" completed keep alive response.
+2023-04-26 07:21:39.552 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 32.2308ms
+2023-04-26 07:24:23.137 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 07:24:23.276 +02:00 [DBG] Hosting starting
+2023-04-26 07:24:23.432 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 07:24:23.436 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 07:24:23.438 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 07:24:23.441 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 07:24:23.442 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 07:24:23.444 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 07:24:23.445 +02:00 [INF] Hosting environment: Development
+2023-04-26 07:24:23.445 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 07:24:23.446 +02:00 [DBG] Hosting started
+2023-04-26 07:24:30.851 +02:00 [DBG] Connection id "0HMQ62Q1K6JCJ" received FIN.
+2023-04-26 07:24:30.863 +02:00 [DBG] Connection id "0HMQ62Q1K6JCJ" accepted.
+2023-04-26 07:24:30.867 +02:00 [DBG] Connection id "0HMQ62Q1K6JCJ" started.
+2023-04-26 07:24:30.872 +02:00 [DBG] Connection id "0HMQ62Q1K6JCK" accepted.
+2023-04-26 07:24:30.877 +02:00 [DBG] Connection id "0HMQ62Q1K6JCK" started.
+2023-04-26 07:24:30.896 +02:00 [DBG] Connection id "0HMQ62Q1K6JCJ" sending FIN because: "The client closed the connection."
+2023-04-26 07:24:30.905 +02:00 [DBG] Connection id "0HMQ62Q1K6JCJ" disconnecting.
+2023-04-26 07:24:30.913 +02:00 [DBG] Connection id "0HMQ62Q1K6JCJ" stopped.
+2023-04-26 07:24:30.977 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:24:31.013 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 07:24:31.065 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:24:31.079 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 07:24:31.086 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:24:31.113 +02:00 [DBG] Connection id "0HMQ62Q1K6JCK" completed keep alive response.
+2023-04-26 07:24:31.122 +02:00 [DBG] Connection id "0HMQ62Q1K6JCL" accepted.
+2023-04-26 07:24:31.124 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 150.6314ms
+2023-04-26 07:24:31.124 +02:00 [DBG] Connection id "0HMQ62Q1K6JCM" accepted.
+2023-04-26 07:24:31.124 +02:00 [DBG] Connection id "0HMQ62Q1K6JCL" received FIN.
+2023-04-26 07:24:31.151 +02:00 [DBG] Connection id "0HMQ62Q1K6JCM" started.
+2023-04-26 07:24:31.141 +02:00 [DBG] Connection id "0HMQ62Q1K6JCL" started.
+2023-04-26 07:24:31.164 +02:00 [DBG] Connection id "0HMQ62Q1K6JCL" sending FIN because: "The client closed the connection."
+2023-04-26 07:24:31.176 +02:00 [DBG] Connection id "0HMQ62Q1K6JCL" disconnecting.
+2023-04-26 07:24:31.184 +02:00 [DBG] Connection id "0HMQ62Q1K6JCL" stopped.
+2023-04-26 07:24:31.270 +02:00 [DBG] Connection 0HMQ62Q1K6JCM established using the following protocol: "Tls13"
+2023-04-26 07:24:31.284 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:24:31.292 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:24:31.351 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:24:31.358 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:24:31.369 +02:00 [DBG] Connection id "0HMQ62Q1K6JCM" completed keep alive response.
+2023-04-26 07:24:31.377 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 92.3694ms
+2023-04-26 07:24:32.796 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:24:32.801 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:24:32.803 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:24:32.806 +02:00 [DBG] Connection id "0HMQ62Q1K6JCK" completed keep alive response.
+2023-04-26 07:24:32.808 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 12.5622ms
+2023-04-26 07:24:32.812 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:24:32.814 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:24:32.818 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:24:32.820 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:24:32.822 +02:00 [DBG] Connection id "0HMQ62Q1K6JCM" completed keep alive response.
+2023-04-26 07:24:32.825 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 12.4590ms
+2023-04-26 07:31:49.024 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 07:31:49.224 +02:00 [DBG] Hosting starting
+2023-04-26 07:31:49.472 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 07:31:49.476 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 07:31:49.482 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 07:31:49.486 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 07:31:49.488 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 07:31:49.491 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 07:31:49.493 +02:00 [INF] Hosting environment: Development
+2023-04-26 07:31:49.496 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 07:31:49.498 +02:00 [DBG] Hosting started
+2023-04-26 07:31:53.679 +02:00 [DBG] Connection id "0HMQ62U5JAOJT" received FIN.
+2023-04-26 07:31:53.701 +02:00 [DBG] Connection id "0HMQ62U5JAOJT" accepted.
+2023-04-26 07:31:53.710 +02:00 [DBG] Connection id "0HMQ62U5JAOJT" started.
+2023-04-26 07:31:53.719 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" accepted.
+2023-04-26 07:31:53.726 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" started.
+2023-04-26 07:31:53.756 +02:00 [DBG] Connection id "0HMQ62U5JAOJT" sending FIN because: "The client closed the connection."
+2023-04-26 07:31:53.769 +02:00 [DBG] Connection id "0HMQ62U5JAOJT" disconnecting.
+2023-04-26 07:31:53.776 +02:00 [DBG] Connection id "0HMQ62U5JAOJT" stopped.
+2023-04-26 07:31:53.871 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:31:53.915 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 07:31:53.985 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:31:53.999 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 07:31:54.008 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:31:54.031 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" completed keep alive response.
+2023-04-26 07:31:54.039 +02:00 [DBG] Connection id "0HMQ62U5JAOJV" accepted.
+2023-04-26 07:31:54.040 +02:00 [DBG] Connection id "0HMQ62U5JAOJV" received FIN.
+2023-04-26 07:31:54.055 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 175.1720ms
+2023-04-26 07:31:54.041 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" accepted.
+2023-04-26 07:31:54.056 +02:00 [DBG] Connection id "0HMQ62U5JAOJV" started.
+2023-04-26 07:31:54.071 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" started.
+2023-04-26 07:31:54.079 +02:00 [DBG] Connection id "0HMQ62U5JAOJV" sending FIN because: "The client closed the connection."
+2023-04-26 07:31:54.093 +02:00 [DBG] Connection id "0HMQ62U5JAOJV" disconnecting.
+2023-04-26 07:31:54.110 +02:00 [DBG] Connection id "0HMQ62U5JAOJV" stopped.
+2023-04-26 07:31:54.248 +02:00 [DBG] Connection 0HMQ62U5JAOK0 established using the following protocol: "Tls13"
+2023-04-26 07:31:54.264 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:31:54.273 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:31:54.392 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:31:54.400 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:31:54.418 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" completed keep alive response.
+2023-04-26 07:31:54.426 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 161.7188ms
+2023-04-26 07:31:55.879 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:31:55.889 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:31:55.894 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:31:55.900 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" completed keep alive response.
+2023-04-26 07:31:55.906 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 27.3080ms
+2023-04-26 07:31:55.909 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:31:55.915 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:31:55.922 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:31:55.927 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:31:55.935 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" completed keep alive response.
+2023-04-26 07:31:55.941 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 31.0202ms
+2023-04-26 07:32:06.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - -
+2023-04-26 07:32:06.828 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:32:06.830 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-26 07:32:06.832 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" completed keep alive response.
+2023-04-26 07:32:06.836 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - - - 307 0 - 10.4554ms
+2023-04-26 07:32:06.836 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - -
+2023-04-26 07:32:06.842 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:32:06.853 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-26 07:32:06.861 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-26 07:32:06.870 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 07:32:06.877 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 07:32:06.924 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 07:32:06.935 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 07:32:06.942 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 07:32:06.951 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 07:32:06.958 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 07:32:06.965 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 07:32:06.975 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 07:32:06.986 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 07:32:07.003 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-26 07:32:07.018 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-26 07:32:07.033 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 07:32:07.043 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 07:32:07.048 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-26 07:32:07.063 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-26 07:32:07.077 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 07:32:07.094 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-26 07:32:07.099 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-26 07:32:07.106 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-26 07:32:07.112 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-26 07:32:07.121 +02:00 [INF] Executing OkObjectResult, writing value of type 'FoodSavr.API.Models.IngredientDto'.
+2023-04-26 07:32:07.451 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 474.1591ms
+2023-04-26 07:32:07.463 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 07:32:07.469 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" completed keep alive response.
+2023-04-26 07:32:07.477 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - - - 200 47 application/json;+charset=utf-8 641.2047ms
+2023-04-26 07:32:14.599 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:32:14.603 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:32:14.605 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:32:14.607 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" completed keep alive response.
+2023-04-26 07:32:14.610 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 11.5337ms
+2023-04-26 07:32:14.611 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:32:14.614 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:32:14.617 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:32:14.619 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:32:14.622 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" completed keep alive response.
+2023-04-26 07:32:14.626 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 14.6869ms
+2023-04-26 07:32:34.140 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:32:34.143 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:32:34.145 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:32:34.149 +02:00 [DBG] Connection id "0HMQ62U5JAOJU" completed keep alive response.
+2023-04-26 07:32:34.152 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 12.4572ms
+2023-04-26 07:32:34.154 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:32:34.159 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:32:34.162 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:32:34.168 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:32:34.173 +02:00 [DBG] Connection id "0HMQ62U5JAOK0" completed keep alive response.
+2023-04-26 07:32:34.176 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 21.1704ms
+2023-04-26 07:33:22.052 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 07:33:22.334 +02:00 [DBG] Hosting starting
+2023-04-26 07:33:22.683 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 07:33:22.699 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 07:33:22.710 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 07:33:22.716 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 07:33:22.725 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 07:33:22.739 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 07:33:22.761 +02:00 [INF] Hosting environment: Development
+2023-04-26 07:33:22.796 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 07:33:22.824 +02:00 [DBG] Hosting started
+2023-04-26 07:33:23.484 +02:00 [DBG] Connection id "0HMQ62V0BP7UL" received FIN.
+2023-04-26 07:33:23.524 +02:00 [DBG] Connection id "0HMQ62V0BP7UL" accepted.
+2023-04-26 07:33:23.543 +02:00 [DBG] Connection id "0HMQ62V0BP7UL" started.
+2023-04-26 07:33:23.547 +02:00 [DBG] Connection id "0HMQ62V0BP7UM" accepted.
+2023-04-26 07:33:23.564 +02:00 [DBG] Connection id "0HMQ62V0BP7UM" started.
+2023-04-26 07:33:23.576 +02:00 [DBG] Connection id "0HMQ62V0BP7UL" sending FIN because: "The client closed the connection."
+2023-04-26 07:33:23.589 +02:00 [DBG] Connection id "0HMQ62V0BP7UL" disconnecting.
+2023-04-26 07:33:23.598 +02:00 [DBG] Connection id "0HMQ62V0BP7UL" stopped.
+2023-04-26 07:33:23.632 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:33:23.653 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 07:33:23.707 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:33:23.722 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 07:33:23.735 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:33:23.764 +02:00 [DBG] Connection id "0HMQ62V0BP7UM" completed keep alive response.
+2023-04-26 07:33:23.771 +02:00 [DBG] Connection id "0HMQ62V0BP7UN" accepted.
+2023-04-26 07:33:23.773 +02:00 [DBG] Connection id "0HMQ62V0BP7UO" accepted.
+2023-04-26 07:33:23.788 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 147.3438ms
+2023-04-26 07:33:23.773 +02:00 [DBG] Connection id "0HMQ62V0BP7UN" received FIN.
+2023-04-26 07:33:23.794 +02:00 [DBG] Connection id "0HMQ62V0BP7UO" started.
+2023-04-26 07:33:23.790 +02:00 [DBG] Connection id "0HMQ62V0BP7UN" started.
+2023-04-26 07:33:23.811 +02:00 [DBG] Connection id "0HMQ62V0BP7UN" sending FIN because: "The client closed the connection."
+2023-04-26 07:33:23.823 +02:00 [DBG] Connection id "0HMQ62V0BP7UN" disconnecting.
+2023-04-26 07:33:23.827 +02:00 [DBG] Connection id "0HMQ62V0BP7UN" stopped.
+2023-04-26 07:33:23.908 +02:00 [DBG] Connection 0HMQ62V0BP7UO established using the following protocol: "Tls13"
+2023-04-26 07:33:23.934 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:33:23.938 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:33:23.983 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:33:23.988 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:33:23.998 +02:00 [DBG] Connection id "0HMQ62V0BP7UO" completed keep alive response.
+2023-04-26 07:33:24.003 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 68.8852ms
+2023-04-26 07:33:26.040 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:33:26.048 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:33:26.053 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:33:26.057 +02:00 [DBG] Connection id "0HMQ62V0BP7UM" completed keep alive response.
+2023-04-26 07:33:26.062 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:33:26.063 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 22.6164ms
+2023-04-26 07:33:26.067 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:33:26.075 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:33:26.079 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:33:26.082 +02:00 [DBG] Connection id "0HMQ62V0BP7UO" completed keep alive response.
+2023-04-26 07:33:26.085 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 23.5581ms
+2023-04-26 07:34:40.418 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 07:34:40.684 +02:00 [DBG] Hosting starting
+2023-04-26 07:34:41.042 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 07:34:41.048 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 07:34:41.053 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 07:34:41.057 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 07:34:41.063 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 07:34:41.068 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 07:34:41.072 +02:00 [INF] Hosting environment: Development
+2023-04-26 07:34:41.078 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 07:34:41.085 +02:00 [DBG] Hosting started
+2023-04-26 07:34:45.355 +02:00 [DBG] Connection id "0HMQ62VOOI97T" received FIN.
+2023-04-26 07:34:45.371 +02:00 [DBG] Connection id "0HMQ62VOOI97T" accepted.
+2023-04-26 07:34:45.376 +02:00 [DBG] Connection id "0HMQ62VOOI97T" started.
+2023-04-26 07:34:45.380 +02:00 [DBG] Connection id "0HMQ62VOOI97U" accepted.
+2023-04-26 07:34:45.386 +02:00 [DBG] Connection id "0HMQ62VOOI97U" started.
+2023-04-26 07:34:45.403 +02:00 [DBG] Connection id "0HMQ62VOOI97T" sending FIN because: "The client closed the connection."
+2023-04-26 07:34:45.410 +02:00 [DBG] Connection id "0HMQ62VOOI97T" disconnecting.
+2023-04-26 07:34:45.416 +02:00 [DBG] Connection id "0HMQ62VOOI97T" stopped.
+2023-04-26 07:34:45.488 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:34:45.522 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 07:34:45.560 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:34:45.570 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 07:34:45.578 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:34:45.602 +02:00 [DBG] Connection id "0HMQ62VOOI97U" completed keep alive response.
+2023-04-26 07:34:45.608 +02:00 [DBG] Connection id "0HMQ62VOOI97V" accepted.
+2023-04-26 07:34:45.610 +02:00 [DBG] Connection id "0HMQ62VOOI97V" received FIN.
+2023-04-26 07:34:45.610 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 123.6491ms
+2023-04-26 07:34:45.609 +02:00 [DBG] Connection id "0HMQ62VOOI980" accepted.
+2023-04-26 07:34:45.624 +02:00 [DBG] Connection id "0HMQ62VOOI97V" started.
+2023-04-26 07:34:45.631 +02:00 [DBG] Connection id "0HMQ62VOOI980" started.
+2023-04-26 07:34:45.635 +02:00 [DBG] Connection id "0HMQ62VOOI97V" sending FIN because: "The client closed the connection."
+2023-04-26 07:34:45.642 +02:00 [DBG] Connection id "0HMQ62VOOI97V" disconnecting.
+2023-04-26 07:34:45.653 +02:00 [DBG] Connection id "0HMQ62VOOI97V" stopped.
+2023-04-26 07:34:45.749 +02:00 [DBG] Connection 0HMQ62VOOI980 established using the following protocol: "Tls13"
+2023-04-26 07:34:45.766 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:34:45.773 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:34:45.831 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:34:45.837 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:34:45.849 +02:00 [DBG] Connection id "0HMQ62VOOI980" completed keep alive response.
+2023-04-26 07:34:45.855 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 88.3005ms
+2023-04-26 07:34:47.249 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:34:47.258 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:34:47.261 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:34:47.267 +02:00 [DBG] Connection id "0HMQ62VOOI97U" completed keep alive response.
+2023-04-26 07:34:47.275 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 25.7469ms
+2023-04-26 07:34:47.280 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:34:47.285 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:34:47.294 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:34:47.297 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:34:47.300 +02:00 [DBG] Connection id "0HMQ62VOOI980" completed keep alive response.
+2023-04-26 07:34:47.303 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 23.1221ms
+2023-04-26 07:35:16.658 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 07:35:16.839 +02:00 [DBG] Hosting starting
+2023-04-26 07:35:17.169 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 07:35:17.176 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 07:35:17.180 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 07:35:17.184 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 07:35:17.188 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 07:35:17.193 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 07:35:17.199 +02:00 [INF] Hosting environment: Development
+2023-04-26 07:35:17.205 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 07:35:17.210 +02:00 [DBG] Hosting started
+2023-04-26 07:35:17.984 +02:00 [DBG] Connection id "0HMQ6302FNPCF" received FIN.
+2023-04-26 07:35:17.998 +02:00 [DBG] Connection id "0HMQ6302FNPCF" accepted.
+2023-04-26 07:35:18.005 +02:00 [DBG] Connection id "0HMQ6302FNPCF" started.
+2023-04-26 07:35:18.009 +02:00 [DBG] Connection id "0HMQ6302FNPCG" accepted.
+2023-04-26 07:35:18.016 +02:00 [DBG] Connection id "0HMQ6302FNPCG" started.
+2023-04-26 07:35:18.033 +02:00 [DBG] Connection id "0HMQ6302FNPCF" sending FIN because: "The client closed the connection."
+2023-04-26 07:35:18.040 +02:00 [DBG] Connection id "0HMQ6302FNPCF" disconnecting.
+2023-04-26 07:35:18.048 +02:00 [DBG] Connection id "0HMQ6302FNPCF" stopped.
+2023-04-26 07:35:18.096 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:35:18.129 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 07:35:18.161 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:18.168 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 07:35:18.173 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:35:18.189 +02:00 [DBG] Connection id "0HMQ6302FNPCG" completed keep alive response.
+2023-04-26 07:35:18.197 +02:00 [DBG] Connection id "0HMQ6302FNPCH" accepted.
+2023-04-26 07:35:18.198 +02:00 [DBG] Connection id "0HMQ6302FNPCH" received FIN.
+2023-04-26 07:35:18.198 +02:00 [DBG] Connection id "0HMQ6302FNPCI" accepted.
+2023-04-26 07:35:18.199 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 101.9431ms
+2023-04-26 07:35:18.210 +02:00 [DBG] Connection id "0HMQ6302FNPCH" started.
+2023-04-26 07:35:18.216 +02:00 [DBG] Connection id "0HMQ6302FNPCI" started.
+2023-04-26 07:35:18.223 +02:00 [DBG] Connection id "0HMQ6302FNPCH" sending FIN because: "The client closed the connection."
+2023-04-26 07:35:18.233 +02:00 [DBG] Connection id "0HMQ6302FNPCH" disconnecting.
+2023-04-26 07:35:18.244 +02:00 [DBG] Connection id "0HMQ6302FNPCH" stopped.
+2023-04-26 07:35:18.307 +02:00 [DBG] Connection 0HMQ6302FNPCI established using the following protocol: "Tls13"
+2023-04-26 07:35:18.319 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:35:18.324 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:18.361 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:35:18.367 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:35:18.374 +02:00 [DBG] Connection id "0HMQ6302FNPCI" completed keep alive response.
+2023-04-26 07:35:18.380 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 60.1208ms
+2023-04-26 07:35:19.835 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:35:19.842 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:19.846 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:35:19.851 +02:00 [DBG] Connection id "0HMQ6302FNPCG" completed keep alive response.
+2023-04-26 07:35:19.855 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 19.8289ms
+2023-04-26 07:35:19.856 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:35:19.859 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:19.863 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:35:19.868 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:35:19.871 +02:00 [DBG] Connection id "0HMQ6302FNPCI" completed keep alive response.
+2023-04-26 07:35:19.874 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 17.6991ms
+2023-04-26 07:35:21.045 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:35:21.051 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:21.060 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:35:21.067 +02:00 [DBG] Connection id "0HMQ6302FNPCG" completed keep alive response.
+2023-04-26 07:35:21.073 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:35:21.075 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 30.2881ms
+2023-04-26 07:35:21.081 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:21.091 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:35:21.095 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:35:21.101 +02:00 [DBG] Connection id "0HMQ6302FNPCI" completed keep alive response.
+2023-04-26 07:35:21.108 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 35.4554ms
+2023-04-26 07:35:28.958 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:35:28.962 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:28.964 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:35:28.967 +02:00 [DBG] Connection id "0HMQ6302FNPCG" completed keep alive response.
+2023-04-26 07:35:28.979 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:35:28.985 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 26.9429ms
+2023-04-26 07:35:28.987 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:28.994 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:35:28.996 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:35:28.998 +02:00 [DBG] Connection id "0HMQ6302FNPCI" completed keep alive response.
+2023-04-26 07:35:29.002 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 22.5831ms
+2023-04-26 07:35:30.318 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 07:35:30.321 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:30.323 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 07:35:30.326 +02:00 [DBG] Connection id "0HMQ6302FNPCG" completed keep alive response.
+2023-04-26 07:35:30.329 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 11.0830ms
+2023-04-26 07:35:30.329 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 07:35:30.333 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:30.336 +02:00 [DBG] No candidates found for the request path '/api/foodsavr/'
+2023-04-26 07:35:30.339 +02:00 [DBG] Request did not match any endpoints
+2023-04-26 07:35:30.341 +02:00 [DBG] Connection id "0HMQ6302FNPCI" completed keep alive response.
+2023-04-26 07:35:30.345 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 404 0 - 16.0740ms
+2023-04-26 07:35:47.227 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/getingredients - -
+2023-04-26 07:35:47.230 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:47.233 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/getingredients'.
+2023-04-26 07:35:47.236 +02:00 [DBG] Connection id "0HMQ6302FNPCG" completed keep alive response.
+2023-04-26 07:35:47.238 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/getingredients - - - 307 0 - 11.2589ms
+2023-04-26 07:35:47.240 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/getingredients - -
+2023-04-26 07:35:47.243 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 07:35:47.254 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/getingredients'
+2023-04-26 07:35:47.262 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)' with route pattern 'api/foodsavr/GetIngredients' is valid for the request path '/api/foodsavr/getingredients'
+2023-04-26 07:35:47.271 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/getingredients'
+2023-04-26 07:35:47.280 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 07:35:47.285 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 07:35:47.310 +02:00 [INF] Route matched with {action = "GetIngredients", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Models.IngredientDataStore]] GetIngredients() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 07:35:47.323 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 07:35:47.330 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 07:35:47.341 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 07:35:47.354 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 07:35:47.357 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 07:35:47.370 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 07:35:47.384 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 07:35:47.401 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 07:35:47.422 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-04-26 07:35:47.433 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-26 07:35:47.441 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Models.IngredientDto, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-26 07:35:47.714 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API) in 340.8754ms
+2023-04-26 07:35:47.718 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 07:35:47.721 +02:00 [DBG] Connection id "0HMQ6302FNPCI" completed keep alive response.
+2023-04-26 07:35:47.723 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/getingredients - - - 200 304 application/json;+charset=utf-8 482.9228ms
+2023-04-26 08:49:46.519 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 08:49:46.692 +02:00 [DBG] Hosting starting
+2023-04-26 08:49:47.057 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 08:49:47.076 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 08:49:47.081 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 08:49:47.092 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 08:49:47.097 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 08:49:47.102 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 08:49:47.104 +02:00 [INF] Hosting environment: Development
+2023-04-26 08:49:47.107 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 08:49:47.110 +02:00 [DBG] Hosting started
+2023-04-26 08:50:00.006 +02:00 [DBG] Connection id "0HMQ649Q7KGT6" received FIN.
+2023-04-26 08:50:00.015 +02:00 [DBG] Connection id "0HMQ649Q7KGT6" accepted.
+2023-04-26 08:50:00.020 +02:00 [DBG] Connection id "0HMQ649Q7KGT6" started.
+2023-04-26 08:50:00.024 +02:00 [DBG] Connection id "0HMQ649Q7KGT7" accepted.
+2023-04-26 08:50:00.026 +02:00 [DBG] Connection id "0HMQ649Q7KGT7" started.
+2023-04-26 08:50:00.041 +02:00 [DBG] Connection id "0HMQ649Q7KGT6" sending FIN because: "The client closed the connection."
+2023-04-26 08:50:00.045 +02:00 [DBG] Connection id "0HMQ649Q7KGT6" disconnecting.
+2023-04-26 08:50:00.048 +02:00 [DBG] Connection id "0HMQ649Q7KGT6" stopped.
+2023-04-26 08:50:00.101 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/getingredients - -
+2023-04-26 08:50:00.125 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 08:50:00.156 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:50:00.166 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 08:50:00.174 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/getingredients'.
+2023-04-26 08:50:00.211 +02:00 [DBG] Connection id "0HMQ649Q7KGT7" completed keep alive response.
+2023-04-26 08:50:00.223 +02:00 [DBG] Connection id "0HMQ649Q7KGT8" accepted.
+2023-04-26 08:50:00.224 +02:00 [DBG] Connection id "0HMQ649Q7KGT9" accepted.
+2023-04-26 08:50:00.243 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/getingredients - - - 307 0 - 125.4453ms
+2023-04-26 08:50:00.224 +02:00 [DBG] Connection id "0HMQ649Q7KGT8" received FIN.
+2023-04-26 08:50:00.257 +02:00 [DBG] Connection id "0HMQ649Q7KGT9" started.
+2023-04-26 08:50:00.248 +02:00 [DBG] Connection id "0HMQ649Q7KGT8" started.
+2023-04-26 08:50:00.287 +02:00 [DBG] Connection id "0HMQ649Q7KGT8" sending FIN because: "The client closed the connection."
+2023-04-26 08:50:00.303 +02:00 [DBG] Connection id "0HMQ649Q7KGT8" disconnecting.
+2023-04-26 08:50:00.310 +02:00 [DBG] Connection id "0HMQ649Q7KGT8" stopped.
+2023-04-26 08:50:00.373 +02:00 [DBG] Connection 0HMQ649Q7KGT9 established using the following protocol: "Tls13"
+2023-04-26 08:50:00.388 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/getingredients - -
+2023-04-26 08:50:00.396 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:50:00.444 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/getingredients'
+2023-04-26 08:50:00.456 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)' with route pattern 'api/foodsavr/GetIngredients' is valid for the request path '/api/foodsavr/getingredients'
+2023-04-26 08:50:00.464 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/getingredients'
+2023-04-26 08:50:00.473 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 08:50:00.484 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 08:50:00.520 +02:00 [INF] Route matched with {action = "GetIngredients", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Models.IngredientDataStore]] GetIngredients() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 08:50:00.538 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 08:50:00.549 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 08:50:00.561 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 08:50:00.572 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 08:50:00.580 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 08:50:00.594 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:50:00.606 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:50:00.621 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 08:50:00.643 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-04-26 08:50:00.653 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-26 08:50:00.659 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Models.IngredientDto, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-26 08:50:00.913 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API) in 315.9544ms
+2023-04-26 08:50:00.920 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 08:50:00.923 +02:00 [DBG] Connection id "0HMQ649Q7KGT9" completed keep alive response.
+2023-04-26 08:50:00.925 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/getingredients - - - 200 304 application/json;+charset=utf-8 536.6573ms
+2023-04-26 08:57:52.174 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 08:57:52.357 +02:00 [DBG] Hosting starting
+2023-04-26 08:57:52.635 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 08:57:52.640 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 08:57:52.643 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 08:57:52.646 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 08:57:52.647 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 08:57:52.649 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 08:57:52.653 +02:00 [INF] Hosting environment: Development
+2023-04-26 08:57:52.655 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 08:57:52.657 +02:00 [DBG] Hosting started
+2023-04-26 08:57:53.559 +02:00 [DBG] Connection id "0HMQ64E7BPCBH" received FIN.
+2023-04-26 08:57:53.569 +02:00 [DBG] Connection id "0HMQ64E7BPCBH" accepted.
+2023-04-26 08:57:53.576 +02:00 [DBG] Connection id "0HMQ64E7BPCBH" started.
+2023-04-26 08:57:53.579 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" accepted.
+2023-04-26 08:57:53.588 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" started.
+2023-04-26 08:57:53.599 +02:00 [DBG] Connection id "0HMQ64E7BPCBH" sending FIN because: "The client closed the connection."
+2023-04-26 08:57:53.608 +02:00 [DBG] Connection id "0HMQ64E7BPCBH" disconnecting.
+2023-04-26 08:57:53.619 +02:00 [DBG] Connection id "0HMQ64E7BPCBH" stopped.
+2023-04-26 08:57:53.656 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/getingredients - -
+2023-04-26 08:57:53.684 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 08:57:53.720 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:57:53.730 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 08:57:53.736 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/getingredients'.
+2023-04-26 08:57:53.756 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" completed keep alive response.
+2023-04-26 08:57:53.764 +02:00 [DBG] Connection id "0HMQ64E7BPCBJ" accepted.
+2023-04-26 08:57:53.764 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/getingredients - - - 307 0 - 113.0043ms
+2023-04-26 08:57:53.765 +02:00 [DBG] Connection id "0HMQ64E7BPCBJ" received FIN.
+2023-04-26 08:57:53.765 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" accepted.
+2023-04-26 08:57:53.779 +02:00 [DBG] Connection id "0HMQ64E7BPCBJ" started.
+2023-04-26 08:57:53.791 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" started.
+2023-04-26 08:57:53.794 +02:00 [DBG] Connection id "0HMQ64E7BPCBJ" sending FIN because: "The client closed the connection."
+2023-04-26 08:57:53.798 +02:00 [DBG] Connection id "0HMQ64E7BPCBJ" disconnecting.
+2023-04-26 08:57:53.807 +02:00 [DBG] Connection id "0HMQ64E7BPCBJ" stopped.
+2023-04-26 08:57:53.866 +02:00 [DBG] Connection 0HMQ64E7BPCBK established using the following protocol: "Tls13"
+2023-04-26 08:57:53.876 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/getingredients - -
+2023-04-26 08:57:53.882 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:57:53.932 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/getingredients'
+2023-04-26 08:57:53.940 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/getingredients'
+2023-04-26 08:57:53.947 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 08:57:53.953 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 08:57:53.983 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 08:57:53.992 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 08:57:53.997 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 08:57:54.002 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 08:57:54.008 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 08:57:54.012 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 08:57:54.017 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:57:54.025 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:57:54.036 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-26 08:57:54.045 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-26 08:57:54.065 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 08:57:54.071 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-26 08:57:54.081 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-26 08:57:54.089 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-04-26 08:57:54.095 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-04-26 08:57:54.106 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 08:57:54.122 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-04-26 08:57:54.138 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-04-26 08:57:54.142 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-26 08:57:54.363 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 344.6489ms
+2023-04-26 08:57:54.369 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 08:57:54.374 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" completed keep alive response.
+2023-04-26 08:57:54.378 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/getingredients - - - 400 252 application/problem+json;+charset=utf-8 501.8733ms
+2023-04-26 08:57:58.108 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-26 08:57:58.115 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:57:58.117 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-26 08:57:58.120 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" completed keep alive response.
+2023-04-26 08:57:58.125 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 17.4489ms
+2023-04-26 08:57:58.127 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-26 08:57:58.131 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:57:58.140 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/'
+2023-04-26 08:57:58.145 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)' with route pattern 'api/foodsavr' is valid for the request path '/api/foodsavr/'
+2023-04-26 08:57:58.149 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 08:57:58.152 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 08:57:58.161 +02:00 [INF] Route matched with {action = "GetIngredients", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Models.IngredientDataStore]] GetIngredients() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 08:57:58.168 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 08:57:58.172 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 08:57:58.178 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 08:57:58.183 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 08:57:58.186 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 08:57:58.195 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:57:58.206 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:57:58.212 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 08:57:58.221 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-04-26 08:57:58.227 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-26 08:57:58.231 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Models.IngredientDto, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-26 08:57:58.244 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API) in 49.5771ms
+2023-04-26 08:57:58.253 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-26 08:57:58.257 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" completed keep alive response.
+2023-04-26 08:57:58.265 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 200 304 application/json;+charset=utf-8 137.5015ms
+2023-04-26 08:58:15.683 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - -
+2023-04-26 08:58:15.689 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:58:15.695 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-26 08:58:15.698 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" completed keep alive response.
+2023-04-26 08:58:15.702 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - - - 307 0 - 18.7489ms
+2023-04-26 08:58:15.703 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - -
+2023-04-26 08:58:15.712 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:58:15.717 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-26 08:58:15.720 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-26 08:58:15.734 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 08:58:15.737 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 08:58:15.747 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 08:58:15.761 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 08:58:15.769 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 08:58:15.780 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 08:58:15.794 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 08:58:15.801 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 08:58:15.810 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:58:15.821 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:58:15.831 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-26 08:58:15.838 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-26 08:58:15.847 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 08:58:15.851 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 08:58:15.856 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-26 08:58:15.861 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-26 08:58:15.869 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 08:58:15.883 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-26 08:58:15.886 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-26 08:58:15.888 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-26 08:58:15.891 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-26 08:58:15.896 +02:00 [INF] Executing OkObjectResult, writing value of type 'FoodSavr.API.Models.IngredientDto'.
+2023-04-26 08:58:15.903 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 92.6222ms
+2023-04-26 08:58:15.907 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-26 08:58:15.911 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" completed keep alive response.
+2023-04-26 08:58:15.915 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - - - 200 47 application/json;+charset=utf-8 212.3557ms
+2023-04-26 08:58:20.938 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetIngredientCount - -
+2023-04-26 08:58:20.939 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:58:20.942 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetIngredientCount'.
+2023-04-26 08:58:20.946 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" completed keep alive response.
+2023-04-26 08:58:20.949 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetIngredientCount - -
+2023-04-26 08:58:20.951 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetIngredientCount - - - 307 0 - 13.1431ms
+2023-04-26 08:58:20.952 +02:00 [DBG] The request path  does not match the path filter
+2023-04-26 08:58:20.957 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/GetIngredientCount'
+2023-04-26 08:58:20.963 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredientCount (FoodSavr.API)' with route pattern 'api/foodsavr/GetIngredientCount' is valid for the request path '/api/foodsavr/GetIngredientCount'
+2023-04-26 08:58:20.968 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetIngredientCount'
+2023-04-26 08:58:20.976 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredientCount (FoodSavr.API)'
+2023-04-26 08:58:20.979 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredientCount (FoodSavr.API)'
+2023-04-26 08:58:20.985 +02:00 [INF] Route matched with {action = "GetIngredientCount", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32] GetIngredientCount() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 08:58:20.994 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 08:58:20.998 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 08:58:21.001 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 08:58:21.006 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 08:58:21.009 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 08:58:21.012 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:58:21.017 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:58:21.026 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-26 08:58:21.037 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-26 08:58:21.039 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-26 08:58:21.042 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-26 08:58:21.046 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-26 08:58:21.053 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2023-04-26 08:58:21.062 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredientCount (FoodSavr.API) in 50.2434ms
+2023-04-26 08:58:21.073 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredientCount (FoodSavr.API)'
+2023-04-26 08:58:21.079 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" completed keep alive response.
+2023-04-26 08:58:21.086 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetIngredientCount - - - 200 1 application/json;+charset=utf-8 135.9222ms
+2023-04-26 08:58:35.236 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5225/api/foodsavr/2 - -
+2023-04-26 08:58:35.245 +02:00 [DBG] DELETE requests are not supported
+2023-04-26 08:58:35.249 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-26 08:58:35.255 +02:00 [DBG] Connection id "0HMQ64E7BPCBI" completed keep alive response.
+2023-04-26 08:58:35.260 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5225/api/foodsavr/2 - - - 307 0 - 24.0493ms
+2023-04-26 08:58:35.263 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - -
+2023-04-26 08:58:35.270 +02:00 [DBG] DELETE requests are not supported
+2023-04-26 08:58:35.274 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-26 08:58:35.277 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-26 08:58:35.281 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 08:58:35.283 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 08:58:35.289 +02:00 [INF] Route matched with {action = "DeleteIngredient", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 08:58:35.292 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 08:58:35.295 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 08:58:35.299 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 08:58:35.303 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 08:58:35.307 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 08:58:35.311 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:58:35.314 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 08:58:35.316 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-26 08:58:35.319 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-26 08:58:35.323 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 08:58:35.328 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 08:58:35.331 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-26 08:58:35.335 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-26 08:58:35.344 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-04-26 08:58:35.348 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API) in 37.4208ms
+2023-04-26 08:58:35.352 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 08:58:35.354 +02:00 [DBG] Connection id "0HMQ64E7BPCBK" completed keep alive response.
+2023-04-26 08:58:35.359 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - - - 204 - - 96.0274ms
+2023-04-26 09:00:24.238 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-26 09:00:24.437 +02:00 [DBG] Hosting starting
+2023-04-26 09:00:24.701 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-26 09:00:24.706 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-26 09:00:24.709 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-26 09:00:24.712 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-26 09:00:24.714 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-26 09:00:24.717 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-26 09:00:24.719 +02:00 [INF] Hosting environment: Development
+2023-04-26 09:00:24.723 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-26 09:00:24.725 +02:00 [DBG] Hosting started
+2023-04-26 09:00:26.265 +02:00 [DBG] Connection id "0HMQ64FKS3IUE" received FIN.
+2023-04-26 09:00:26.278 +02:00 [DBG] Connection id "0HMQ64FKS3IUE" accepted.
+2023-04-26 09:00:26.287 +02:00 [DBG] Connection id "0HMQ64FKS3IUE" started.
+2023-04-26 09:00:26.290 +02:00 [DBG] Connection id "0HMQ64FKS3IUF" accepted.
+2023-04-26 09:00:26.295 +02:00 [DBG] Connection id "0HMQ64FKS3IUF" started.
+2023-04-26 09:00:26.306 +02:00 [DBG] Connection id "0HMQ64FKS3IUE" sending FIN because: "The client closed the connection."
+2023-04-26 09:00:26.317 +02:00 [DBG] Connection id "0HMQ64FKS3IUE" disconnecting.
+2023-04-26 09:00:26.323 +02:00 [DBG] Connection id "0HMQ64FKS3IUE" stopped.
+2023-04-26 09:00:26.361 +02:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5225/api/foodsavr/2 - -
+2023-04-26 09:00:26.384 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-26 09:00:26.404 +02:00 [DBG] DELETE requests are not supported
+2023-04-26 09:00:26.414 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-26 09:00:26.421 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-26 09:00:26.441 +02:00 [DBG] Connection id "0HMQ64FKS3IUF" completed keep alive response.
+2023-04-26 09:00:26.447 +02:00 [DBG] Connection id "0HMQ64FKS3IUG" accepted.
+2023-04-26 09:00:26.449 +02:00 [DBG] Connection id "0HMQ64FKS3IUG" received FIN.
+2023-04-26 09:00:26.448 +02:00 [DBG] Connection id "0HMQ64FKS3IUH" accepted.
+2023-04-26 09:00:26.462 +02:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5225/api/foodsavr/2 - - - 307 0 - 95.7447ms
+2023-04-26 09:00:26.463 +02:00 [DBG] Connection id "0HMQ64FKS3IUG" started.
+2023-04-26 09:00:26.468 +02:00 [DBG] Connection id "0HMQ64FKS3IUH" started.
+2023-04-26 09:00:26.478 +02:00 [DBG] Connection id "0HMQ64FKS3IUG" sending FIN because: "The client closed the connection."
+2023-04-26 09:00:26.489 +02:00 [DBG] Connection id "0HMQ64FKS3IUG" disconnecting.
+2023-04-26 09:00:26.499 +02:00 [DBG] Connection id "0HMQ64FKS3IUG" stopped.
+2023-04-26 09:00:26.550 +02:00 [DBG] Connection 0HMQ64FKS3IUH established using the following protocol: "Tls13"
+2023-04-26 09:00:26.564 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - -
+2023-04-26 09:00:26.570 +02:00 [DBG] DELETE requests are not supported
+2023-04-26 09:00:26.620 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-26 09:00:26.629 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-26 09:00:26.634 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 09:00:26.641 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 09:00:26.666 +02:00 [INF] Route matched with {action = "DeleteIngredient", controller = "Ingredient"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-26 09:00:26.673 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-26 09:00:26.677 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-26 09:00:26.681 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-26 09:00:26.684 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-26 09:00:26.686 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-26 09:00:26.692 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 09:00:26.696 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-26 09:00:26.704 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-26 09:00:26.712 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-26 09:00:26.716 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 09:00:26.717 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-26 09:00:26.720 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-26 09:00:26.728 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-26 09:00:26.736 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-04-26 09:00:26.746 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API) in 52.8055ms
+2023-04-26 09:00:26.749 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.DeleteIngredient (FoodSavr.API)'
+2023-04-26 09:00:26.755 +02:00 [DBG] Connection id "0HMQ64FKS3IUH" completed keep alive response.
+2023-04-26 09:00:26.759 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7164/api/foodsavr/2 - - - 204 - - 194.9843ms
