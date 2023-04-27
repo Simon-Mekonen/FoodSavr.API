@@ -1,6 +1,8 @@
+using FoodSavr.API.DbContexts;
 using FoodSavr.API.Models;
 using FoodSavr.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -33,8 +35,16 @@ builder.Services.AddTransient<IMailService, LocalMailService>();
 builder.Services.AddTransient<IMailService, CloudMailService>();
 #endif
 
+// Creates a single object of Ingredient/Category classes
 builder.Services.AddSingleton<IngredientDataStore>();
 builder.Services.AddSingleton<IngredientCategoryDataStore>();
+
+builder.Services.AddDbContext<FoodSavrContext>(
+    dbContextOptions => dbContextOptions.UseSqlite(
+        builder.Configuration["ConnectionStrings:FoodSavrDBConnectionString"]));
+
+// Creates the repository
+builder.Services.AddScoped<IIngredientRepository, IngredientRepository>();
 
 var app = builder.Build();
 

@@ -799,3 +799,526 @@
 2023-04-26 09:13:27.079 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" stopped.
 2023-04-26 09:13:27.089 +02:00 [DBG] Connection id "0HMQ64MQR4PO9" sending FIN because: "The Socket transport's send loop completed gracefully."
 2023-04-26 09:13:27.100 +02:00 [DBG] Hosting stopped
+2023-04-26 13:44:49.876 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 13:44:50.717 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 13:44:50.842 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 13:50:54.547 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 13:50:54.838 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 13:50:54.938 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 13:51:43.558 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 13:51:43.845 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 13:51:43.906 +02:00 [DBG] Creating DbConnection.
+2023-04-26 13:51:43.913 +02:00 [DBG] Created DbConnection. (6ms).
+2023-04-26 13:51:43.917 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 13:51:43.922 +02:00 [DBG] An error occurred using the connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 13:51:43.924 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 13:51:43.927 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 13:51:43.933 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 13:51:52.008 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 13:51:52.409 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 13:51:52.551 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:02:34.850 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 14:02:35.490 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 14:02:35.506 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:02:35.516 +02:00 [DBG] Created DbConnection. (8ms).
+2023-04-26 14:02:35.519 +02:00 [DBG] Migrating using database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.523 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:02:35.524 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:02:35.525 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.530 +02:00 [DBG] An error occurred using the connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.532 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.535 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:35.535 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:02:35.535 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:02:35.535 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.535 +02:00 [DBG] An error occurred using the connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.535 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.536 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:35.536 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.540 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.545 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:02:35.551 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (4ms).
+2023-04-26 14:02:35.552 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (7ms).
+2023-04-26 14:02:35.556 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-04-26 14:02:35.572 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-04-26 14:02:35.573 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.575 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (1ms).
+2023-04-26 14:02:35.622 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:02:35.622 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.622 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.622 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.622 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.622 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-04-26 14:02:35.627 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-04-26 14:02:35.627 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.627 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:35.628 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:02:35.628 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:02:35.628 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.629 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.630 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.630 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:35.632 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 14:02:35.632 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-04-26 14:02:35.632 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-04-26 14:02:35.632 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.633 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.633 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:02:35.635 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:02:35.635 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.635 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:35.637 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-26 14:02:35.770 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (133ms).
+2023-04-26 14:02:35.770 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (133ms).
+2023-04-26 14:02:35.770 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.770 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.771 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:02:35.771 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:02:35.774 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.775 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 2ms reading results.
+2023-04-26 14:02:35.775 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.775 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:35.783 +02:00 [INF] Applying migration '20230426115152_FoodSavrDBInitialMigration'.
+2023-04-26 14:02:35.793 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:35.793 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.795 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-04-26 14:02:35.797 +02:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-04-26 14:02:35.798 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:02:35.798 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.798 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.798 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Category" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Category" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2023-04-26 14:02:35.798 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Category" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Category" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2023-04-26 14:02:35.798 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:02:35.798 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.798 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.798 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Ingredient" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Ingredient" PRIMARY KEY AUTOINCREMENT,
+    "CategoryId" INTEGER NOT NULL,
+    "Name" TEXT NOT NULL
+);
+2023-04-26 14:02:35.798 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Ingredient" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Ingredient" PRIMARY KEY AUTOINCREMENT,
+    "CategoryId" INTEGER NOT NULL,
+    "Name" TEXT NOT NULL
+);
+2023-04-26 14:02:35.798 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:02:35.798 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.798 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:02:35.799 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230426115152_FoodSavrDBInitialMigration', '7.0.5');
+2023-04-26 14:02:35.799 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230426115152_FoodSavrDBInitialMigration', '7.0.5');
+2023-04-26 14:02:35.799 +02:00 [DBG] Committing transaction.
+2023-04-26 14:02:35.803 +02:00 [DBG] Committed transaction.
+2023-04-26 14:02:35.803 +02:00 [DBG] Disposing transaction.
+2023-04-26 14:02:35.804 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:02:35.804 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:02:37.573 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:02:37.574 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:02:37.574 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:15:02.678 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 14:15:03.203 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 14:15:03.307 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:15:03.318 +02:00 [DBG] Created DbConnection. (10ms).
+2023-04-26 14:15:03.323 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:03.333 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:03.336 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:03.340 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:15:03.346 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 14:15:03.347 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:15:03.347 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:15:03.352 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (4ms).
+2023-04-26 14:15:03.353 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (8ms).
+2023-04-26 14:15:03.353 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:03.355 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:03.362 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:15:03.378 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:15:03.380 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:03.382 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (1ms).
+2023-04-26 14:15:03.395 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-26 14:15:03.396 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 14:15:03.396 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 14:15:03.396 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:03.396 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:03.396 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:15:03.397 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:15:03.400 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:03.401 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 2ms reading results.
+2023-04-26 14:15:03.401 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:03.401 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:15:03.403 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:15:03.403 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:03.403 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:15:25.473 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 14:15:25.967 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 14:15:26.111 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:15:55.426 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 14:15:55.910 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 14:15:55.993 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:15:56.001 +02:00 [DBG] Created DbConnection. (6ms).
+2023-04-26 14:15:56.006 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:56.014 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:56.018 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:56.022 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:15:56.028 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 14:15:56.028 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:15:56.028 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:15:56.033 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (4ms).
+2023-04-26 14:15:56.033 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (7ms).
+2023-04-26 14:15:56.034 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:56.036 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:56.040 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:15:56.055 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:15:56.057 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:56.059 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (1ms).
+2023-04-26 14:15:56.069 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-26 14:15:56.069 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 14:15:56.069 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 14:15:56.069 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:56.069 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:56.070 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:15:56.070 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:15:56.073 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:56.074 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 2ms reading results.
+2023-04-26 14:15:56.074 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:15:56.074 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:15:56.110 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:15:56.110 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:15:56.110 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:16:13.914 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 14:16:14.416 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 14:16:14.553 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:17:32.328 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 14:17:32.685 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 14:17:32.697 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:17:32.707 +02:00 [DBG] Created DbConnection. (8ms).
+2023-04-26 14:17:32.710 +02:00 [DBG] Migrating using database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.714 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:17:32.714 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:17:32.716 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.722 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.725 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.728 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:17:32.732 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 14:17:32.736 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2023-04-26 14:17:32.737 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2023-04-26 14:17:32.737 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.739 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.743 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:17:32.754 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:17:32.755 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.757 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (1ms).
+2023-04-26 14:17:32.757 +02:00 [DBG] Creating DbConnection.
+2023-04-26 14:17:32.757 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 14:17:32.757 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.758 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.758 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.758 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:17:32.758 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 14:17:32.759 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-04-26 14:17:32.759 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-04-26 14:17:32.759 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.759 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.759 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:17:32.759 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 14:17:32.759 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.759 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:17:32.769 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-26 14:17:32.769 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 14:17:32.769 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 14:17:32.769 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:32.769 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.769 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:17:32.770 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 14:17:32.772 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.773 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 1ms reading results.
+2023-04-26 14:17:32.773 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:32.773 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:17:32.779 +02:00 [INF] Applying migration '20230426121614_FoodSavrDBSecondMigration'.
+2023-04-26 14:17:32.805 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:33.182 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:33.184 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-04-26 14:17:33.186 +02:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-04-26 14:17:33.187 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:33.187 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.187 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.188 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Ingredient_CategoryId" ON "Ingredient" ("CategoryId");
+2023-04-26 14:17:33.188 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Ingredient_CategoryId" ON "Ingredient" ("CategoryId");
+2023-04-26 14:17:33.188 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:33.188 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.188 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.188 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_Ingredient" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Ingredient" PRIMARY KEY AUTOINCREMENT,
+    "CategoryId" INTEGER NOT NULL,
+    "Name" TEXT NOT NULL,
+    CONSTRAINT "FK_Ingredient_Category_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES "Category" ("Id") ON DELETE CASCADE
+);
+2023-04-26 14:17:33.189 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_Ingredient" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Ingredient" PRIMARY KEY AUTOINCREMENT,
+    "CategoryId" INTEGER NOT NULL,
+    "Name" TEXT NOT NULL,
+    CONSTRAINT "FK_Ingredient_Category_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES "Category" ("Id") ON DELETE CASCADE
+);
+2023-04-26 14:17:33.189 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:33.189 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.189 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.189 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_Ingredient" ("Id", "CategoryId", "Name")
+SELECT "Id", "CategoryId", "Name"
+FROM "Ingredient";
+2023-04-26 14:17:33.189 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_Ingredient" ("Id", "CategoryId", "Name")
+SELECT "Id", "CategoryId", "Name"
+FROM "Ingredient";
+2023-04-26 14:17:33.190 +02:00 [DBG] Committing transaction.
+2023-04-26 14:17:33.193 +02:00 [DBG] Committed transaction.
+2023-04-26 14:17:33.194 +02:00 [DBG] Disposing transaction.
+2023-04-26 14:17:33.194 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:33.194 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.194 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.194 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 0;
+2023-04-26 14:17:33.194 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 0;
+2023-04-26 14:17:33.194 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-04-26 14:17:33.194 +02:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-04-26 14:17:33.195 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:33.195 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.195 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.195 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Ingredient";
+2023-04-26 14:17:33.195 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Ingredient";
+2023-04-26 14:17:33.195 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:33.195 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.195 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:33.195 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "ef_temp_Ingredient" RENAME TO "Ingredient";
+2023-04-26 14:17:33.195 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "ef_temp_Ingredient" RENAME TO "Ingredient";
+2023-04-26 14:17:33.195 +02:00 [DBG] Committing transaction.
+2023-04-26 14:17:34.932 +02:00 [DBG] Committed transaction.
+2023-04-26 14:17:34.932 +02:00 [DBG] Disposing transaction.
+2023-04-26 14:17:34.932 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:34.932 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:34.932 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:34.932 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 1;
+2023-04-26 14:17:34.932 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys = 1;
+2023-04-26 14:17:34.933 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-04-26 14:17:34.933 +02:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-04-26 14:17:34.933 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:34.933 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:34.933 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:34.933 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Ingredient_CategoryId" ON "Ingredient" ("CategoryId");
+2023-04-26 14:17:34.933 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Ingredient_CategoryId" ON "Ingredient" ("CategoryId");
+2023-04-26 14:17:34.933 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 14:17:34.933 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:34.933 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 14:17:34.933 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230426121614_FoodSavrDBSecondMigration', '7.0.5');
+2023-04-26 14:17:34.933 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230426121614_FoodSavrDBSecondMigration', '7.0.5');
+2023-04-26 14:17:34.933 +02:00 [DBG] Committing transaction.
+2023-04-26 14:17:34.934 +02:00 [DBG] Committed transaction.
+2023-04-26 14:17:34.935 +02:00 [DBG] Disposing transaction.
+2023-04-26 14:17:34.935 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 14:17:34.935 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 14:17:34.937 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 14:17:34.938 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 14:17:34.938 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 15:03:04.637 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 15:06:29.688 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 15:07:12.427 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 15:12:37.733 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 15:12:38.327 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 15:12:38.566 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 15:13:11.038 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-26 15:13:11.746 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'IngredientContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-26 15:13:11.782 +02:00 [DBG] Creating DbConnection.
+2023-04-26 15:13:11.795 +02:00 [DBG] Created DbConnection. (11ms).
+2023-04-26 15:13:11.798 +02:00 [DBG] Migrating using database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.802 +02:00 [DBG] Creating DbConnection.
+2023-04-26 15:13:11.803 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 15:13:11.804 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.811 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.814 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.817 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 15:13:11.822 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 15:13:11.826 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (3ms).
+2023-04-26 15:13:11.827 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2023-04-26 15:13:11.827 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.828 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.832 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 15:13:11.843 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 15:13:11.845 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.846 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (1ms).
+2023-04-26 15:13:11.847 +02:00 [DBG] Creating DbConnection.
+2023-04-26 15:13:11.847 +02:00 [DBG] Created DbConnection. (0ms).
+2023-04-26 15:13:11.847 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.847 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.847 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.847 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 15:13:11.848 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-26 15:13:11.848 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-04-26 15:13:11.848 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-04-26 15:13:11.848 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.848 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.848 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 15:13:11.848 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-26 15:13:11.848 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.848 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 15:13:11.859 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-26 15:13:11.859 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 15:13:11.859 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-04-26 15:13:11.859 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.859 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.859 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 15:13:11.860 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-26 15:13:11.862 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.863 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 2ms reading results.
+2023-04-26 15:13:11.863 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.863 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 15:13:11.871 +02:00 [INF] Applying migration '20230426131238_DataSeed'.
+2023-04-26 15:13:11.895 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:11.895 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.896 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-04-26 15:13:11.899 +02:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-04-26 15:13:11.900 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 15:13:11.900 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 15:13:11.900 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 15:13:11.901 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Category" ("Id", "Name")
+VALUES (1, 'Grönsak');
+INSERT INTO "Category" ("Id", "Name")
+VALUES (2, 'Protein');
+INSERT INTO "Category" ("Id", "Name")
+VALUES (3, 'Kolhydrat');
+2023-04-26 15:13:11.902 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Category" ("Id", "Name")
+VALUES (1, 'Grönsak');
+INSERT INTO "Category" ("Id", "Name")
+VALUES (2, 'Protein');
+INSERT INTO "Category" ("Id", "Name")
+VALUES (3, 'Kolhydrat');
+2023-04-26 15:13:11.902 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 15:13:11.902 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 15:13:11.902 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 15:13:11.902 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (1, 1, 'Tomat');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (2, 2, 'Fisk');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (3, 2, 'Nötkött');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (4, 1, 'Sallad');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (5, 1, 'Persilja');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (6, 1, 'Avokado');
+2023-04-26 15:13:11.902 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (1, 1, 'Tomat');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (2, 2, 'Fisk');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (3, 2, 'Nötkött');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (4, 1, 'Sallad');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (5, 1, 'Persilja');
+INSERT INTO "Ingredient" ("Id", "CategoryId", "Name")
+VALUES (6, 1, 'Avokado');
+2023-04-26 15:13:11.902 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-26 15:13:11.902 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 15:13:11.902 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-26 15:13:11.902 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230426131238_DataSeed', '7.0.5');
+2023-04-26 15:13:11.902 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230426131238_DataSeed', '7.0.5');
+2023-04-26 15:13:11.903 +02:00 [DBG] Committing transaction.
+2023-04-26 15:13:11.907 +02:00 [DBG] Committed transaction.
+2023-04-26 15:13:11.908 +02:00 [DBG] Disposing transaction.
+2023-04-26 15:13:11.908 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-26 15:13:11.908 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (0ms).
+2023-04-26 15:13:11.909 +02:00 [DBG] 'IngredientContext' disposed.
+2023-04-26 15:13:13.928 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-26 15:13:13.928 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (0ms).

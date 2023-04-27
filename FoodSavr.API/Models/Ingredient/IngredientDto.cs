@@ -3,8 +3,8 @@
     public class IngredientDto
     {
         public int Id { get; set; }
-        public int IngredientCategoryId { get; set; }
-        public string Name { get; set; }
+        public int CategoryId { get; set; }
+        public string? Name { get; set; }
 
     }
 }

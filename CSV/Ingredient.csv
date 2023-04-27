@@ -1,0 +1,202 @@
+﻿id;categoryid;Name
+1;21;champinjoner
+2;3;fläskfärs
+3;5;konc kalvfond
+4;5;konc kycklingfond
+5;6;oregano
+6;9;silver lök
+7;11;mjölk
+8;15;fussili
+9;15;makaroner
+10;15;papardelle
+11;15;spaghetti
+12;16;fläskkarre
+13;18;jordärtskocka
+14;18;morot
+15;18;potatis
+16;18;rotselleri
+17;20;japansk soja
+18;20;soja
+19;0;ströbröd
+20;3;quorn
+21;3;kalkonfärs
+22;0;rödvin
+23;0;ägg
+24;3;kycklingfärs
+25;8;broccoli
+26;12;rågmjöl
+27;1;kycklingbuljongtärning
+28;1;köttbuljongtärning
+29;0;ostronsås
+30;9;röd lök
+31;0;smör
+32;18;palsternacka
+33;41;krossade tomater
+34;0;majsstärkelse
+35;20;kinesisk soja
+36;0;svartpeppar
+37;0;olivolja
+38;16;fläskfilé
+39;15;penne
+40;17;nötrulle
+41;0;tomatpuré
+42;7;färsk koriander
+43;17;bringa
+44;14;neutral olja
+45;18;rödbeta
+46;22;strösocker
+47;12;vetemjöl
+48;19;rucola
+49;8;pak choi
+50;9;gul lök
+51;13;ramen nudlar
+52;0;sesamolja
+53;6;dragon
+54;10;steklökar
+55;11;havre mjök
+56;17;högrev
+58;0;rökt sidfläsk
+59;0;salt
+60;0;lagerblad
+61;0;vatten
+62;8;vitkål
+63;0;vitlöksklyfta
+64;3;nötfärs
+65;7;timjan
+66;10;schalottenlökar
+67;11;soya mjölk
+68;14;rapsolja
+69;13;vetenudlar
+70;13;äggnudlar
+71;0;vispgrädde
+72;1;grönsaksbuljongtärning
+73;16;fläskkotlett
+74;0;matlagningsgrädde
+75;18;kålrot
+76;0;gurka
+77;0;citronskal
+78;0;salladslök
+79;0;avokado
+80;0;babyspenat
+81;0;böngroddar
+82;0;curry
+83;0;grillad paprika
+84;0;gräslök
+85;0;dill
+86;0;hickory glaze
+87;0;ingefära
+88;0;jordnötssmör
+89;0;kokosmjölk
+90;0;koriander
+91;0;kronärtskockscrème
+92;0;lasagneplattor
+93;0;lufttorkad skinka
+94;0;majonnäs
+95;0;majskorn
+96;0;mandelsplitter (à 50g)
+97;0;paprikapulver
+98;0;rispapper
+99;0;riven pepparrot
+100;0;senap
+101;0;sesamfrön
+102;0;spiskummin
+103;0;sweet chilisås
+104;0;teriyakimarinad
+105;0;tofu
+106;0;zucchini
+107;0;ättiksprit 12%
+108;1;fiskbuljongtärning
+109;3;köttfärs
+110;8;blomkålshuvud
+111;12;mjöl
+112;13;risnudlar
+113;13;nudlar
+114;14;olja
+115;15;pasta
+116;15;trottole
+117;15;bandpasta
+118;15;linguini
+119;16;kotletter
+120;16;fläsk
+121;17;entrecote
+122;17;oxfile
+123;17;nötkött
+124;18;amadine potatis
+125;18;rotfrukt
+126;19;cosmopolitansallad
+127;19;hjärtsallad
+128;19;mâchesallad
+129;19;sallad
+130;21;kantareller
+131;21;svamp
+132;23;fiskbuljong
+133;23;grönsaksbuljong
+134;23;köttbuljong
+135;23;kycklingbuljong
+136;24;sojabönor
+137;24;kikärter
+138;25;kokta svarta bönor
+139;25;kokta bruna bönor
+140;25;kokta vita bönor
+141;26;röd peppar (chili)
+142;27;sambal öelek
+143;27;sriracha
+144;28;citron
+145;28;lime
+146;29;fisk
+147;29;laxfilé
+148;29;sejfilé
+149;29;aborre
+150;29;gös
+151;29;torsk
+152;30;pumpakärnor
+153;30;solrosfrön
+154;31;crème fraiche
+155;31;vegansk fraiche
+156;32;matyoghurt
+157;32;växtbaserad fraiche
+158;33;cashewnötter
+159;33;jordnötter
+160;33;hasselnötter
+161;33;mandlar
+162;33;valnötter
+163;34;urkärnade svarta oliver
+164;34;urkärnade gröna oliver
+165;34;svarta oliver
+166;34;gröna oliver
+167;34;oliver
+168;35;röd paprika
+169;35;gul paprika
+170;35;orange paprika
+171;35;grön paprika
+172;35;röd spetspaprika
+173;35;paprika
+174;36;kalkonfilé
+175;36;kycklinglårfilé
+176;36;kycklingfilé
+177;36;kyckling
+178;37;ris
+179;37;basmatiris
+180;37;jasminris
+181;37;matris
+182;38;riven ost
+183;38;riven prästost
+184;38;taco ost
+185;38;gräddost
+186;39;räkor i lake
+187;39;kräftstjärt
+188;40;tomat
+189;40;körsbärstomater
+190;40;plommontomater
+191;40;romanticatomater
+192;41;passerade tomater
+193;41;tomatburk
+194;42;torkade röda linser
+195;42;torkade svarta linser
+196;42;torkade gula linser
+197;42;torkade gröna linser
+198;42;torkade bruna linser
+199;42;torkade beluga linser
+200;43;rödvinsvinäger
+201;43;vitvinsvinäger
+202;43;äppelcidervinäger
