@@ -74,26 +74,36 @@ namespace FoodSavr.API.Controllers
             return Ok(_mapper.Map<RecipeDto>(recipe));
         }
 
-        ////Add verification for who can Post
-        //[HttpPost(Name = "CreateIngredient")]
-        //public ActionResult<IngredientDataStore> CreateIngredient(
-        //    IngredientForCreationDto ingredient)
-        //{
+        //Add verification for who can Post
+        [HttpPost]
+        public async Task<ActionResult<IngredientDto>> CreateIngredient(
+            IngredientForCreationDto ingredient)
+        {
+            if (await _FoodSavrRepository.IngredientExist(ingredient.Name.Trim()))
+            {
+                _logger.LogInformation($"Ingredient {ingredient.Name} already exists");
+                return BadRequest("ingredient already exists");
+            }
 
-        //    // Quit if ingredient exists
-        //    var ingredientItem = _ingredientDataStore.FindIngredientItem(ingredient.Name);
-        //    if (ingredientItem != null)
-        //    {
-        //        return BadRequest("ingredient exists"); //CHANGE TO MESSAGE WITH INGREDIENT ALREADY EXISTS
-        //    }
+            // Find category and save it, if it doesent exist; create it
 
-        //    // Add category if not exists
-        //    var ingredientCategoryItem = _ingredientCategoryDataStore.CreateNewCategory(ingredient.Category);
+            // Add category if not exists
 
-        //    // Add the ingredient
-        //    var newIngredient = _ingredientDataStore.CreateNewIngredient(ingredient.Name, ingredientCategoryItem.Id);
-        //    return CreatedAtRoute("GetIngredient", new { Id = newIngredient.Id}, newIngredient);
-        //}
+            // Add the ingredient
+            var finalIngredient = _mapper.Map<IngredientForCreationDto>(ingredient);
+
+            await _FoodSavrRepository.AddIngredientAsync(finalIngredient);
+
+            await _FoodSavrRepository.SaveChangesAsync();
+
+            var createdIngredientToReturn = _mapper.Map<IngredientDto>(finalIngredient);
+
+            return CreatedAtRoute("GetIngredient", 
+                new 
+                { 
+                    createdIngredientToReturn.Id 
+                }, createdIngredientToReturn);
+        }
 
         ////Add verification for who can Put
         //[HttpPut("{ingredientid}", Name = "UpdateIngredient")]

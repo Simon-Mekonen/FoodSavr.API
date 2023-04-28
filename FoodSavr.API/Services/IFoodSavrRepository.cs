@@ -10,6 +10,9 @@ namespace FoodSavr.API.Services
         Task<IEnumerable<Recipe>> GetRecipesAsync();
         Task<Recipe> GetRecipeAsync(int id);
         Task<bool> IngredientExist(int id);
+        Task<bool> IngredientExist(string name);
         Task<bool> RecipeExist(int id);
+        Task AddIngredientAsync(IngredientForCreationDto ingredient);
+        Task<bool> SaveChangesAsync();
     }
 }

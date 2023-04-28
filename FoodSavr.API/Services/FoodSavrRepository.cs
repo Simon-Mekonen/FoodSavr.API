@@ -1,5 +1,6 @@
 ﻿using FoodSavr.API.DbContexts;
 using FoodSavr.API.Entities;
+using FoodSavr.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FoodSavr.API.Services
@@ -27,6 +28,11 @@ namespace FoodSavr.API.Services
             return await _context.Ingredient.AnyAsync(i => i.Id == id);
         }
 
+        public async Task<bool> IngredientExist(string name)
+        {
+            return await _context.Ingredient.AnyAsync(i => i.Name.ToLower() == name.ToLower());
+        }
+
         public async Task<IEnumerable<Recipe>> GetRecipesAsync()
         {
             return await _context.Recipe.OrderBy(r => r.Id).ToListAsync();
@@ -41,5 +47,17 @@ namespace FoodSavr.API.Services
         {
             return await _context.Recipe.AnyAsync(i => i.Id == id);
         }
+
+        public async Task AddIngredientAsync(IngredientForCreationDto ingredient) 
+        {
+            var ingredientToSave = new Ingredient(ingredient.Category, ingredient.Name);
+            await _context.Ingredient.AddAsync(ingredientToSave);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return (await  _context.SaveChangesAsync() >= 0);
+        }
+
     }
 }

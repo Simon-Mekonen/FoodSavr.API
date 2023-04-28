@@ -12,6 +12,6 @@ namespace FoodSavr.API.Models
         [Required(ErrorMessage = "You should provide a ingredient category name value.")]
         [MaxLength(20)]
         [MinLength(3)]
-        public string Category { get; set;  } = string.Empty;
+        public int Category { get; set;  }
     }
 }
