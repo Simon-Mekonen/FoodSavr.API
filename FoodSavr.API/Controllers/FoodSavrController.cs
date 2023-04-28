@@ -2,9 +2,7 @@
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
 using FoodSavr.API.Services;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using System.Xml.Linq;
 
 namespace FoodSavr.API.Controllers
 {
@@ -75,14 +73,15 @@ namespace FoodSavr.API.Controllers
         }
 
         //Add verification for who can Post
-        [HttpPost]
-        public async Task<ActionResult<IngredientDto>> CreateIngredient(
+        [Route("CreateIngredient")]
+        [HttpPost("PostIngredient")]
+        public async Task<ActionResult<Ingredient>> CreateIngredient(
             IngredientForCreationDto ingredient)
         {
             if (await _FoodSavrRepository.IngredientExist(ingredient.Name.Trim()))
             {
                 _logger.LogInformation($"Ingredient {ingredient.Name} already exists");
-                return BadRequest("ingredient already exists");
+                return NotFound("ingredient already exists");
             }
 
             // Find category and save it, if it doesent exist; create it
@@ -90,9 +89,9 @@ namespace FoodSavr.API.Controllers
             // Add category if not exists
 
             // Add the ingredient
-            var finalIngredient = _mapper.Map<IngredientForCreationDto>(ingredient);
+            var finalIngredient = _mapper.Map<Ingredient>(ingredient);
 
-            await _FoodSavrRepository.AddIngredientAsync(finalIngredient);
+            await _FoodSavrRepository.CreateIngredientAsync(finalIngredient);
 
             await _FoodSavrRepository.SaveChangesAsync();
 

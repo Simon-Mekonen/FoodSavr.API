@@ -48,9 +48,9 @@ namespace FoodSavr.API.Services
             return await _context.Recipe.AnyAsync(i => i.Id == id);
         }
 
-        public async Task AddIngredientAsync(IngredientForCreationDto ingredient) 
+        public async Task CreateIngredientAsync(Ingredient ingredient) 
         {
-            var ingredientToSave = new Ingredient(ingredient.Category, ingredient.Name);
+            var ingredientToSave = new Ingredient(ingredient.CategoryId, ingredient.Name);
             await _context.Ingredient.AddAsync(ingredientToSave);
         }
 

@@ -12,7 +12,7 @@ namespace FoodSavr.API.Services
         Task<bool> IngredientExist(int id);
         Task<bool> IngredientExist(string name);
         Task<bool> RecipeExist(int id);
-        Task AddIngredientAsync(IngredientForCreationDto ingredient);
+        Task CreateIngredientAsync(Ingredient ingredient);
         Task<bool> SaveChangesAsync();
     }
 }
