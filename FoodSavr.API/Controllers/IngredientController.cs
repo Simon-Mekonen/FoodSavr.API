@@ -1,4 +1,5 @@
-﻿using FoodSavr.API.Entities;
+﻿using AutoMapper;
+using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
 using FoodSavr.API.Services;
 using Microsoft.AspNetCore.JsonPatch;
@@ -11,45 +12,36 @@ namespace FoodSavr.API.Controllers
     [ApiController]
     public class IngredientController : ControllerBase
     {
-        private readonly IIngredientRepository _ingredientRepository;
+        private readonly IFoodSavrRepository _FoodSavrRepository;
+        private readonly IMapper _mapper;
 
-        //private readonly ILogger<IngredientController> _logger;
-        //private readonly IMailService _mailService;
-        //private readonly IngredientDataStore _ingredientDataStore;
-        //private readonly IngredientCategoryDataStore _ingredientCategoryDataStore;
-
-        //public IngredientController(
-        //    ILogger<IngredientController> logger,
-        //    IMailService mailService,
-        //    IngredientDataStore ingredientDataStore,
-        //    IngredientCategoryDataStore ingredientCategoryDataStore)
-        //{
-        //    _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-        //    _mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
-        //    _ingredientDataStore = ingredientDataStore ?? throw new ArgumentNullException(nameof(ingredientDataStore));
-        //    _ingredientCategoryDataStore = ingredientCategoryDataStore ?? throw new ArgumentNullException(nameof(ingredientCategoryDataStore));
-        //}
-
-        public IngredientController(IIngredientRepository ingredientRepository)
+        public IngredientController(IFoodSavrRepository FoodSavrRepository, IMapper mapper)
         {
-            _ingredientRepository = ingredientRepository ?? throw new ArgumentNullException(nameof(ingredientRepository));
+            _FoodSavrRepository = FoodSavrRepository ?? throw new ArgumentNullException(nameof(FoodSavrRepository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(_mapper));
         }
 
         [HttpGet(Name = "GetIngredients")]
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients() 
         {
-            var ingredientEntities = await _ingredientRepository.GetIngredientsAsync();
-            return Ok(ingredientEntities);
+            var ingredientEntities = await _FoodSavrRepository.GetIngredientsAsync();
+            return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
         }
 
         [HttpGet("{id}", Name = "GetIngredient")]
-        public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredient(int id)
+        public async Task<ActionResult<IngredientDto>> GetIngredient(int id)
         {
-            var ingredientEntity = await _ingredientRepository.GetIngredientAsync(id);
-            return Ok(ingredientEntity);
+            var ingredientEntity = await _FoodSavrRepository.GetIngredientAsync(id);
+            return Ok(_mapper.Map<IngredientDto>(ingredientEntity));
         }
 
-        //[HttpGet("{id}")]
+        [HttpGet("GetRecipes")]
+        public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
+        {
+            var recipes = await _FoodSavrRepository.GetRecipesAsync();
+            return Ok(recipes);
+
+        }
         //public ActionResult<IngredientDto> GetIngredient(int id)
         //{
         //    //try

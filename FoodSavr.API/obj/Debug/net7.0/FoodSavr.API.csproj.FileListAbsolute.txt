@@ -83,3 +83,5 @@ C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\ne
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

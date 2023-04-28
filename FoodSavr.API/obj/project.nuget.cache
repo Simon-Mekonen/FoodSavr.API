@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "D8SAOZNldE/W4K7xmMKWcmpzplSn4SJYvSAq20vK3zF0LpmX7oe6JiALa3ICfsjTzYIFSyiZ19gcoyDxniC0/Q==",
+  "dgSpecHash": "6HfrKhOQYYW9TrwE2p6AeDxT4nLY1utiVLzmAk2Vqfc9GMrQOdtLmgq9dc2wKOqDat4pLzu0d7yIRKe7L5uEAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SimonGebrielMekonen\\source\\repos\\FoodSavr.API\\FoodSavr.API\\FoodSavr.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SimonGebrielMekonen\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\SimonGebrielMekonen\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\SimonGebrielMekonen\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\SimonGebrielMekonen\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.5\\microsoft.aspnetcore.jsonpatch.7.0.5.nupkg.sha512",
     "C:\\Users\\SimonGebrielMekonen\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.5\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.5.nupkg.sha512",

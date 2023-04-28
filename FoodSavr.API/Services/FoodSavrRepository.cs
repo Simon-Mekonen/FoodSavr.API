@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FoodSavr.API.Services
 {
-    public class IngredientRepository : IIngredientRepository
+    public class FoodSavrRepository : IFoodSavrRepository
     {
         private readonly FoodSavrContext _context;
 
-        public IngredientRepository(FoodSavrContext context) 
+        public FoodSavrRepository(FoodSavrContext context) 
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
@@ -20,6 +20,11 @@ namespace FoodSavr.API.Services
         public async Task<IEnumerable<Ingredient>> GetIngredientsAsync()
         {
             return await _context.Ingredient.OrderBy(i => i.Name).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Recipe>> GetRecipesAsync()
+        {
+            return await _context.Recipe.OrderBy(r => r.Id).ToListAsync();
         }
     }
 }

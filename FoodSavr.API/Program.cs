@@ -44,7 +44,10 @@ builder.Services.AddDbContext<FoodSavrContext>(
         builder.Configuration["ConnectionStrings:FoodSavrDBConnectionString"]));
 
 // Creates the repository
-builder.Services.AddScoped<IIngredientRepository, IngredientRepository>();
+builder.Services.AddScoped<IFoodSavrRepository, FoodSavrRepository>();
+
+// Automapper Nuget
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

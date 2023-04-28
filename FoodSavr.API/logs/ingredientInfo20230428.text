@@ -1,0 +1,1390 @@
+2023-04-28 09:17:14.468 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-28 09:17:14.712 +02:00 [DBG] Hosting starting
+2023-04-28 09:17:15.014 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-28 09:17:15.017 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-28 09:17:15.019 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-28 09:17:15.021 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-28 09:17:15.022 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-28 09:17:15.024 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 09:17:15.026 +02:00 [INF] Hosting environment: Development
+2023-04-28 09:17:15.027 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-28 09:17:15.029 +02:00 [DBG] Hosting started
+2023-04-28 09:19:28.001 +02:00 [DBG] Connection id "0HMQ7N3JHOTF1" received FIN.
+2023-04-28 09:19:28.008 +02:00 [DBG] Connection id "0HMQ7N3JHOTF1" accepted.
+2023-04-28 09:19:28.019 +02:00 [DBG] Connection id "0HMQ7N3JHOTF1" started.
+2023-04-28 09:19:28.021 +02:00 [DBG] Connection id "0HMQ7N3JHOTF2" accepted.
+2023-04-28 09:19:28.024 +02:00 [DBG] Connection id "0HMQ7N3JHOTF2" started.
+2023-04-28 09:19:28.032 +02:00 [DBG] Connection id "0HMQ7N3JHOTF1" sending FIN because: "The client closed the connection."
+2023-04-28 09:19:28.035 +02:00 [DBG] Connection id "0HMQ7N3JHOTF1" disconnecting.
+2023-04-28 09:19:28.038 +02:00 [DBG] Connection id "0HMQ7N3JHOTF1" stopped.
+2023-04-28 09:19:28.078 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - -
+2023-04-28 09:19:28.100 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-28 09:19:28.126 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:19:28.133 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-28 09:19:28.136 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-28 09:19:28.157 +02:00 [DBG] Connection id "0HMQ7N3JHOTF2" completed keep alive response.
+2023-04-28 09:19:28.160 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - - - 307 0 - 84.0429ms
+2023-04-28 09:19:28.164 +02:00 [DBG] Connection id "0HMQ7N3JHOTF3" accepted.
+2023-04-28 09:19:28.166 +02:00 [DBG] Connection id "0HMQ7N3JHOTF3" received FIN.
+2023-04-28 09:19:28.165 +02:00 [DBG] Connection id "0HMQ7N3JHOTF4" accepted.
+2023-04-28 09:19:28.202 +02:00 [DBG] Connection id "0HMQ7N3JHOTF3" started.
+2023-04-28 09:19:28.227 +02:00 [DBG] Connection id "0HMQ7N3JHOTF4" started.
+2023-04-28 09:19:28.232 +02:00 [DBG] Connection id "0HMQ7N3JHOTF3" sending FIN because: "The client closed the connection."
+2023-04-28 09:19:28.241 +02:00 [DBG] Connection id "0HMQ7N3JHOTF3" disconnecting.
+2023-04-28 09:19:28.253 +02:00 [DBG] Connection id "0HMQ7N3JHOTF3" stopped.
+2023-04-28 09:19:28.291 +02:00 [DBG] Connection 0HMQ7N3JHOTF4 established using the following protocol: "Tls13"
+2023-04-28 09:19:28.299 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - -
+2023-04-28 09:19:28.302 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:19:28.336 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-28 09:19:28.342 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-28 09:19:28.349 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:19:28.355 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:19:28.385 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto]] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 09:19:28.393 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 09:19:28.399 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 09:19:28.405 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 09:19:28.408 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 09:19:28.412 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 09:19:28.416 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:19:28.595 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-28 09:19:28.636 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:19:28.646 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-28 09:19:28.653 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-28 09:19:28.656 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 09:19:28.658 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 09:19:28.660 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-28 09:19:28.665 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-28 09:19:29.303 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 09:19:29.343 +02:00 [DBG] Compiling query expression: 
+'DbSet<Ingredient>()
+    .Where(i => i.Id == __id_0)
+    .FirstOrDefault()'
+2023-04-28 09:19:29.463 +02:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Ingredient>(
+    asyncEnumerable: new SingleQueryingEnumerable<Ingredient>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ingredient.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ingredient.CategoryId (int) Required FK Index, 1], [Property: Ingredient.Name (string) Required MaxLength(20), 2] }
+            SELECT TOP(1) i.Id, i.CategoryId, i.Name
+            FROM Ingredient AS i
+            WHERE i.Id == @__id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ingredient>, 
+        FoodSavr.API.DbContexts.FoodSavrContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-04-28 09:19:29.494 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 09:19:29.498 +02:00 [DBG] Creating DbConnection.
+2023-04-28 09:19:29.511 +02:00 [DBG] Created DbConnection. (11ms).
+2023-04-28 09:19:29.521 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (27ms).
+2023-04-28 09:19:29.530 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (38ms).
+2023-04-28 09:19:29.537 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:19:29.558 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:19:29.569 +02:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 1
+2023-04-28 09:19:29.607 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 1
+2023-04-28 09:19:29.637 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:19:29.654 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:19:29.661 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 44ms reading results.
+2023-04-28 09:19:29.667 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:19:29.673 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (5ms).
+2023-04-28 09:19:29.680 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 09:19:29.685 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 09:19:29.687 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 09:19:29.688 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 09:19:29.689 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 09:19:29.693 +02:00 [INF] Executing OkObjectResult, writing value of type 'FoodSavr.API.Entities.Ingredient'.
+2023-04-28 09:19:29.798 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 1381.7536ms
+2023-04-28 09:19:29.800 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:19:29.804 +02:00 [DBG] Connection id "0HMQ7N3JHOTF4" completed keep alive response.
+2023-04-28 09:19:29.808 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 09:19:29.812 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:19:29.815 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (3ms).
+2023-04-28 09:19:29.818 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - - - 200 60 application/json;+charset=utf-8 1518.9560ms
+2023-04-28 09:29:11.000 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-28 09:29:11.114 +02:00 [DBG] Hosting starting
+2023-04-28 09:29:11.349 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-28 09:29:11.354 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-28 09:29:11.356 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-28 09:29:11.358 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-28 09:29:11.359 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-28 09:29:11.360 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 09:29:11.362 +02:00 [INF] Hosting environment: Development
+2023-04-28 09:29:11.363 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-28 09:29:11.364 +02:00 [DBG] Hosting started
+2023-04-28 09:29:11.893 +02:00 [DBG] Connection id "0HMQ7N91I68U8" received FIN.
+2023-04-28 09:29:11.903 +02:00 [DBG] Connection id "0HMQ7N91I68U8" accepted.
+2023-04-28 09:29:11.909 +02:00 [DBG] Connection id "0HMQ7N91I68U8" started.
+2023-04-28 09:29:11.911 +02:00 [DBG] Connection id "0HMQ7N91I68U9" accepted.
+2023-04-28 09:29:11.918 +02:00 [DBG] Connection id "0HMQ7N91I68U9" started.
+2023-04-28 09:29:11.921 +02:00 [DBG] Connection id "0HMQ7N91I68U8" sending FIN because: "The client closed the connection."
+2023-04-28 09:29:11.926 +02:00 [DBG] Connection id "0HMQ7N91I68U8" disconnecting.
+2023-04-28 09:29:11.929 +02:00 [DBG] Connection id "0HMQ7N91I68U8" stopped.
+2023-04-28 09:29:11.950 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - -
+2023-04-28 09:29:11.967 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-28 09:29:11.983 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:29:11.991 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-28 09:29:11.999 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-28 09:29:12.013 +02:00 [DBG] Connection id "0HMQ7N91I68U9" completed keep alive response.
+2023-04-28 09:29:12.017 +02:00 [DBG] Connection id "0HMQ7N91I68UA" accepted.
+2023-04-28 09:29:12.018 +02:00 [DBG] Connection id "0HMQ7N91I68UB" accepted.
+2023-04-28 09:29:12.019 +02:00 [DBG] Connection id "0HMQ7N91I68UA" received FIN.
+2023-04-28 09:29:12.031 +02:00 [DBG] Connection id "0HMQ7N91I68UB" started.
+2023-04-28 09:29:12.026 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - - - 307 0 - 71.7162ms
+2023-04-28 09:29:12.026 +02:00 [DBG] Connection id "0HMQ7N91I68UA" started.
+2023-04-28 09:29:12.038 +02:00 [DBG] Connection id "0HMQ7N91I68UA" sending FIN because: "The client closed the connection."
+2023-04-28 09:29:12.043 +02:00 [DBG] Connection id "0HMQ7N91I68UA" disconnecting.
+2023-04-28 09:29:12.046 +02:00 [DBG] Connection id "0HMQ7N91I68UA" stopped.
+2023-04-28 09:29:12.074 +02:00 [DBG] Connection 0HMQ7N91I68UB established using the following protocol: "Tls13"
+2023-04-28 09:29:12.082 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - -
+2023-04-28 09:29:12.087 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:29:12.110 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-28 09:29:12.118 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-28 09:29:12.123 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:29:12.127 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:29:12.146 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto]] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 09:29:12.157 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 09:29:12.163 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 09:29:12.169 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 09:29:12.173 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 09:29:12.175 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 09:29:12.179 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:29:12.298 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-28 09:29:12.318 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:29:12.329 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-28 09:29:12.336 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-28 09:29:12.344 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 09:29:12.351 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 09:29:12.355 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-28 09:29:12.359 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-28 09:29:12.855 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 09:29:12.897 +02:00 [DBG] Compiling query expression: 
+'DbSet<Ingredient>()
+    .Where(i => i.Id == __id_0)
+    .FirstOrDefault()'
+2023-04-28 09:29:13.014 +02:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Ingredient>(
+    asyncEnumerable: new SingleQueryingEnumerable<Ingredient>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ingredient.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ingredient.CategoryId (int) Required FK Index, 1], [Property: Ingredient.Name (string) Required MaxLength(20), 2] }
+            SELECT TOP(1) i.Id, i.CategoryId, i.Name
+            FROM Ingredient AS i
+            WHERE i.Id == @__id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ingredient>, 
+        FoodSavr.API.DbContexts.FoodSavrContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-04-28 09:29:13.045 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 09:29:13.048 +02:00 [DBG] Creating DbConnection.
+2023-04-28 09:29:13.060 +02:00 [DBG] Created DbConnection. (10ms).
+2023-04-28 09:29:13.066 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (20ms).
+2023-04-28 09:29:13.070 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (27ms).
+2023-04-28 09:29:13.075 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:29:13.088 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:29:13.096 +02:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 1
+2023-04-28 09:29:13.120 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 1
+2023-04-28 09:29:13.155 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:13.172 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:29:13.182 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 47ms reading results.
+2023-04-28 09:29:13.190 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:29:13.197 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (6ms).
+2023-04-28 09:29:13.206 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 09:29:13.213 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 09:29:13.215 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 09:29:13.216 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 09:29:13.220 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 09:29:13.222 +02:00 [INF] Executing OkObjectResult, writing value of type 'FoodSavr.API.Models.IngredientDto'.
+2023-04-28 09:29:13.314 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 1133.9152ms
+2023-04-28 09:29:13.320 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:29:13.323 +02:00 [DBG] Connection id "0HMQ7N91I68UB" completed keep alive response.
+2023-04-28 09:29:13.328 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 09:29:13.332 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:29:13.339 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (6ms).
+2023-04-28 09:29:13.342 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - - - 200 44 application/json;+charset=utf-8 1259.5944ms
+2023-04-28 09:29:17.122 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-28 09:29:17.130 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:29:17.136 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-28 09:29:17.142 +02:00 [DBG] Connection id "0HMQ7N91I68U9" completed keep alive response.
+2023-04-28 09:29:17.148 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 25.8728ms
+2023-04-28 09:29:17.151 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-28 09:29:17.156 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:29:17.162 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/'
+2023-04-28 09:29:17.170 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)' with route pattern 'api/foodsavr' is valid for the request path '/api/foodsavr/'
+2023-04-28 09:29:17.179 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-28 09:29:17.182 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-28 09:29:17.199 +02:00 [INF] Route matched with {action = "GetIngredients", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Models.IngredientDto]]] GetIngredients() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 09:29:17.211 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 09:29:17.220 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 09:29:17.228 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 09:29:17.240 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 09:29:17.246 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 09:29:17.256 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:29:17.268 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:29:17.310 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 09:29:17.333 +02:00 [DBG] Compiling query expression: 
+'DbSet<Ingredient>()
+    .OrderBy(i => i.Name)'
+2023-04-28 09:29:17.364 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Ingredient>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ingredient.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ingredient.CategoryId (int) Required FK Index, 1], [Property: Ingredient.Name (string) Required MaxLength(20), 2] }
+        SELECT i.Id, i.CategoryId, i.Name
+        FROM Ingredient AS i
+        ORDER BY i.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ingredient>, 
+    FoodSavr.API.DbContexts.FoodSavrContext, 
+    False, 
+    False, 
+    True
+)'
+2023-04-28 09:29:17.374 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 09:29:17.381 +02:00 [DBG] Creating DbConnection.
+2023-04-28 09:29:17.385 +02:00 [DBG] Created DbConnection. (4ms).
+2023-04-28 09:29:17.390 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (16ms).
+2023-04-28 09:29:17.398 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (24ms).
+2023-04-28 09:29:17.407 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:29:17.415 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:29:17.424 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+ORDER BY "i"."Name"
+2023-04-28 09:29:17.435 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+ORDER BY "i"."Name"
+2023-04-28 09:29:17.450 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.458 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.464 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.473 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.478 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.487 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.493 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.501 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.509 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.518 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.527 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.535 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.541 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.550 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.558 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.567 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.577 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.586 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.595 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.604 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.614 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.623 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.633 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.641 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.652 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.662 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.672 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.680 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.688 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.694 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.699 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.703 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.705 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.707 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.709 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.714 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.720 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.724 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.727 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.733 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.737 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.741 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.745 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.750 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.755 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.761 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.768 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.778 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.788 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.796 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.801 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.802 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.804 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.805 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.808 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.812 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.816 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.817 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.819 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.822 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.824 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.826 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.828 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.830 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.832 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.834 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.836 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.840 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.842 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.847 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.852 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.855 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.857 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.858 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.860 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.862 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.864 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.867 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.870 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.872 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.875 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.878 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.881 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.883 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.887 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.890 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.892 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.898 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.902 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.903 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.905 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.906 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.908 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.910 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.912 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.914 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.917 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.919 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.921 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.923 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.925 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.926 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.929 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.933 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.937 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.940 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.942 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.946 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.949 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.952 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.955 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.957 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.961 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.966 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.970 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.974 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.977 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.981 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.985 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.988 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.990 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.992 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:17.995 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.000 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.004 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.007 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.010 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.017 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.021 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.024 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.029 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.034 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.038 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.042 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.049 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.056 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.064 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.071 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.078 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.084 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.090 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.095 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.102 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.109 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.116 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.121 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.128 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.134 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.142 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.149 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.156 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.161 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.168 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.173 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.175 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.179 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.184 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.188 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.195 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.204 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.209 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.214 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.218 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.222 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.229 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.235 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.241 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.245 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.250 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.256 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.260 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.268 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.274 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.280 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.284 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.288 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.291 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.296 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.304 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.309 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.315 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.322 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.330 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.337 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.343 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.351 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.355 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.358 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.361 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.366 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.371 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.374 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.378 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.383 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.390 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.396 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.403 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.407 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.412 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.419 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.422 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:29:18.427 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:29:18.432 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 984ms reading results.
+2023-04-28 09:29:18.435 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:29:18.437 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (2ms).
+2023-04-28 09:29:18.443 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 09:29:18.450 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-04-28 09:29:18.453 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 09:29:18.456 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Models.IngredientDto, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 09:29:18.481 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API) in 1225.4357ms
+2023-04-28 09:29:18.486 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-28 09:29:18.488 +02:00 [DBG] Connection id "0HMQ7N91I68UB" completed keep alive response.
+2023-04-28 09:29:18.491 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 09:29:18.495 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:29:18.500 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (4ms).
+2023-04-28 09:29:18.505 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 200 9486 application/json;+charset=utf-8 1353.2018ms
+2023-04-28 09:38:30.740 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-28 09:38:30.831 +02:00 [DBG] Hosting starting
+2023-04-28 09:38:30.975 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-28 09:38:30.981 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-28 09:38:30.983 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-28 09:38:30.984 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-28 09:38:30.985 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-28 09:38:30.987 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 09:38:30.989 +02:00 [INF] Hosting environment: Development
+2023-04-28 09:38:30.990 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-28 09:38:30.992 +02:00 [DBG] Hosting started
+2023-04-28 09:38:31.131 +02:00 [DBG] Connection id "0HMQ7NE87G52G" received FIN.
+2023-04-28 09:38:31.136 +02:00 [DBG] Connection id "0HMQ7NE87G52G" accepted.
+2023-04-28 09:38:31.146 +02:00 [DBG] Connection id "0HMQ7NE87G52G" started.
+2023-04-28 09:38:31.149 +02:00 [DBG] Connection id "0HMQ7NE87G52H" accepted.
+2023-04-28 09:38:31.162 +02:00 [DBG] Connection id "0HMQ7NE87G52H" started.
+2023-04-28 09:38:31.165 +02:00 [DBG] Connection id "0HMQ7NE87G52G" sending FIN because: "The client closed the connection."
+2023-04-28 09:38:31.176 +02:00 [DBG] Connection id "0HMQ7NE87G52G" disconnecting.
+2023-04-28 09:38:31.185 +02:00 [DBG] Connection id "0HMQ7NE87G52G" stopped.
+2023-04-28 09:38:31.208 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - -
+2023-04-28 09:38:31.218 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-28 09:38:31.236 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:38:31.239 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-28 09:38:31.242 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/2'.
+2023-04-28 09:38:31.245 +02:00 [DBG] Connection id "0HMQ7NE87G52H" completed keep alive response.
+2023-04-28 09:38:31.248 +02:00 [DBG] Connection id "0HMQ7NE87G52I" accepted.
+2023-04-28 09:38:31.250 +02:00 [DBG] Connection id "0HMQ7NE87G52I" received FIN.
+2023-04-28 09:38:31.250 +02:00 [DBG] Connection id "0HMQ7NE87G52J" accepted.
+2023-04-28 09:38:31.249 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/2 - - - 307 0 - 41.0089ms
+2023-04-28 09:38:31.259 +02:00 [DBG] Connection id "0HMQ7NE87G52I" started.
+2023-04-28 09:38:31.264 +02:00 [DBG] Connection id "0HMQ7NE87G52J" started.
+2023-04-28 09:38:31.269 +02:00 [DBG] Connection id "0HMQ7NE87G52I" sending FIN because: "The client closed the connection."
+2023-04-28 09:38:31.273 +02:00 [DBG] Connection id "0HMQ7NE87G52I" disconnecting.
+2023-04-28 09:38:31.279 +02:00 [DBG] Connection id "0HMQ7NE87G52I" stopped.
+2023-04-28 09:38:31.311 +02:00 [DBG] Connection 0HMQ7NE87G52J established using the following protocol: "Tls13"
+2023-04-28 09:38:31.318 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - -
+2023-04-28 09:38:31.324 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:38:31.344 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/2'
+2023-04-28 09:38:31.351 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/2'
+2023-04-28 09:38:31.356 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:38:31.361 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:38:31.381 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto]] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 09:38:31.386 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 09:38:31.389 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 09:38:31.392 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 09:38:31.395 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 09:38:31.397 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 09:38:31.401 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:38:31.500 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-28 09:38:31.601 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:38:31.609 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-28 09:38:31.614 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-28 09:38:31.618 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 09:38:31.620 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 09:38:31.622 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-28 09:38:31.625 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-28 09:38:32.079 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 09:38:32.125 +02:00 [DBG] Compiling query expression: 
+'DbSet<Ingredient>()
+    .Where(i => i.Id == __id_0)
+    .FirstOrDefault()'
+2023-04-28 09:38:32.239 +02:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Ingredient>(
+    asyncEnumerable: new SingleQueryingEnumerable<Ingredient>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ingredient.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ingredient.CategoryId (int) Required FK Index, 1], [Property: Ingredient.Name (string) Required MaxLength(20), 2] }
+            SELECT TOP(1) i.Id, i.CategoryId, i.Name
+            FROM Ingredient AS i
+            WHERE i.Id == @__id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ingredient>, 
+        FoodSavr.API.DbContexts.FoodSavrContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-04-28 09:38:32.264 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 09:38:32.268 +02:00 [DBG] Creating DbConnection.
+2023-04-28 09:38:32.279 +02:00 [DBG] Created DbConnection. (10ms).
+2023-04-28 09:38:32.286 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (21ms).
+2023-04-28 09:38:32.291 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (28ms).
+2023-04-28 09:38:32.296 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:38:32.309 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:38:32.319 +02:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 1
+2023-04-28 09:38:32.348 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+WHERE "i"."Id" = @__id_0
+LIMIT 1
+2023-04-28 09:38:32.378 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:32.399 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:38:32.412 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 54ms reading results.
+2023-04-28 09:38:32.422 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:38:32.429 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (7ms).
+2023-04-28 09:38:32.445 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 09:38:32.457 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 09:38:32.462 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 09:38:32.466 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 09:38:32.471 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 09:38:32.475 +02:00 [INF] Executing OkObjectResult, writing value of type 'FoodSavr.API.Models.IngredientDto'.
+2023-04-28 09:38:32.568 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 1166.1708ms
+2023-04-28 09:38:32.573 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 09:38:32.576 +02:00 [DBG] Connection id "0HMQ7NE87G52J" completed keep alive response.
+2023-04-28 09:38:32.582 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 09:38:32.587 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:38:32.591 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (3ms).
+2023-04-28 09:38:32.596 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/2 - - - 200 44 application/json;+charset=utf-8 1277.8145ms
+2023-04-28 09:38:35.870 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - -
+2023-04-28 09:38:35.878 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:38:35.884 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/'.
+2023-04-28 09:38:35.890 +02:00 [DBG] Connection id "0HMQ7NE87G52H" completed keep alive response.
+2023-04-28 09:38:35.896 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - -
+2023-04-28 09:38:35.897 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/ - - - 307 0 - 26.7806ms
+2023-04-28 09:38:35.902 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 09:38:35.914 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/'
+2023-04-28 09:38:35.922 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)' with route pattern 'api/foodsavr' is valid for the request path '/api/foodsavr/'
+2023-04-28 09:38:35.931 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-28 09:38:35.937 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-28 09:38:35.955 +02:00 [INF] Route matched with {action = "GetIngredients", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Models.IngredientDto]]] GetIngredients() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 09:38:35.967 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 09:38:35.977 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 09:38:35.986 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 09:38:35.995 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 09:38:36.003 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 09:38:36.011 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:38:36.020 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 09:38:36.065 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 09:38:36.089 +02:00 [DBG] Compiling query expression: 
+'DbSet<Ingredient>()
+    .OrderBy(i => i.Name)'
+2023-04-28 09:38:36.129 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Ingredient>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Ingredient.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Ingredient.CategoryId (int) Required FK Index, 1], [Property: Ingredient.Name (string) Required MaxLength(20), 2] }
+        SELECT i.Id, i.CategoryId, i.Name
+        FROM Ingredient AS i
+        ORDER BY i.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Ingredient>, 
+    FoodSavr.API.DbContexts.FoodSavrContext, 
+    False, 
+    False, 
+    True
+)'
+2023-04-28 09:38:36.142 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 09:38:36.149 +02:00 [DBG] Creating DbConnection.
+2023-04-28 09:38:36.154 +02:00 [DBG] Created DbConnection. (5ms).
+2023-04-28 09:38:36.161 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (19ms).
+2023-04-28 09:38:36.170 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (27ms).
+2023-04-28 09:38:36.178 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:38:36.183 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:38:36.189 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+ORDER BY "i"."Name"
+2023-04-28 09:38:36.197 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."CategoryId", "i"."Name"
+FROM "Ingredient" AS "i"
+ORDER BY "i"."Name"
+2023-04-28 09:38:36.210 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.220 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.230 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.241 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.250 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.260 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.270 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.280 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.290 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.299 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.309 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.318 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.328 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.338 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.347 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.357 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.368 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.378 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.387 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.397 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.406 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.420 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.430 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.440 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.450 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.460 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.471 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.482 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.502 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.512 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.521 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.529 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.538 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.547 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.556 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.565 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.573 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.580 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.587 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.592 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.601 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.610 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.617 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.625 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.630 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.633 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.639 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.644 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.649 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.656 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.660 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.663 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.668 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.672 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.679 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.685 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.693 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.698 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.704 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.712 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.719 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.725 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.734 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.741 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.746 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.753 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.762 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.771 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.777 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.780 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.783 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.787 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.789 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.792 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.795 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.800 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.803 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.805 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.808 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.811 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.814 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.815 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.820 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.824 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.826 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.829 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.833 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.840 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.846 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.852 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.856 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.860 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.864 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.868 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.872 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.875 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.877 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.879 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.882 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.886 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.893 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.897 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.902 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.907 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.911 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.913 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.918 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.924 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.927 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.933 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.938 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.940 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.943 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.946 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.949 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.951 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.955 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.958 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.961 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.964 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.968 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.971 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.976 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.980 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.984 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.988 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.993 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:36.999 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.008 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.016 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.020 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.026 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.035 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.042 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.051 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.060 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.070 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.080 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.087 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.093 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.097 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.101 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.108 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.117 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.123 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.130 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.140 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.150 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.159 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.169 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.178 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.185 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.191 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.199 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.209 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.221 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.231 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.241 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.251 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.260 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.270 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.279 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.286 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.294 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.301 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.309 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.319 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.328 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.338 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.347 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.357 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.366 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.375 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.384 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.393 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.401 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.411 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.420 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.429 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.438 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.445 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.452 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.457 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.464 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.470 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.479 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.488 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.494 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.500 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.506 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.511 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.515 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.518 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.524 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.529 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.532 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.536 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.542 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.548 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.552 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.561 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Ingredient' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 09:38:37.572 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:38:37.582 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 1373ms reading results.
+2023-04-28 09:38:37.593 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 09:38:37.603 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (9ms).
+2023-04-28 09:38:37.644 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 09:38:37.666 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-04-28 09:38:37.677 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 09:38:37.686 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Models.IngredientDto, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 09:38:37.715 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API) in 1704.9791ms
+2023-04-28 09:38:37.725 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredients (FoodSavr.API)'
+2023-04-28 09:38:37.731 +02:00 [DBG] Connection id "0HMQ7NE87G52J" completed keep alive response.
+2023-04-28 09:38:37.737 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 09:38:37.745 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 09:38:37.754 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (8ms).
+2023-04-28 09:38:37.765 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/ - - - 200 9486 application/json;+charset=utf-8 1869.0581ms
+2023-04-28 10:15:19.694 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-28 10:15:19.771 +02:00 [DBG] Hosting starting
+2023-04-28 10:15:19.906 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-28 10:15:19.908 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-28 10:15:19.910 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-28 10:15:19.911 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-28 10:15:19.912 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-28 10:15:19.914 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 10:15:19.915 +02:00 [INF] Hosting environment: Development
+2023-04-28 10:15:19.916 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-28 10:15:19.917 +02:00 [DBG] Hosting started
+2023-04-28 10:15:49.180 +02:00 [DBG] Connection id "0HMQ7O3376PGM" received FIN.
+2023-04-28 10:15:49.190 +02:00 [DBG] Connection id "0HMQ7O3376PGM" accepted.
+2023-04-28 10:15:49.201 +02:00 [DBG] Connection id "0HMQ7O3376PGM" started.
+2023-04-28 10:15:49.208 +02:00 [DBG] Connection id "0HMQ7O3376PGN" accepted.
+2023-04-28 10:15:49.212 +02:00 [DBG] Connection id "0HMQ7O3376PGN" started.
+2023-04-28 10:15:49.215 +02:00 [DBG] Connection id "0HMQ7O3376PGM" sending FIN because: "The client closed the connection."
+2023-04-28 10:15:49.224 +02:00 [DBG] Connection id "0HMQ7O3376PGM" disconnecting.
+2023-04-28 10:15:49.228 +02:00 [DBG] Connection id "0HMQ7O3376PGM" stopped.
+2023-04-28 10:15:49.250 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:15:49.257 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-28 10:15:49.283 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:15:49.290 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-28 10:15:49.296 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:15:49.304 +02:00 [DBG] Connection id "0HMQ7O3376PGN" completed keep alive response.
+2023-04-28 10:15:49.311 +02:00 [DBG] Connection id "0HMQ7O3376PGO" accepted.
+2023-04-28 10:15:49.315 +02:00 [DBG] Connection id "0HMQ7O3376PGO" received FIN.
+2023-04-28 10:15:49.313 +02:00 [DBG] Connection id "0HMQ7O3376PGP" accepted.
+2023-04-28 10:15:49.323 +02:00 [DBG] Connection id "0HMQ7O3376PGO" started.
+2023-04-28 10:15:49.315 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 62.4140ms
+2023-04-28 10:15:49.336 +02:00 [DBG] Connection id "0HMQ7O3376PGP" started.
+2023-04-28 10:15:49.340 +02:00 [DBG] Connection id "0HMQ7O3376PGO" sending FIN because: "The client closed the connection."
+2023-04-28 10:15:49.347 +02:00 [DBG] Connection id "0HMQ7O3376PGO" disconnecting.
+2023-04-28 10:15:49.351 +02:00 [DBG] Connection id "0HMQ7O3376PGO" stopped.
+2023-04-28 10:15:49.403 +02:00 [DBG] Connection 0HMQ7O3376PGP established using the following protocol: "Tls13"
+2023-04-28 10:15:49.411 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:15:49.418 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:15:49.456 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:15:49.466 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:15:49.470 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:15:49.475 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:15:49.515 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto]] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:15:49.522 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:15:49.526 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:15:49.534 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:15:49.542 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:15:49.547 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:15:49.555 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:15:49.713 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-28 10:15:49.854 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:15:49.860 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-28 10:15:49.863 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-28 10:15:49.875 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 10:15:49.883 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-28 10:15:49.892 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-28 10:15:49.899 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-04-28 10:15:49.905 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-04-28 10:15:49.910 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:15:49.919 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:15:49.922 +02:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-04-28 10:15:49.933 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-04-28 10:15:49.939 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-28 10:15:50.091 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 534.0019ms
+2023-04-28 10:15:50.098 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:15:50.105 +02:00 [DBG] Connection id "0HMQ7O3376PGP" completed keep alive response.
+2023-04-28 10:15:50.109 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 400 248 application/problem+json;+charset=utf-8 698.1575ms
+2023-04-28 10:16:06.588 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:16:06.591 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:16:06.594 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:16:06.598 +02:00 [DBG] Connection id "0HMQ7O3376PGN" completed keep alive response.
+2023-04-28 10:16:06.602 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:16:06.603 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 12.1245ms
+2023-04-28 10:16:06.604 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:16:06.607 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:06.609 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:06.612 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:16:06.614 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:16:06.618 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto]] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:16:06.622 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:16:06.624 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:16:06.627 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:16:06.630 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:16:06.634 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:16:06.637 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:16:06.650 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:16:06.658 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-28 10:16:06.661 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-28 10:16:06.665 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 10:16:06.671 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-28 10:16:06.676 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-28 10:16:06.681 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-04-28 10:16:06.683 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-04-28 10:16:06.687 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:16:06.694 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:16:06.696 +02:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-04-28 10:16:06.702 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-04-28 10:16:06.705 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-28 10:16:06.711 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 73.7759ms
+2023-04-28 10:16:06.717 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:16:06.720 +02:00 [DBG] Connection id "0HMQ7O3376PGP" completed keep alive response.
+2023-04-28 10:16:06.724 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 400 248 application/problem+json;+charset=utf-8 121.3930ms
+2023-04-28 10:16:07.603 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:16:07.605 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:16:07.609 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:16:07.614 +02:00 [DBG] Connection id "0HMQ7O3376PGN" completed keep alive response.
+2023-04-28 10:16:07.616 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:16:07.617 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 13.9507ms
+2023-04-28 10:16:07.620 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:16:07.623 +02:00 [DBG] 1 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:07.630 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:07.636 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:16:07.637 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:16:07.639 +02:00 [INF] Route matched with {action = "GetIngredient", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[FoodSavr.API.Models.IngredientDto]] GetIngredient(Int32) on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:16:07.644 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:16:07.645 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:16:07.647 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:16:07.649 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:16:07.651 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:16:07.653 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:16:07.658 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:16:07.659 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-04-28 10:16:07.661 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-04-28 10:16:07.663 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-04-28 10:16:07.665 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-04-28 10:16:07.667 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-04-28 10:16:07.669 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-04-28 10:16:07.669 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-04-28 10:16:07.671 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:16:07.675 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:16:07.676 +02:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-04-28 10:16:07.679 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-04-28 10:16:07.680 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-04-28 10:16:07.682 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API) in 28.7158ms
+2023-04-28 10:16:07.683 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)'
+2023-04-28 10:16:07.686 +02:00 [DBG] Connection id "0HMQ7O3376PGP" completed keep alive response.
+2023-04-28 10:16:07.687 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 400 248 application/problem+json;+charset=utf-8 71.1159ms
+2023-04-28 10:16:21.971 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-28 10:16:22.072 +02:00 [DBG] Hosting starting
+2023-04-28 10:16:22.314 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-28 10:16:22.317 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-28 10:16:22.318 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-28 10:16:22.320 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-28 10:16:22.321 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-28 10:16:22.322 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 10:16:22.324 +02:00 [INF] Hosting environment: Development
+2023-04-28 10:16:22.325 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-28 10:16:22.327 +02:00 [DBG] Hosting started
+2023-04-28 10:16:23.021 +02:00 [DBG] Connection id "0HMQ7O3D9UA39" received FIN.
+2023-04-28 10:16:23.035 +02:00 [DBG] Connection id "0HMQ7O3D9UA39" accepted.
+2023-04-28 10:16:23.040 +02:00 [DBG] Connection id "0HMQ7O3D9UA39" started.
+2023-04-28 10:16:23.045 +02:00 [DBG] Connection id "0HMQ7O3D9UA3A" accepted.
+2023-04-28 10:16:23.048 +02:00 [DBG] Connection id "0HMQ7O3D9UA3A" started.
+2023-04-28 10:16:23.052 +02:00 [DBG] Connection id "0HMQ7O3D9UA39" sending FIN because: "The client closed the connection."
+2023-04-28 10:16:23.056 +02:00 [DBG] Connection id "0HMQ7O3D9UA39" disconnecting.
+2023-04-28 10:16:23.060 +02:00 [DBG] Connection id "0HMQ7O3D9UA39" stopped.
+2023-04-28 10:16:23.083 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:16:23.101 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-28 10:16:23.136 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:16:23.142 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-28 10:16:23.147 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:16:23.152 +02:00 [DBG] Connection id "0HMQ7O3D9UA3A" completed keep alive response.
+2023-04-28 10:16:23.159 +02:00 [DBG] Connection id "0HMQ7O3D9UA3B" accepted.
+2023-04-28 10:16:23.161 +02:00 [DBG] Connection id "0HMQ7O3D9UA3C" accepted.
+2023-04-28 10:16:23.243 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 82.0086ms
+2023-04-28 10:16:23.247 +02:00 [DBG] Connection id "0HMQ7O3D9UA3C" started.
+2023-04-28 10:16:23.161 +02:00 [DBG] Connection id "0HMQ7O3D9UA3B" received FIN.
+2023-04-28 10:16:23.244 +02:00 [DBG] Connection id "0HMQ7O3D9UA3B" started.
+2023-04-28 10:16:23.262 +02:00 [DBG] Connection id "0HMQ7O3D9UA3B" sending FIN because: "The client closed the connection."
+2023-04-28 10:16:23.265 +02:00 [DBG] Connection id "0HMQ7O3D9UA3B" disconnecting.
+2023-04-28 10:16:23.267 +02:00 [DBG] Connection id "0HMQ7O3D9UA3B" stopped.
+2023-04-28 10:16:23.304 +02:00 [DBG] Connection 0HMQ7O3D9UA3C established using the following protocol: "Tls13"
+2023-04-28 10:16:23.315 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:16:23.321 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:16:23.350 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:23.360 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)' with route pattern 'api/foodsavr/GetRecipes' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:23.368 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:16:23.371 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:16:23.375 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:16:23.392 +02:00 [INF] Route matched with {action = "GetRecipes", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Entities.Recipe]]] GetRecipes() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:16:23.401 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:16:23.403 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:16:23.406 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:16:23.412 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:16:23.414 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:16:23.418 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:16:23.622 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-28 10:16:23.798 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:16:24.493 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 10:16:24.531 +02:00 [DBG] Compiling query expression: 
+'DbSet<Recipe>()
+    .OrderBy(i => i.Name)'
+2023-04-28 10:16:24.685 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Recipe>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Recipe.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Recipe.CookingTime (int) Required, 1], [Property: Recipe.Description (string) Required MaxLength(100), 2], [Property: Recipe.ImgLink (string) Required MaxLength(100), 3], [Property: Recipe.Name (string) Required MaxLength(20), 4], [Property: Recipe.Portions (int) Required, 5] }
+        SELECT r.Id, r.CookingTime, r.Description, r.ImgLink, r.Name, r.Portions
+        FROM Recipe AS r
+        ORDER BY r.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Recipe>, 
+    FoodSavr.API.DbContexts.FoodSavrContext, 
+    False, 
+    False, 
+    True
+)'
+2023-04-28 10:16:24.719 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 10:16:24.723 +02:00 [DBG] Creating DbConnection.
+2023-04-28 10:16:24.744 +02:00 [DBG] Created DbConnection. (18ms).
+2023-04-28 10:16:24.755 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (33ms).
+2023-04-28 10:16:24.760 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (42ms).
+2023-04-28 10:16:24.767 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:16:24.783 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:16:24.793 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Name"
+2023-04-28 10:16:24.817 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Name"
+2023-04-28 10:16:24.852 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.871 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.874 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.876 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.878 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.880 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.882 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.883 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.885 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.886 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.888 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.890 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.893 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.896 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.897 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:16:24.903 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:16:24.911 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 85ms reading results.
+2023-04-28 10:16:24.916 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:16:24.920 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (4ms).
+2023-04-28 10:16:24.924 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:16:24.930 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:16:24.932 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 10:16:24.933 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 10:16:24.935 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 10:16:24.937 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Entities.Recipe, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 10:16:25.057 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API) in 1637.1918ms
+2023-04-28 10:16:25.062 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:16:25.064 +02:00 [DBG] Connection id "0HMQ7O3D9UA3C" completed keep alive response.
+2023-04-28 10:16:25.069 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 10:16:25.077 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:16:25.081 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (3ms).
+2023-04-28 10:16:25.087 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 200 6786 application/json;+charset=utf-8 1771.6968ms
+2023-04-28 10:17:09.630 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:17:09.638 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:17:09.641 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:17:09.647 +02:00 [DBG] Connection id "0HMQ7O3D9UA3A" completed keep alive response.
+2023-04-28 10:17:09.652 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 22.6154ms
+2023-04-28 10:17:09.653 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:17:09.662 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:17:09.668 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:09.671 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)' with route pattern 'api/foodsavr/GetRecipes' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:09.674 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:09.677 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:09.679 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:09.682 +02:00 [INF] Route matched with {action = "GetRecipes", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Entities.Recipe]]] GetRecipes() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:17:09.684 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:17:09.685 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:17:09.687 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:17:09.689 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:17:09.691 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:17:09.694 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:17:09.700 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:17:09.733 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 10:17:09.744 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 10:17:09.757 +02:00 [DBG] Creating DbConnection.
+2023-04-28 10:17:09.759 +02:00 [DBG] Created DbConnection. (9ms).
+2023-04-28 10:17:09.762 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (18ms).
+2023-04-28 10:17:09.770 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (26ms).
+2023-04-28 10:17:09.782 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:17:09.788 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:09.792 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Name"
+2023-04-28 10:17:09.803 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Name"
+2023-04-28 10:17:09.810 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.817 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.820 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.823 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.826 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.831 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.835 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.839 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.842 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.846 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.851 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.854 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.858 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.863 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.872 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:09.880 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:09.885 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 75ms reading results.
+2023-04-28 10:17:09.890 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:09.894 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (4ms).
+2023-04-28 10:17:09.900 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:17:09.905 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:17:09.907 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 10:17:09.909 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 10:17:09.910 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 10:17:09.915 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Entities.Recipe, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 10:17:09.920 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API) in 226.2133ms
+2023-04-28 10:17:09.925 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:09.929 +02:00 [DBG] Connection id "0HMQ7O3D9UA3C" completed keep alive response.
+2023-04-28 10:17:09.935 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 10:17:09.940 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:17:09.947 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (6ms).
+2023-04-28 10:17:09.953 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 200 6786 application/json;+charset=utf-8 300.3029ms
+2023-04-28 10:17:13.686 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:17:13.689 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:17:13.691 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:17:13.695 +02:00 [DBG] Connection id "0HMQ7O3D9UA3A" completed keep alive response.
+2023-04-28 10:17:13.698 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:17:13.698 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 12.0825ms
+2023-04-28 10:17:13.700 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:17:13.705 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:13.707 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)' with route pattern 'api/foodsavr/GetRecipes' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:13.712 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:13.716 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:13.719 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:13.721 +02:00 [INF] Route matched with {action = "GetRecipes", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Entities.Recipe]]] GetRecipes() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:17:13.725 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:17:13.730 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:17:13.733 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:17:13.736 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:17:13.737 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:17:13.739 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:17:13.745 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:17:13.818 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 10:17:13.823 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 10:17:13.825 +02:00 [DBG] Creating DbConnection.
+2023-04-28 10:17:13.826 +02:00 [DBG] Created DbConnection. (1ms).
+2023-04-28 10:17:13.828 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2023-04-28 10:17:13.833 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (10ms).
+2023-04-28 10:17:13.837 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:17:13.846 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:13.851 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Name"
+2023-04-28 10:17:13.856 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Name"
+2023-04-28 10:17:13.860 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.863 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.866 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.869 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.872 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.875 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.877 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.880 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.887 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.890 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.894 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.898 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.902 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.905 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.907 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:13.909 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:13.911 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 51ms reading results.
+2023-04-28 10:17:13.916 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:13.925 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (8ms).
+2023-04-28 10:17:13.933 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:17:13.941 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:17:13.942 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 10:17:13.944 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 10:17:13.948 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 10:17:13.954 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Entities.Recipe, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 10:17:13.963 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API) in 223.8527ms
+2023-04-28 10:17:13.967 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:13.971 +02:00 [DBG] Connection id "0HMQ7O3D9UA3C" completed keep alive response.
+2023-04-28 10:17:13.975 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 10:17:13.978 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:17:13.981 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (3ms).
+2023-04-28 10:17:13.985 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 200 6786 application/json;+charset=utf-8 287.4391ms
+2023-04-28 10:17:23.875 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-28 10:17:23.969 +02:00 [DBG] Hosting starting
+2023-04-28 10:17:24.115 +02:00 [INF] Now listening on: https://localhost:7164
+2023-04-28 10:17:24.121 +02:00 [INF] Now listening on: http://localhost:5225
+2023-04-28 10:17:24.124 +02:00 [DBG] Loaded hosting startup assembly FoodSavr.API
+2023-04-28 10:17:24.126 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-28 10:17:24.129 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-28 10:17:24.130 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 10:17:24.132 +02:00 [INF] Hosting environment: Development
+2023-04-28 10:17:24.133 +02:00 [INF] Content root path: C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API
+2023-04-28 10:17:24.135 +02:00 [DBG] Hosting started
+2023-04-28 10:17:24.861 +02:00 [DBG] Connection id "0HMQ7O3VNMBJF" received FIN.
+2023-04-28 10:17:24.873 +02:00 [DBG] Connection id "0HMQ7O3VNMBJF" accepted.
+2023-04-28 10:17:24.882 +02:00 [DBG] Connection id "0HMQ7O3VNMBJF" started.
+2023-04-28 10:17:24.885 +02:00 [DBG] Connection id "0HMQ7O3VNMBJG" accepted.
+2023-04-28 10:17:24.893 +02:00 [DBG] Connection id "0HMQ7O3VNMBJG" started.
+2023-04-28 10:17:24.898 +02:00 [DBG] Connection id "0HMQ7O3VNMBJF" sending FIN because: "The client closed the connection."
+2023-04-28 10:17:24.909 +02:00 [DBG] Connection id "0HMQ7O3VNMBJF" disconnecting.
+2023-04-28 10:17:24.915 +02:00 [DBG] Connection id "0HMQ7O3VNMBJF" stopped.
+2023-04-28 10:17:24.928 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - -
+2023-04-28 10:17:24.937 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-28 10:17:24.959 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:17:24.966 +02:00 [DBG] Https port '7164' loaded from configuration.
+2023-04-28 10:17:24.972 +02:00 [DBG] Redirecting to 'https://localhost:7164/api/foodsavr/GetRecipes'.
+2023-04-28 10:17:24.975 +02:00 [DBG] Connection id "0HMQ7O3VNMBJG" completed keep alive response.
+2023-04-28 10:17:24.979 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5225/api/foodsavr/GetRecipes - - - 307 0 - 52.9419ms
+2023-04-28 10:17:24.980 +02:00 [DBG] Connection id "0HMQ7O3VNMBJH" accepted.
+2023-04-28 10:17:24.980 +02:00 [DBG] Connection id "0HMQ7O3VNMBJH" received FIN.
+2023-04-28 10:17:24.980 +02:00 [DBG] Connection id "0HMQ7O3VNMBJI" accepted.
+2023-04-28 10:17:24.991 +02:00 [DBG] Connection id "0HMQ7O3VNMBJH" started.
+2023-04-28 10:17:24.996 +02:00 [DBG] Connection id "0HMQ7O3VNMBJI" started.
+2023-04-28 10:17:24.999 +02:00 [DBG] Connection id "0HMQ7O3VNMBJH" sending FIN because: "The client closed the connection."
+2023-04-28 10:17:25.011 +02:00 [DBG] Connection id "0HMQ7O3VNMBJH" disconnecting.
+2023-04-28 10:17:25.013 +02:00 [DBG] Connection id "0HMQ7O3VNMBJH" stopped.
+2023-04-28 10:17:25.057 +02:00 [DBG] Connection 0HMQ7O3VNMBJI established using the following protocol: "Tls13"
+2023-04-28 10:17:25.064 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - -
+2023-04-28 10:17:25.067 +02:00 [DBG] The request path  does not match the path filter
+2023-04-28 10:17:25.097 +02:00 [DBG] 2 candidate(s) found for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:25.106 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)' with route pattern 'api/foodsavr/GetRecipes' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:25.109 +02:00 [DBG] Endpoint 'FoodSavr.API.Controllers.IngredientController.GetIngredient (FoodSavr.API)' with route pattern 'api/foodsavr/{id}' is valid for the request path '/api/foodsavr/GetRecipes'
+2023-04-28 10:17:25.113 +02:00 [DBG] Request matched endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:25.117 +02:00 [INF] Executing endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:25.142 +02:00 [INF] Route matched with {action = "GetRecipes", controller = "Ingredient"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[FoodSavr.API.Entities.Recipe]]] GetRecipes() on controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API).
+2023-04-28 10:17:25.148 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-04-28 10:17:25.151 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-04-28 10:17:25.156 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-04-28 10:17:25.159 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-04-28 10:17:25.163 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-04-28 10:17:25.170 +02:00 [DBG] Executing controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:17:25.311 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-28 10:17:25.446 +02:00 [DBG] Executed controller factory for controller FoodSavr.API.Controllers.IngredientController (FoodSavr.API)
+2023-04-28 10:17:26.072 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'FoodSavrContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-04-28 10:17:26.107 +02:00 [DBG] Compiling query expression: 
+'DbSet<Recipe>()
+    .OrderBy(r => r.Id)'
+2023-04-28 10:17:26.254 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Recipe>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Recipe.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Recipe.CookingTime (int) Required, 1], [Property: Recipe.Description (string) Required MaxLength(100), 2], [Property: Recipe.ImgLink (string) Required MaxLength(100), 3], [Property: Recipe.Name (string) Required MaxLength(20), 4], [Property: Recipe.Portions (int) Required, 5] }
+        SELECT r.Id, r.CookingTime, r.Description, r.ImgLink, r.Name, r.Portions
+        FROM Recipe AS r
+        ORDER BY r.Id ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Recipe>, 
+    FoodSavr.API.DbContexts.FoodSavrContext, 
+    False, 
+    False, 
+    True
+)'
+2023-04-28 10:17:26.301 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-28 10:17:26.306 +02:00 [DBG] Creating DbConnection.
+2023-04-28 10:17:26.321 +02:00 [DBG] Created DbConnection. (13ms).
+2023-04-28 10:17:26.329 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (27ms).
+2023-04-28 10:17:26.332 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (33ms).
+2023-04-28 10:17:26.340 +02:00 [DBG] Opening connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:17:26.358 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:26.367 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Id"
+2023-04-28 10:17:26.392 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "r"."Id", "r"."CookingTime", "r"."Description", "r"."ImgLink", "r"."Name", "r"."Portions"
+FROM "Recipe" AS "r"
+ORDER BY "r"."Id"
+2023-04-28 10:17:26.432 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.450 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.454 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.457 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.459 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.461 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.462 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.464 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.465 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.468 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.470 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.472 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.474 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.476 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.479 +02:00 [DBG] Context 'FoodSavrContext' started tracking 'Recipe' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-04-28 10:17:26.486 +02:00 [DBG] Closing data reader to 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:26.498 +02:00 [DBG] A data reader for 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db' is being disposed after spending 94ms reading results.
+2023-04-28 10:17:26.506 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\SimonGebrielMekonen\source\repos\FoodSavr.API\FoodSavr.API\FoodSavr.db'.
+2023-04-28 10:17:26.512 +02:00 [DBG] Closed connection to database 'main' on server 'FoodSavr.db' (5ms).
+2023-04-28 10:17:26.516 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-04-28 10:17:26.524 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-04-28 10:17:26.525 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-04-28 10:17:26.526 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-04-28 10:17:26.528 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-04-28 10:17:26.530 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FoodSavr.API.Entities.Recipe, FoodSavr.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-28 10:17:26.656 +02:00 [INF] Executed action FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API) in 1486.0744ms
+2023-04-28 10:17:26.660 +02:00 [INF] Executed endpoint 'FoodSavr.API.Controllers.IngredientController.GetRecipes (FoodSavr.API)'
+2023-04-28 10:17:26.663 +02:00 [DBG] Connection id "0HMQ7O3VNMBJI" completed keep alive response.
+2023-04-28 10:17:26.667 +02:00 [DBG] 'FoodSavrContext' disposed.
+2023-04-28 10:17:26.673 +02:00 [DBG] Disposing connection to database 'main' on server 'FoodSavr.db'.
+2023-04-28 10:17:26.678 +02:00 [DBG] Disposed connection to database 'main' on server 'FoodSavr.db' (4ms).
+2023-04-28 10:17:26.684 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7164/api/foodsavr/GetRecipes - - - 200 6786 application/json;+charset=utf-8 1619.8458ms
