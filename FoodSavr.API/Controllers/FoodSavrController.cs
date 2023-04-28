@@ -10,17 +10,30 @@ namespace FoodSavr.API.Controllers
 {
     [Route("api/foodsavr")]
     [ApiController]
-    public class IngredientController : ControllerBase
+    public class FoodSavrController : ControllerBase
     {
+        private readonly ILogger<FoodSavrController> _logger;
+        private readonly IMailService _mailService;
         private readonly IFoodSavrRepository _FoodSavrRepository;
         private readonly IMapper _mapper;
 
-        public IngredientController(IFoodSavrRepository FoodSavrRepository, IMapper mapper)
+        public FoodSavrController(
+            ILogger<FoodSavrController> logger,
+            IMailService mailService,
+            IFoodSavrRepository FoodSavrRepository,
+            IMapper mapper)
         {
-            _FoodSavrRepository = FoodSavrRepository ?? throw new ArgumentNullException(nameof(FoodSavrRepository));
-            _mapper = mapper ?? throw new ArgumentNullException(nameof(_mapper));
+            _logger = logger ?? 
+                throw new ArgumentNullException(nameof(logger));
+            _mailService = mailService ?? 
+                throw new ArgumentNullException(nameof(mailService));
+            _FoodSavrRepository = FoodSavrRepository ?? 
+                throw new ArgumentNullException(nameof(FoodSavrRepository));
+            _mapper = mapper ?? 
+                throw new ArgumentNullException(nameof(_mapper));
         }
 
+        [Route("ingredient")]
         [HttpGet(Name = "GetIngredients")]
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients() 
         {
@@ -28,51 +41,38 @@ namespace FoodSavr.API.Controllers
             return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
         }
 
+        [Route("ingredient/{id}")]
         [HttpGet("{id}", Name = "GetIngredient")]
         public async Task<ActionResult<IngredientDto>> GetIngredient(int id)
         {
+            if (!await _FoodSavrRepository.IngredientExist(id))
+            {
+                _logger.LogInformation($"Ingredient with id {id} was not found");
+                return NotFound();
+            }
             var ingredientEntity = await _FoodSavrRepository.GetIngredientAsync(id);
             return Ok(_mapper.Map<IngredientDto>(ingredientEntity));
         }
 
+        [Route("recipe")]
         [HttpGet("GetRecipes")]
         public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
         {
             var recipes = await _FoodSavrRepository.GetRecipesAsync();
             return Ok(recipes);
-
         }
-        //public ActionResult<IngredientDto> GetIngredient(int id)
-        //{
-        //    //try
-        //    //{
-        //    //    //throw new Exception("Exception sample.");
-        //    //    var ingredientToReturn = _ingredientDataStore.Ingredients.FirstOrDefault(i => i.Id == id);
-        //    //    if (ingredientToReturn == null)
-        //    //    {
-        //    //        _logger.LogInformation($"Ingredient with id {id} wasn't found");
-        //    //        return NotFound();
-        //    //    }
-        //    //    return Ok (ingredientToReturn);
-        //    //}
-        //    //catch (Exception ex)
-        //    //{
-        //    //    _logger.LogCritical($"Exception while getting ingredient id {id}.",
-        //    //        ex);
-        //    //    return StatusCode(500, "A problem happened while handling your request.");
-        //    //}
-        //}
-
-        //[HttpGet("GetIngredientCount")]
-        //public ActionResult<int> GetIngredientCount()
-        //{
-        //    int ingredientCount = _ingredientDataStore.NumberOfIngredients;
-        //    if (ingredientCount == 0)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(ingredientCount);
-        //}
+        [Route("recipe/{id}")]
+        [HttpGet("{id}", Name = "GetRecipe")]
+        public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
+        {
+            if(!await _FoodSavrRepository.RecipeExist(id))
+            {
+                _logger.LogInformation($"Recipe with id {id} was not found");
+                return NotFound();
+            }
+            var recipe = await _FoodSavrRepository.GetRecipeAsync(id);
+            return Ok(_mapper.Map<RecipeDto>(recipe));
+        }
 
         ////Add verification for who can Post
         //[HttpPost(Name = "CreateIngredient")]

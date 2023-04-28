@@ -22,9 +22,24 @@ namespace FoodSavr.API.Services
             return await _context.Ingredient.OrderBy(i => i.Name).ToListAsync();
         }
 
+        public async Task<bool> IngredientExist(int id)
+        {
+            return await _context.Ingredient.AnyAsync(i => i.Id == id);
+        }
+
         public async Task<IEnumerable<Recipe>> GetRecipesAsync()
         {
             return await _context.Recipe.OrderBy(r => r.Id).ToListAsync();
+        }
+
+        public async Task<Recipe> GetRecipeAsync(int id)
+        {
+            return await _context.Recipe.Where(r => r.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<bool> RecipeExist(int id)
+        {
+            return await _context.Recipe.AnyAsync(i => i.Id == id);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using FoodSavr.API.Entities;
+using FoodSavr.API.Models;
 
 namespace FoodSavr.API.Services
 {
@@ -7,5 +8,8 @@ namespace FoodSavr.API.Services
         Task<IEnumerable<Ingredient>> GetIngredientsAsync();
         Task<Ingredient> GetIngredientAsync(int id);
         Task<IEnumerable<Recipe>> GetRecipesAsync();
+        Task<Recipe> GetRecipeAsync(int id);
+        Task<bool> IngredientExist(int id);
+        Task<bool> RecipeExist(int id);
     }
 }
