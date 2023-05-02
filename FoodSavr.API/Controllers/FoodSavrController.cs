@@ -3,6 +3,7 @@ using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
 using FoodSavr.API.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace FoodSavr.API.Controllers
 {
@@ -14,6 +15,7 @@ namespace FoodSavr.API.Controllers
         private readonly IMailService _mailService;
         private readonly IFoodSavrRepository _FoodSavrRepository;
         private readonly IMapper _mapper;
+        const int maxIngredientPageSize = 20;
 
         public FoodSavrController(
             ILogger<FoodSavrController> logger,
@@ -33,11 +35,24 @@ namespace FoodSavr.API.Controllers
 
         [Route("ingredient")]
         [HttpGet(Name = "GetIngredients")]
-        public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients() 
+        public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
+            string? searchQuery,
+            int pageNumber = 1,
+            int pageSize = 30) 
         {
             try
             {
-                var ingredientEntities = await _FoodSavrRepository.GetIngredientsAsync();
+                if (pageSize > maxIngredientPageSize) 
+                {
+                    pageSize = maxIngredientPageSize;
+                }
+
+                var (ingredientEntities, paginationMetadata) = await _FoodSavrRepository
+                    .GetIngredientsAsync(searchQuery, pageNumber, pageSize);
+
+                Response.Headers.Add("X-Pagination",
+                JsonSerializer.Serialize(paginationMetadata));
+
                 return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
             }
             catch (Exception ex)
@@ -117,8 +132,12 @@ namespace FoodSavr.API.Controllers
                     _logger.LogInformation($"Ingredient {ingredient.Name} already exists");
                     return NotFound("ingredient already exists");
                 }
-                // Find category and save it, if it doesent exist; create it
-                // Add category if not exists
+
+                if(!await _FoodSavrRepository.CategoryExist(ingredient.CategoryId))
+                {
+                    _logger.LogInformation($"Category with Id {ingredient.CategoryId} does not exist");
+                    return NotFound($"category with Id {ingredient.CategoryId} does not exist");
+                }
 
                 var finalIngredient = 
                     await _FoodSavrRepository.CreateIngredientAsync(

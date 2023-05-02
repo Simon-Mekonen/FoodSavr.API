@@ -23,6 +23,30 @@ namespace FoodSavr.API.Services
             return await _context.Ingredient.OrderBy(i => i.Name).ToListAsync();
         }
 
+        public async Task<(IEnumerable<Ingredient>, PaginationMetaData)> GetIngredientsAsync(
+            string? searchQuery, int pageNumber, int pageSize)
+        {
+            var collection = _context.Ingredient as IQueryable<Ingredient>;
+
+            if (!string.IsNullOrWhiteSpace(searchQuery))
+            {
+                searchQuery = searchQuery.Trim().ToLower();
+                collection = collection.Where(i => i.Name.Contains(searchQuery));
+            }
+
+            var totalItemCount = await collection.CountAsync();
+
+            var paginationMetadata = new PaginationMetaData(
+                totalItemCount, pageSize, pageNumber);
+
+            var collectionToReturn = await collection.OrderBy(i => i.Name)
+                .Skip(pageSize * (pageNumber - 1))
+                .Take(pageSize)
+                .ToListAsync();
+
+            return (collectionToReturn, paginationMetadata);
+        }
+
         public async Task<bool> IngredientExist(int id)
         {
             return await _context.Ingredient.AnyAsync(i => i.Id == id);
@@ -31,6 +55,11 @@ namespace FoodSavr.API.Services
         public async Task<bool> IngredientExist(string name)
         {
             return await _context.Ingredient.AnyAsync(i => i.Name.ToLower() == name.ToLower());
+        }
+
+        public async Task<bool> CategoryExist(int id)
+        {
+            return await _context.Category.AnyAsync(c => c.Id == id);
         }
 
         public async Task<IEnumerable<Recipe>> GetRecipesAsync()
