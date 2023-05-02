@@ -72,6 +72,13 @@ namespace FoodSavr.API.Services
             return await _context.Recipe.Where(r => r.Id == id).FirstOrDefaultAsync();
         }
 
+        public async Task<IEnumerable<Recipe>> TestAsync(List<IngredientDto> ingredients)
+        {
+            // implement the necessary code to fetch the recipes that has ingredients that matches in category.
+            // use Stored Procedure?
+        }
+
+
         public async Task<bool> RecipeExist(int id)
         {
             return await _context.Recipe.AnyAsync(i => i.Id == id);

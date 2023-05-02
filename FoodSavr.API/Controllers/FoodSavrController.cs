@@ -2,11 +2,13 @@
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
 using FoodSavr.API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
 namespace FoodSavr.API.Controllers
 {
+    //[Authorize]
     [Route("api/foodsavr")]
     [ApiController]
     public class FoodSavrController : ControllerBase
@@ -34,7 +36,7 @@ namespace FoodSavr.API.Controllers
         }
 
         [Route("ingredient")]
-        [HttpGet(Name = "GetIngredients")]
+        [HttpGet("GetIngredients")]
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
             string? searchQuery,
             int pageNumber = 1,
@@ -98,6 +100,25 @@ namespace FoodSavr.API.Controllers
                 return NotFound();
             }
         }
+
+        [Route("test")]
+        [HttpGet("testar")]
+        public async Task<ActionResult<IEnumerable<RecipeDto>>> GetTest(
+            List<IngredientDto> ingredients)
+        {
+            try 
+            {
+                var recipes = await _FoodSavrRepository.TestAsync(ingredients);
+                return Ok("Test");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation($"Error");
+                return NotFound();
+            }
+
+        }
+
         [Route("recipe/{id}")]
         [HttpGet("{id}", Name = "GetRecipe")]
         public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
