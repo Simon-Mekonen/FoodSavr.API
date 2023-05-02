@@ -9,6 +9,7 @@ namespace FoodSavr.API.Models
         [MinLength(3)]
         public string Name { get; set; } = string.Empty;
 
-        public int Category { get; set;  }
+        [Required(ErrorMessage = "You should provide a category Id for the ingredient")]
+        public int CategoryId { get; set;  }
     }
 }

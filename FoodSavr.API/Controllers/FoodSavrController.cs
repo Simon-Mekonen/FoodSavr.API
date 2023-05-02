@@ -35,79 +35,130 @@ namespace FoodSavr.API.Controllers
         [HttpGet(Name = "GetIngredients")]
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients() 
         {
-            var ingredientEntities = await _FoodSavrRepository.GetIngredientsAsync();
-            return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
+            try
+            {
+                var ingredientEntities = await _FoodSavrRepository.GetIngredientsAsync();
+                return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation($"Unable to fetch GetIngredients. Error: {ex}");
+                return NotFound();
+            }
         }
 
         [Route("ingredient/{id}")]
         [HttpGet("{id}", Name = "GetIngredient")]
         public async Task<ActionResult<IngredientDto>> GetIngredient(int id)
         {
-            if (!await _FoodSavrRepository.IngredientExist(id))
+            try
             {
-                _logger.LogInformation($"Ingredient with id {id} was not found");
+                if (!await _FoodSavrRepository.IngredientExist(id))
+                {
+                    _logger.LogInformation($"Ingredient with id {id} was not found");
+                    return NotFound();
+                }
+                var ingredientEntity = await _FoodSavrRepository.GetIngredientAsync(id);
+                return Ok(_mapper.Map<IngredientDto>(ingredientEntity));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation($"Unable to fetch ingredient with id {id}. Error: {ex}");
                 return NotFound();
             }
-            var ingredientEntity = await _FoodSavrRepository.GetIngredientAsync(id);
-            return Ok(_mapper.Map<IngredientDto>(ingredientEntity));
         }
 
         [Route("recipe")]
         [HttpGet("GetRecipes")]
         public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
         {
-            var recipes = await _FoodSavrRepository.GetRecipesAsync();
-            return Ok(recipes);
+            try
+            {
+                var recipes = await _FoodSavrRepository.GetRecipesAsync();
+                return Ok(recipes);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation($"Unable to fetch recipes. Error: {ex}");
+                return NotFound();
+            }
         }
         [Route("recipe/{id}")]
         [HttpGet("{id}", Name = "GetRecipe")]
         public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
         {
-            if(!await _FoodSavrRepository.RecipeExist(id))
+            try
             {
-                _logger.LogInformation($"Recipe with id {id} was not found");
+                if(!await _FoodSavrRepository.RecipeExist(id))
+                {
+                    _logger.LogInformation($"Recipe with id {id} was not found");
+                    return NotFound();
+                }
+                var recipe = await _FoodSavrRepository.GetRecipeAsync(id);
+                return Ok(_mapper.Map<RecipeDto>(recipe));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation($"Unable to fetch recipe with id {id}. Error: {ex}");
                 return NotFound();
             }
-            var recipe = await _FoodSavrRepository.GetRecipeAsync(id);
-            return Ok(_mapper.Map<RecipeDto>(recipe));
         }
 
         //Add verification for who can Post
         [Route("CreateIngredient")]
         [HttpPost("PostIngredient")]
-        public async Task<ActionResult<Ingredient>> CreateIngredient(
+        public async Task<ActionResult<IngredientDto>> CreateIngredient(
             IngredientForCreationDto ingredient)
         {
-            if (await _FoodSavrRepository.IngredientExist(ingredient.Name.Trim()))
+            try
             {
-                _logger.LogInformation($"Ingredient {ingredient.Name} already exists");
-                return NotFound("ingredient already exists");
+                if (await _FoodSavrRepository.IngredientExist(ingredient.Name.Trim()))
+                {
+                    _logger.LogInformation($"Ingredient {ingredient.Name} already exists");
+                    return NotFound("ingredient already exists");
+                }
+                // Find category and save it, if it doesent exist; create it
+                // Add category if not exists
+
+                var finalIngredient = 
+                    await _FoodSavrRepository.CreateIngredientAsync(
+                    _mapper.Map<Ingredient>(ingredient));
+
+                await _FoodSavrRepository.SaveChangesAsync();
+
+                var createdIngredientToReturn = _mapper.Map<IngredientDto>(finalIngredient);
+
+                return CreatedAtRoute("GetIngredient", new { createdIngredientToReturn.Id }, createdIngredientToReturn);
+
+            }
+            catch (Exception ex) 
+            { 
+                _logger.LogInformation(
+                    $"Unable to save ingredient {ingredient.Name}. " +
+                    $"Error: {ex}"); return NotFound(); 
             }
 
-            // Find category and save it, if it doesent exist; create it
-
-            // Add category if not exists
-
-            // Add the ingredient
-            var finalIngredient = _mapper.Map<Ingredient>(ingredient);
-
-            await _FoodSavrRepository.CreateIngredientAsync(finalIngredient);
-
-            await _FoodSavrRepository.SaveChangesAsync();
-
-            var createdIngredientToReturn = _mapper.Map<IngredientDto>(finalIngredient);
-
-            return CreatedAtRoute("GetIngredient", 
-                new 
-                { 
-                    createdIngredientToReturn.Id 
-                }, createdIngredientToReturn);
         }
 
+        // ADD PARTIAL UPDATE of Recipe.
+
+        /* ADD new recipe
+         * Send in a format (form in website?)
+         * 1. Creates the recipe in database with the information
+         * 2. Return the id for recipe
+         * 3. Creates the steps table with recipe id
+         * 4. Creates the table in ingredients with recipe id
+         * 5. adds the measurements (and creates measurements that doesent exist)
+         * 6. adds the ingredients in the recipe, if category doesent exist it will add into category db.
+         * 
+         * -- use a stored procedure maybe?
+         */
+
         ////Add verification for who can Put
+        //[Route("UpdateIngredient")]
         //[HttpPut("{ingredientid}", Name = "UpdateIngredient")]
         //public ActionResult UpdateIngredient(
-        //    int ingredientId, 
+        //    int ingredientId,
         //    IngredientForUpdateDto ingredient)
         //{
         //    //need to add check so ingredient name doesent exist already
@@ -116,7 +167,7 @@ namespace FoodSavr.API.Controllers
 
         //    // find the ingredient
         //    var ingredientItem = _ingredientDataStore.FindIngredientItem(ingredientId);
-        //    if (ingredientItem == null) 
+        //    if (ingredientItem == null)
         //    {
         //        return NotFound("Ingredient id was not found");
         //    }
