@@ -40,7 +40,7 @@ builder.Services.AddSingleton<IngredientDataStore>();
 builder.Services.AddSingleton<IngredientCategoryDataStore>();
 
 builder.Services.AddDbContext<FoodSavrContext>(
-    dbContextOptions => dbContextOptions.UseSqlite(
+    dbContextOptions =>     dbContextOptions.UseSqlite(
         builder.Configuration["ConnectionStrings:FoodSavrDBConnectionString"]));
 
 // Creates the repository
