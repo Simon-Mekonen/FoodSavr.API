@@ -85,48 +85,30 @@ namespace FoodSavr.API.Controllers
             }
         }
 
-        [Route("recipe")]
-        [HttpGet("GetRecipes")]
-        public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
-        {
-            try
-            {
-                var recipes = await _FoodSavrRepository.GetRecipesAsync();
-                return Ok(recipes);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation($"Unable to fetch recipes. Error: {ex}");
-                return NotFound();
-            }
-        }
-
-        //[Route("test")]
-        //[HttpGet("testar")]
-        //public async Task<ActionResult<IEnumerable<RecipeDto>>> GetTest(
-        //    List<IngredientDto> ingredients)
+        //[Route("recipe")]
+        //[HttpGet("GetRecipes")]
+        //public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
         //{
-        //    try 
+        //    try
         //    {
-        //        var recipes = await _FoodSavrRepository.TestAsync(ingredients);
-        //        return Ok("Test");
+        //        var recipes = await _FoodSavrRepository.GetRecipesAsync();
+        //        return Ok(recipes);
         //    }
         //    catch (Exception ex)
         //    {
-        //        _logger.LogInformation($"Error");
+        //        _logger.LogInformation($"Unable to fetch recipes. Error: {ex}");
         //        return NotFound();
         //    }
-
         //}
 
-        [Route("test")]
-        [HttpGet("testar")]
-        public async Task<ActionResult<IEnumerable<Ingredient>>> GetTest(
+        [Route("recipematches")]
+        [HttpGet("RecipeBlob")]
+        public async Task<ActionResult<IEnumerable<RecipeBlobDto>>> GetTest(
             List<int> ingredients)
         {
             try
             {
-                var recipes = await _FoodSavrRepository.GetIngredientsAsync2(ingredients);
+                var recipes = await _FoodSavrRepository.GetRecipesAsync(ingredients);
                 return Ok(recipes);
             }
             catch (Exception ex)
@@ -137,6 +119,8 @@ namespace FoodSavr.API.Controllers
 
         }
 
+
+        // Rewrite this to take recipe id, and body with my ingredients, then return the complete recipe item.
         [Route("recipe/{id}")]
         [HttpGet("{id}", Name = "GetRecipe")]
         public async Task<ActionResult<RecipeDto>> GetRecipe(int id)

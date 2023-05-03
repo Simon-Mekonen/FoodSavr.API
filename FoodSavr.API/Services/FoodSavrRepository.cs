@@ -64,32 +64,33 @@ namespace FoodSavr.API.Services
         {
             return await _context.Category.AnyAsync(c => c.Id == id);
         }
-
-        public async Task<IEnumerable<Recipe>> GetRecipesAsync()
-        {
-            return await _context.Recipe.OrderBy(r => r.Id).ToListAsync();
-        }
-
         public async Task<Recipe> GetRecipeAsync(int id)
         {
             return await _context.Recipe.Where(r => r.Id == id).FirstOrDefaultAsync();
         }
 
-        //public async Task<IEnumerable<Recipe>> TestAsync(List<IngredientDto> ingredients)
-        //{
-        //    // implement the necessary code to fetch the recipes that has ingredients that matches in category.
-        //    // use Stored Procedure?
-        //}
-
-        public async Task<IEnumerable<IngredientDto>> GetIngredientsAsync2(List<int> ingredients)
+        public async Task<IEnumerable<RecipeBlobDto>> GetRecipesAsync(List<int> ingredientId)
         {
             var controller = new GetRecipeListController(_context);
-            var result = controller.Index(ingredients) as ViewResult;
+            var result = controller.Index(ingredientId) as ViewResult;
 
-            // nedan fungerar inte, ger ingen data
-            var ingredientList = result.Model as List<IngredientDto>;
-            return ingredientList.AsEnumerable();
+            var recipeList = result.Model as List<RecipeBlobDto>;
+            return recipeList.AsEnumerable();
         }
+
+        public async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
+        {
+            return await _context.RecipeSteps.Where(rs => rs.RecipeId == id).ToListAsync();
+        }
+
+        //public async Task<IEnumerable<RecipeIngredientDto>> GetRecipeIngredientListAsync(int recipeId, List<int> ingredientId)
+        //{
+        //    //var controller = new GetRecipeIngredientListController(_context);
+        //    //var result = controller.Index(ingredientId) as ViewResult;
+
+        //    //var recipeList = result.Model as List<RecipeBlobDto>;
+        //    //return recipeList.AsEnumerable();
+        //}
 
 
 

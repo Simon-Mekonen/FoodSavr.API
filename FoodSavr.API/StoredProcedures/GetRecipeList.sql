@@ -7,7 +7,7 @@
   	SELECT I2.categoryid
   		FROM ingredient AS I2
   		JOIN category AS C ON C.id = I2.categoryid
-  		WHERE I2.id IN (?????) -- add the necessary questionmark
+  		WHERE I2.id IN (1, 2, 3, 4, 26) -- add the necessary questionmark
   		AND C.Id <> 0 /*--Uncategorized */) 
   
   GROUP BY R.id

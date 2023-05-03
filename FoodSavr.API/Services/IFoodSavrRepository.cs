@@ -9,15 +9,17 @@ namespace FoodSavr.API.Services
         Task<(IEnumerable<Ingredient>, PaginationMetaData)> GetIngredientsAsync(
             string? searchQuery, int pageNumber, int pageSize);
         Task<Ingredient> GetIngredientAsync(int id);
-        Task<IEnumerable<Recipe>> GetRecipesAsync();
+        Task<IEnumerable<RecipeBlobDto>> GetRecipesAsync(List<int> ingredientId);
+        Task<Ingredient>CreateIngredientAsync(Ingredient ingredient);
+        Task<bool> SaveChangesAsync();
+
+        Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id);
+
+        // can be removed later
         Task<Recipe> GetRecipeAsync(int id);
-        //Task<IEnumerable<Recipe>> TestAsync(List<IngredientDto> ingredients);
-        Task<IEnumerable<IngredientDto>> GetIngredientsAsync2(List<int> ingredients);
         Task<bool> IngredientExist(int id);
         Task<bool> IngredientExist(string name);
         Task<bool> RecipeExist(int id);
         Task<bool> CategoryExist(int id);
-        Task <Ingredient>CreateIngredientAsync(Ingredient ingredient);
-        Task<bool> SaveChangesAsync();
     }
 }
