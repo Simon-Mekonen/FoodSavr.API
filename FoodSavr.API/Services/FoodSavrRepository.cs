@@ -1,4 +1,5 @@
-﻿using FoodSavr.API.DbContexts;
+﻿using FoodSavr.API.Controllers;
+using FoodSavr.API.DbContexts;
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ namespace FoodSavr.API.Services
     public class FoodSavrRepository : IFoodSavrRepository
     {
         private readonly FoodSavrContext _context;
+        private readonly GetRecipeListController _recipeConnection;
 
         public FoodSavrRepository(FoodSavrContext context) 
         {
@@ -77,6 +79,12 @@ namespace FoodSavr.API.Services
             // implement the necessary code to fetch the recipes that has ingredients that matches in category.
             // use Stored Procedure?
         }
+
+        public async Task<IEnumerable<Ingredient>> GetIngredientsAsync2(List<int> ingredients)
+        {
+            return await _recipeConnection.Index(ingredients);
+        }
+
 
 
         public async Task<bool> RecipeExist(int id)
