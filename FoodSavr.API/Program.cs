@@ -66,7 +66,7 @@ builder.Services.AddAuthentication("Bearer")
         };
     });
 
-builder.Services.AddApiVersioning();
+//builder.Services.AddApiVersioning();
 
 var app = builder.Build();
 

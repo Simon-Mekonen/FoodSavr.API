@@ -37,11 +37,11 @@ namespace FoodSavr.API.Controllers
                     var categoryId = reader.GetInt32(1);
                     var name = reader.GetString(2);
 
-                    var model = new IngredientDto { Id = id, Name = name , CategoryId = categoryId};
-                    results.Add(model);
+                    var ingredient = new IngredientDto { Id = id, Name = name, CategoryId = categoryId };
+                    results.Add(ingredient);
                 }
 
-            return View(results);
+                return View(results);
 
             }
         }

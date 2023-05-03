@@ -11,8 +11,8 @@ namespace FoodSavr.API.Services
         Task<Ingredient> GetIngredientAsync(int id);
         Task<IEnumerable<Recipe>> GetRecipesAsync();
         Task<Recipe> GetRecipeAsync(int id);
-        Task<IEnumerable <Recipe>> TestAsync(List<IngredientDto> ingredients);
-        Task<IEnumerable <Ingredient>> GetIngredientsAsync2(List<int> ingredients);
+        //Task<IEnumerable<Recipe>> TestAsync(List<IngredientDto> ingredients);
+        Task<IEnumerable<IngredientDto>> GetIngredientsAsync2(List<int> ingredients);
         Task<bool> IngredientExist(int id);
         Task<bool> IngredientExist(string name);
         Task<bool> RecipeExist(int id);

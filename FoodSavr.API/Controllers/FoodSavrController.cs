@@ -101,19 +101,37 @@ namespace FoodSavr.API.Controllers
             }
         }
 
+        //[Route("test")]
+        //[HttpGet("testar")]
+        //public async Task<ActionResult<IEnumerable<RecipeDto>>> GetTest(
+        //    List<IngredientDto> ingredients)
+        //{
+        //    try 
+        //    {
+        //        var recipes = await _FoodSavrRepository.TestAsync(ingredients);
+        //        return Ok("Test");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogInformation($"Error");
+        //        return NotFound();
+        //    }
+
+        //}
+
         [Route("test")]
         [HttpGet("testar")]
-        public async Task<ActionResult<IEnumerable<RecipeDto>>> GetTest(
-            List<IngredientDto> ingredients)
+        public async Task<ActionResult<IEnumerable<Ingredient>>> GetTest(
+            List<int> ingredients)
         {
-            try 
+            try
             {
-                var recipes = await _FoodSavrRepository.TestAsync(ingredients);
-                return Ok("Test");
+                var recipes = await _FoodSavrRepository.GetIngredientsAsync2(ingredients);
+                return Ok(recipes);
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"Error");
+                _logger.LogInformation($"Error {ex}");
                 return NotFound();
             }
 

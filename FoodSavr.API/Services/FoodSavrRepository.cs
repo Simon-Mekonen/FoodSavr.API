@@ -2,6 +2,7 @@
 using FoodSavr.API.DbContexts;
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace FoodSavr.API.Services
@@ -74,15 +75,20 @@ namespace FoodSavr.API.Services
             return await _context.Recipe.Where(r => r.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<Recipe>> TestAsync(List<IngredientDto> ingredients)
-        {
-            // implement the necessary code to fetch the recipes that has ingredients that matches in category.
-            // use Stored Procedure?
-        }
+        //public async Task<IEnumerable<Recipe>> TestAsync(List<IngredientDto> ingredients)
+        //{
+        //    // implement the necessary code to fetch the recipes that has ingredients that matches in category.
+        //    // use Stored Procedure?
+        //}
 
-        public async Task<IEnumerable<Ingredient>> GetIngredientsAsync2(List<int> ingredients)
+        public async Task<IEnumerable<IngredientDto>> GetIngredientsAsync2(List<int> ingredients)
         {
-            return await _recipeConnection.Index(ingredients);
+            var controller = new GetRecipeListController(_context);
+            var result = controller.Index(ingredients) as ViewResult;
+
+            // nedan fungerar inte, ger ingen data
+            var ingredientList = result.Model as List<IngredientDto>;
+            return ingredientList.AsEnumerable();
         }
 
 
