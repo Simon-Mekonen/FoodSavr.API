@@ -2,6 +2,8 @@
 using FoodSavr.API.DbContexts;
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
+using FoodSavr.API.Models.Ingredient;
+using FoodSavr.API.Models.Recipe;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +18,12 @@ namespace FoodSavr.API.Services
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return (await _context.SaveChangesAsync() >= 0);
+        }
+
         public async Task<Ingredient> GetIngredientAsync(int id)
         {
             return await _context.Ingredient.Where(i => i.Id == id).FirstOrDefaultAsync();
@@ -64,10 +72,6 @@ namespace FoodSavr.API.Services
         {
             return await _context.Category.AnyAsync(c => c.Id == id);
         }
-        public async Task<Recipe> GetRecipeAsync(int id)
-        {
-            return await _context.Recipe.Where(r => r.Id == id).FirstOrDefaultAsync();
-        }
 
         public async Task<IEnumerable<RecipeBlobDto>> GetRecipesAsync(List<int> ingredientId)
         {
@@ -77,21 +81,24 @@ namespace FoodSavr.API.Services
             var recipeList = result.Model as List<RecipeBlobDto>;
             return recipeList.AsEnumerable();
         }
+        public async Task<(
+            RecipeBlobDto, 
+            IEnumerable<RecipeStepsDto>, 
+            IEnumerable<RecipeIngredientDto>, 
+            IEnumerable<IngredientConverterDto>)> 
+            GetRecipeAsync(int recipeId, List<int> ingredients)
+        {
+            var recipeSteps = await GetRecipeStepsAsync(recipeId);
+            var recipeIngredient = new NotImplementedException(); // SQL query is needed
+            var ingredientConverter = new NotImplementedException(); // SQL query is needed
+
+            return await _context.Recipe.Where(r => r.Id == recipeId).FirstOrDefaultAsync();
+        }
 
         public async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
         {
             return await _context.RecipeSteps.Where(rs => rs.RecipeId == id).ToListAsync();
         }
-
-        //public async Task<IEnumerable<RecipeIngredientDto>> GetRecipeIngredientListAsync(int recipeId, List<int> ingredientId)
-        //{
-        //    //var controller = new GetRecipeIngredientListController(_context);
-        //    //var result = controller.Index(ingredientId) as ViewResult;
-
-        //    //var recipeList = result.Model as List<RecipeBlobDto>;
-        //    //return recipeList.AsEnumerable();
-        //}
-
 
 
         public async Task<bool> RecipeExist(int id)
@@ -104,11 +111,6 @@ namespace FoodSavr.API.Services
             var ingredientToSave = new Ingredient(ingredient.CategoryId, ingredient.Name);
             await _context.Ingredient.AddAsync(ingredientToSave);
             return ingredientToSave;
-        }
-
-        public async Task<bool> SaveChangesAsync()
-        {
-            return (await  _context.SaveChangesAsync() >= 0);
         }
 
     }

@@ -85,23 +85,7 @@ namespace FoodSavr.API.Controllers
             }
         }
 
-        //[Route("recipe")]
-        //[HttpGet("GetRecipes")]
-        //public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
-        //{
-        //    try
-        //    {
-        //        var recipes = await _FoodSavrRepository.GetRecipesAsync();
-        //        return Ok(recipes);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogInformation($"Unable to fetch recipes. Error: {ex}");
-        //        return NotFound();
-        //    }
-        //}
-
-        [Route("recipematches")]
+        [Route("RecipeMatches")]
         [HttpGet("RecipeBlob")]
         public async Task<ActionResult<IEnumerable<RecipeBlobDto>>> GetTest(
             List<int> ingredients)
@@ -116,28 +100,26 @@ namespace FoodSavr.API.Controllers
                 _logger.LogInformation($"Error {ex}");
                 return NotFound();
             }
-
         }
 
-
         // Rewrite this to take recipe id, and body with my ingredients, then return the complete recipe item.
-        [Route("recipe/{id}")]
-        [HttpGet("{id}", Name = "GetRecipe")]
-        public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
+        [Route("recipe/{recipeId}")]
+        [HttpGet("{recipeId}", Name = "GetRecipe")]
+        public async Task<ActionResult<RecipeDto>> GetRecipe(int recipeId, List<int> ingredients)
         {
             try
             {
-                if(!await _FoodSavrRepository.RecipeExist(id))
+                if(!await _FoodSavrRepository.RecipeExist(recipeId))
                 {
-                    _logger.LogInformation($"Recipe with id {id} was not found");
+                    _logger.LogInformation($"Recipe with id {recipeId} was not found");
                     return NotFound();
                 }
-                var recipe = await _FoodSavrRepository.GetRecipeAsync(id);
+                var recipe = await _FoodSavrRepository.GetRecipeAsync(recipeId, ingredients);
                 return Ok(_mapper.Map<RecipeDto>(recipe));
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"Unable to fetch recipe with id {id}. Error: {ex}");
+                _logger.LogInformation($"Unable to fetch recipe with id {recipeId}. Error: {ex}");
                 return NotFound();
             }
         }
