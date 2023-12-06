@@ -8,7 +8,5 @@
         public string? ImgLink { get; set; }
         public int Portions { get; set; }
         public int CookingTime { get; set; }
-        public List<RecipeStepsDto>? Steps { get; set; }
-        public List<RecipeIngredientDto>? Ingredients { get; set;}
     }
 }
