@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FoodSavr.API.DbContexts
 {
-    public class FoodSavrContext: DbContext
+    public class FoodSavrDbContext: DbContext
     {
         //add all the tables and set the keys/foreign keys connection
         public DbSet<Ingredient> Ingredient { get; set; }
@@ -14,7 +14,7 @@ namespace FoodSavr.API.DbContexts
         public DbSet<RecipeIngredient> RecipeIngredient { get; set; }
         public DbSet<RecipeSteps> RecipeSteps { get; set; }
 
-        public FoodSavrContext(DbContextOptions<FoodSavrContext> options)
+        public FoodSavrDbContext(DbContextOptions<FoodSavrDbContext> options)
             : base(options)
         {
 

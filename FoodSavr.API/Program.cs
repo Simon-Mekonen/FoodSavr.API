@@ -41,7 +41,7 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 //builder.Services.AddSingleton<IngredientDataStore>();
 //builder.Services.AddSingleton<IngredientCategoryDataStore>();
 
-builder.Services.AddDbContext<FoodSavrContext>(
+builder.Services.AddDbContext<FoodSavrDbContext>(
     dbContextOptions =>     dbContextOptions.UseSqlite(
         builder.Configuration["ConnectionStrings:FoodSavrDBConnectionString"]));
 

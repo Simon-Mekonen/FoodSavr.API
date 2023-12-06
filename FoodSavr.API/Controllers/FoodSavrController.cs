@@ -41,7 +41,7 @@ namespace FoodSavr.API.Controllers
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
             string? searchQuery,
             int pageNumber = 1,
-            int pageSize = 30) 
+            int pageSize = 1) 
         {
             try
             {
@@ -115,12 +115,13 @@ namespace FoodSavr.API.Controllers
                     _logger.LogInformation($"Recipe with id {recipeId} was not found");
                     return NotFound();
                 }
-                var (recipe, recipeSteps, recipeIngredient, ingredientConverter) = await _FoodSavrRepository.GetRecipeAsync(recipeId, ingredients);
+                var (recipe, recipeSteps, recipeIngredient, ingredientConverter) = await _FoodSavrRepository.GetCompleteRecipeAsync(recipeId, ingredients);
 
                 var recipeComplete = new RecipeCompleteDto(
                     _mapper.Map<RecipeDto>(recipe),
                     _mapper.Map<List<RecipeStepsDto>>(recipeSteps),
-                    _mapper.Map<List<RecipeIngredientDto>>(recipeIngredient), ingredientConverter
+                    recipeIngredient, //SIMON: CHANGE TO USING DTO/ENTITY?
+                    ingredientConverter
                     );
 
                 return Ok(recipeComplete);

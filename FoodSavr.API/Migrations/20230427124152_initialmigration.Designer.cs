@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FoodSavr.API.Migrations
 {
-    [DbContext(typeof(FoodSavrContext))]
+    [DbContext(typeof(FoodSavrDbContext))]
     [Migration("20230427124152_initialmigration")]
     partial class initialmigration
     {

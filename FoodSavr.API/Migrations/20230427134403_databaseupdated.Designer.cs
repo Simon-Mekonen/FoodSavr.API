@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FoodSavr.API.Migrations
 {
-    [DbContext(typeof(FoodSavrContext))]
+    [DbContext(typeof(FoodSavrDbContext))]
     [Migration("20230427134403_databaseupdated")]
     partial class databaseupdated
     {

@@ -10,9 +10,9 @@ namespace FoodSavr.API.Controllers
 {
     public class GetRecipeListController : Controller
     {
-        private readonly FoodSavrContext _foodSavrContext;
+        private readonly FoodSavrDbContext _foodSavrContext;
 
-        public GetRecipeListController(FoodSavrContext foodSavrContext)
+        public GetRecipeListController(FoodSavrDbContext foodSavrContext)
         {
             _foodSavrContext = foodSavrContext;
         }
