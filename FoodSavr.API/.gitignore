@@ -80,6 +80,7 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
+.cache
 
 # Visual Studio profiler
 *.psess
@@ -232,3 +233,8 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Scenarios
+.vsidx
+.props
+**/obj/*
