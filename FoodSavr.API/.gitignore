@@ -237,4 +237,5 @@ _Pvt_Extensions
 # Scenarios
 .vsidx
 .props
-**/obj/*
+**/obj/**
+**/bin/**
