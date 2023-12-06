@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FoodSavr.API.Entities;
 
 namespace FoodSavr.API.Profiles
 {
@@ -13,6 +14,8 @@ namespace FoodSavr.API.Profiles
             CreateMap<Models.IngredientForCreationDto, Entities.Ingredient>();
 
             CreateMap<Entities.Recipe, Models.RecipeDto>();
+            CreateMap<Entities.RecipeSteps, Models.RecipeStepsDto>(MemberList.Destination);
+            CreateMap<Entities.RecipeIngredient, Models.RecipeIngredientDto>();
         }
     }
 }

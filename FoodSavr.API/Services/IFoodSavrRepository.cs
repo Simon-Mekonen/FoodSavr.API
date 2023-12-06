@@ -24,10 +24,11 @@ namespace FoodSavr.API.Services
         Task<bool> RecipeExist(int id);
         Task<IEnumerable<RecipeBlobDto>> GetRecipesAsync(List<int> ingredientId);
         Task<(
-            RecipeBlobDto, 
-            IEnumerable<RecipeStepsDto>, 
-            IEnumerable<RecipeIngredientDto>, 
-            IEnumerable<IngredientConverterDto>)> GetRecipeAsync(int recipeId, List<int> ingredients);
+            Recipe, 
+            IEnumerable<RecipeSteps>, 
+            IEnumerable<RecipeIngredient>, 
+            IEnumerable<IngredientConverterDto>)> 
+            GetRecipeAsync(int recipeId, List<int> ingredients);
         Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id);
     }
 }
