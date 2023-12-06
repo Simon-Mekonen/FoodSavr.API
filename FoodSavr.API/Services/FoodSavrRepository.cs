@@ -2,7 +2,6 @@
 using FoodSavr.API.DbContexts;
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
-using FoodSavr.API.Models.Ingredient;
 using FoodSavr.API.Models.Recipe;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -81,18 +80,20 @@ namespace FoodSavr.API.Services
             var recipeList = result.Model as List<RecipeBlobDto>;
             return recipeList.AsEnumerable();
         }
+
         public async Task<(
-            RecipeBlobDto, 
-            IEnumerable<RecipeStepsDto>, 
-            IEnumerable<RecipeIngredientDto>, 
-            IEnumerable<IngredientConverterDto>)> 
+            Recipe,
+            IEnumerable<RecipeSteps>,
+            IEnumerable<RecipeIngredient>,
+            IEnumerable<IngredientConverterDto>)>
             GetRecipeAsync(int recipeId, List<int> ingredients)
         {
+            var recipe = await _context.Recipe.Where(r => r.Id == recipeId).FirstOrDefaultAsync();
             var recipeSteps = await GetRecipeStepsAsync(recipeId);
-            var recipeIngredient = new NotImplementedException(); // SQL query is needed
-            var ingredientConverter = new NotImplementedException(); // SQL query is needed
+            var recipeIngredient = new RecipeIngredient[0]; // SQL query is needed
+            var ingredientConverter = new IngredientConverterDto[0]; // SQL query is needed
 
-            return await _context.Recipe.Where(r => r.Id == recipeId).FirstOrDefaultAsync();
+            return (recipe, recipeSteps, recipeIngredient, ingredientConverter);
         }
 
         public async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
