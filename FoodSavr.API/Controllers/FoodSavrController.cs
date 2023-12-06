@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FoodSavr.API.Entities;
 using FoodSavr.API.Models;
+using FoodSavr.API.Models.Recipe;
 using FoodSavr.API.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +36,7 @@ namespace FoodSavr.API.Controllers
                 throw new ArgumentNullException(nameof(_mapper));
         }
 
-        [Route("ingredient")]
+        [Route("ingredients")]
         [HttpGet("GetIngredients")]
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
             string? searchQuery,
@@ -102,10 +103,10 @@ namespace FoodSavr.API.Controllers
             }
         }
 
-        // Rewrite this to take recipe id, and body with my ingredients, then return the complete recipe item.
+        // Create an overload where you can give ingredients/recipeId in url or body
         [Route("recipe/{recipeId}")]
         [HttpGet("{recipeId}", Name = "GetRecipe")]
-        public async Task<ActionResult<RecipeDto>> GetRecipe(int recipeId, List<int> ingredients)
+        public async Task<ActionResult<RecipeCompleteDto>> GetRecipe(int recipeId, List<int> ingredients)
         {
             try
             {
@@ -114,8 +115,15 @@ namespace FoodSavr.API.Controllers
                     _logger.LogInformation($"Recipe with id {recipeId} was not found");
                     return NotFound();
                 }
-                var recipe = await _FoodSavrRepository.GetRecipeAsync(recipeId, ingredients);
-                return Ok(_mapper.Map<RecipeDto>(recipe));
+                var (recipe, recipeSteps, recipeIngredient, ingredientConverter) = await _FoodSavrRepository.GetRecipeAsync(recipeId, ingredients);
+
+                var recipeComplete = new RecipeCompleteDto(
+                    _mapper.Map<RecipeDto>(recipe),
+                    _mapper.Map<List<RecipeStepsDto>>(recipeSteps),
+                    _mapper.Map<List<RecipeIngredientDto>>(recipeIngredient), ingredientConverter
+                    );
+
+                return Ok(recipeComplete);
             }
             catch (Exception ex)
             {
@@ -125,7 +133,7 @@ namespace FoodSavr.API.Controllers
         }
 
         //Add verification for who can Post
-        [Route("CreateIngredient")]
+        [Route("createingredient")]
         [HttpPost("PostIngredient")]
         public async Task<ActionResult<IngredientDto>> CreateIngredient(
             IngredientForCreationDto ingredient)
