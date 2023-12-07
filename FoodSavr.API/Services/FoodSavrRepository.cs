@@ -5,6 +5,7 @@ using FoodSavr.API.Models;
 using FoodSavr.API.Models.Recipe;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
 
 namespace FoodSavr.API.Services
 {
@@ -121,7 +122,7 @@ namespace FoodSavr.API.Services
                             ReplacementIngredient = string.Empty
                         };
 
-            var converter = await query.ToListAsync();
+            var ingredientsToCheck = await query.ToListAsync();
 
             // Second Step
             var secondQuery = from I in _dbContext.Ingredient
@@ -129,24 +130,24 @@ namespace FoodSavr.API.Services
                               select new
                               {
                                   CategoryId = I.CategoryId,
-                                  ReplacementIngredient = I.Name
+                                  ReplacementIngredient = I.Name,
+                                  IngredientId = I.Id
                               };
 
             var replacements = await secondQuery.ToListAsync();
             // Third Step
             // Match data from Converter and update ReplacementIngredient
 
-            foreach (var ingredient in converter)
+            IEnumerable<IngredientConverterDto> converter = new List<IngredientConverterDto>();
+
+            foreach (var ingredient in ingredientsToCheck)
             {
                 var replacement = replacements.FirstOrDefault(r => r.CategoryId == ingredient.CategoryId);
 
-                if (replacement == null || String.Equals(ingredient.OriginalIngredient, replacement.ReplacementIngredient))
-                {
-                    converter.Remove(ingredient);
-                }
-                else
+                if (replacement != null && ingredient.IngredientId != replacement.IngredientId)
                 {
                     ingredient.ReplacementIngredient = replacement.ReplacementIngredient;
+                    converter = converter.Append(ingredient).ToArray();
                 }
             }
 
