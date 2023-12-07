@@ -1,5 +1,4 @@
 using FoodSavr.API.DbContexts;
-using FoodSavr.API.Models;
 using FoodSavr.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +12,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("logs/ingredientInfo.text", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
+
 var builder = WebApplication.CreateBuilder(args);
 //builder.Logging.ClearProviders();
 //builder.Logging.AddConsole();
@@ -25,6 +25,15 @@ builder.Services.AddControllers(options =>
 }).AddNewtonsoftJson()
 .AddXmlDataContractSerializerFormatters();
 
+string AllowSpecificOrigins = "_allowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173/", "http://localhost:5173");
+        });
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -47,6 +56,7 @@ builder.Services.AddDbContext<FoodSavrDbContext>(
 
 // Creates the repository
 builder.Services.AddScoped<IFoodSavrRepository, FoodSavrRepository>();
+builder.Services.AddScoped<IIngredientConverterServices, IngredientConverterServices>();
 
 // Automapper Nuget
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -81,6 +91,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseCors(AllowSpecificOrigins);
 
 app.UseAuthentication();
 

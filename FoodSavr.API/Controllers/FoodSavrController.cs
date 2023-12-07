@@ -18,7 +18,7 @@ namespace FoodSavr.API.Controllers
         private readonly IMailService _mailService;
         private readonly IFoodSavrRepository _FoodSavrRepository;
         private readonly IMapper _mapper;
-        const int maxIngredientPageSize = 20;
+        const int maxIngredientPageSize = 100;
 
         public FoodSavrController(
             ILogger<FoodSavrController> logger,
@@ -41,7 +41,7 @@ namespace FoodSavr.API.Controllers
         public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
             string? searchQuery,
             int pageNumber = 1,
-            int pageSize = 1) 
+            int pageSize = 100) 
         {
             try
             {

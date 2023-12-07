@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FoodSavr.API.Services
 {
-    public class IngredientConverterServices
+    public class IngredientConverterServices : IIngredientConverterServices
     {
         private readonly FoodSavrDbContext _dbContext;
         private readonly string _uncategorized = "uncategorized";
@@ -14,7 +14,7 @@ namespace FoodSavr.API.Services
             _dbContext = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        internal async Task<IEnumerable<IngredientConverterDto>> GetRecipeIngredientConverterAsync(int recipeId, List<int> ingredients)
+        public async Task<IEnumerable<IngredientConverterDto>> GetRecipeIngredientConverterAsync(int recipeId, List<int> ingredients)
         {
 
             var ingredientsToCheck = await GetIngredientsToCheckAsync(recipeId, ingredients);
