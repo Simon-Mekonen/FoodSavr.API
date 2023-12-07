@@ -121,7 +121,7 @@ namespace FoodSavr.API.Controllers
                     _mapper.Map<RecipeDto>(recipe),
                     _mapper.Map<List<RecipeStepsDto>>(recipeSteps),
                     recipeIngredient, //SIMON: CHANGE TO USING DTO/ENTITY?
-                    ingredientConverter
+                    ingredientConverter //SIMON: CHANGE TO USING DTO/ENTITY?
                     );
 
                 return Ok(recipeComplete);
@@ -133,7 +133,7 @@ namespace FoodSavr.API.Controllers
             }
         }
 
-        //Add verification for who can Post
+        //SIMON: Add verification for who can Post
         [Route("createingredient")]
         [HttpPost("PostIngredient")]
         public async Task<ActionResult<IngredientDto>> CreateIngredient(

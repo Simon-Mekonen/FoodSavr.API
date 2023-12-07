@@ -29,6 +29,5 @@ namespace FoodSavr.API.Services
             IEnumerable<RecipeIngredientDto>, 
             IEnumerable<IngredientConverterDto>)> 
             GetCompleteRecipeAsync(int recipeId, List<int> ingredients);
-        Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id);
     }
 }

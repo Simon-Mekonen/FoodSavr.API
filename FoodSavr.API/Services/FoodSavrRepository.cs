@@ -13,11 +13,15 @@ namespace FoodSavr.API.Services
     {
         private readonly FoodSavrDbContext _dbContext;
         private readonly GetRecipeListController _recipeConnection;
-        private readonly string _uncategorized = "uncategorized";
+        private readonly IIngredientConverterServices _IngredientConverterServices;
 
-        public FoodSavrRepository(FoodSavrDbContext context) 
+        public FoodSavrRepository(
+            FoodSavrDbContext context,
+            IIngredientConverterServices IngredientConverterServices) 
         {
             _dbContext = context ?? throw new ArgumentNullException(nameof(context));
+            _IngredientConverterServices = IngredientConverterServices ?? throw new ArgumentNullException(nameof(IngredientConverterServices));
+
         }
 
         public async Task<bool> SaveChangesAsync()
@@ -25,6 +29,7 @@ namespace FoodSavr.API.Services
             return (await _dbContext.SaveChangesAsync() >= 0);
         }
 
+        // Ingredient
         public async Task<Ingredient> GetIngredientAsync(int id)
         {
             return await _dbContext.Ingredient.Where(i => i.Id == id).FirstOrDefaultAsync();
@@ -58,7 +63,6 @@ namespace FoodSavr.API.Services
 
             return (collectionToReturn, paginationMetadata);
         }
-
         public async Task<bool> IngredientExist(int id)
         {
             return await _dbContext.Ingredient.AnyAsync(i => i.Id == id);
@@ -69,14 +73,16 @@ namespace FoodSavr.API.Services
             return await _dbContext.Ingredient.AnyAsync(i => i.Name.ToLower() == name.ToLower());
         }
 
+        // Category
         public async Task<bool> CategoryExist(int id)
         {
             return await _dbContext.Category.AnyAsync(c => c.Id == id);
         }
 
+        // Recipe
         public async Task<IEnumerable<RecipeBlobDto>> GetRecipesAsync(List<int> ingredientId)
         {
-            var controller = new GetRecipeListController(_dbContext);
+            var controller = new GetRecipeListController(_dbContext); //SIMON: remake to LINQ
             var result = controller.Index(ingredientId) as ViewResult;
 
             var recipeList = result.Model as List<RecipeBlobDto>;
@@ -93,65 +99,9 @@ namespace FoodSavr.API.Services
             var recipe = await _dbContext.Recipe.Where(r => r.Id == recipeId).FirstOrDefaultAsync();
             var recipeSteps = await GetRecipeStepsAsync(recipeId);
             var recipeIngredient = await GetRecipeIngredientAsync(recipeId);
-            var ingredientConverter = await GetRecipeIngredientConverterAsync(recipeId, ingredients);
-
+            var ingredientConverter = await _IngredientConverterServices.GetRecipeIngredientConverterAsync(recipeId, ingredients);
+            
             return (recipe, recipeSteps, recipeIngredient, ingredientConverter);
-        }
-
-        private async Task<IEnumerable<IngredientConverterDto>> GetRecipeIngredientConverterAsync(int recipeId, List<int> ingredients)
-        {
-
-            // First Step
-            var nestedQuery = from I in _dbContext.Ingredient
-                              join C in _dbContext.Category on I.CategoryId equals C.Id
-                              where ingredients.Contains(I.Id)
-                              && C.Name != _uncategorized
-                              select I.CategoryId;
-
-            var categoryIdQuery = await nestedQuery.ToListAsync();
-
-            var query = from RI in _dbContext.RecipeIngredient
-                        join I in _dbContext.Ingredient on RI.IngredientId equals I.Id
-                        where categoryIdQuery.Contains(I.CategoryId)
-                        && RI.RecipeId == recipeId
-                        select new IngredientConverterDto()
-                        {
-                            CategoryId = I.CategoryId,
-                            IngredientId = RI.IngredientId,
-                            OriginalIngredient = I.Name,
-                            ReplacementIngredient = string.Empty
-                        };
-
-            var ingredientsToCheck = await query.ToListAsync();
-
-            // Second Step
-            var secondQuery = from I in _dbContext.Ingredient
-                              where ingredients.Contains(I.Id)
-                              select new
-                              {
-                                  CategoryId = I.CategoryId,
-                                  ReplacementIngredient = I.Name,
-                                  IngredientId = I.Id
-                              };
-
-            var replacements = await secondQuery.ToListAsync();
-            // Third Step
-            // Match data from Converter and update ReplacementIngredient
-
-            IEnumerable<IngredientConverterDto> converter = new List<IngredientConverterDto>();
-
-            foreach (var ingredient in ingredientsToCheck)
-            {
-                var replacement = replacements.FirstOrDefault(r => r.CategoryId == ingredient.CategoryId);
-
-                if (replacement != null && ingredient.IngredientId != replacement.IngredientId)
-                {
-                    ingredient.ReplacementIngredient = replacement.ReplacementIngredient;
-                    converter = converter.Append(ingredient).ToArray();
-                }
-            }
-
-            return converter;
         }
 
         private async Task<IEnumerable<RecipeIngredientDto>> GetRecipeIngredientAsync(int recipeId)
@@ -174,7 +124,7 @@ namespace FoodSavr.API.Services
             return result;
         }
 
-        public async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
+        private async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
         {
             return await _dbContext.RecipeSteps.Where(rs => rs.RecipeId == id).ToListAsync();
         }
