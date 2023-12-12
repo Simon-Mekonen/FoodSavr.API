@@ -10,8 +10,8 @@ using System.Text.Json;
 namespace FoodSavr.API.Controllers
 {
     //[Authorize]
-    [Route("api/foodsavr")]
     [ApiController]
+    [Route("api/foodsavr")]
     public class FoodSavrController : ControllerBase
     {
         private readonly ILogger<FoodSavrController> _logger;
@@ -104,12 +104,16 @@ namespace FoodSavr.API.Controllers
         }
 
         [Route("recipematches")]
-        [HttpGet("RecipeBlob")]
-        public async Task<ActionResult<IEnumerable<RecipeBlobDto>>> GetRecipeMatches(
-            List<int> ingredients)
+        [HttpGet(Name = "RecipeBlob")]
+        public async Task<ActionResult<IEnumerable<RecipeBlobDto>>> GetRecipeMatches([FromBody] List<int> ingredients)
         {
             try
             {
+                if (ingredients.Count == 0)
+                {
+                    ingredients = new List<int>{1,2,3,4,5,6};
+                }
+
                 var recipes = await _FoodSavrRepository.GetRecipesAsync(ingredients);
                 return Ok(recipes);
             }
