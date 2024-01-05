@@ -114,7 +114,7 @@ namespace FoodSavr.API.Services
                         select new RecipeIngredientDto()
                         {
                             IngredientId = RI.IngredientId,
-                            Quantity = (int)RI.Quantity,
+                            Quantity = RI.Quantity.HasValue ? (int)RI.Quantity : 0,
                             Measurement = measurement.Measure,
                             OriginalIngredient = I.Name
                         };
