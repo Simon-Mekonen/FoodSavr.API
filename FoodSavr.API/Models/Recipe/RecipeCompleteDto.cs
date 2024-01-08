@@ -7,10 +7,10 @@ namespace FoodSavr.API.Models
     {
         public RecipeDto Recipe { get; set; }
         public List<RecipeStepsDto> RecipeSteps { get; set; }
-        public List<RecipeIngredientDto> RecipeIngredient { get; set; }
+        public IEnumerable<RecipeIngredientDto> RecipeIngredient { get; set; }
         public IEnumerable<IngredientConverterDto> IngredientConverter { get; set; }
 
-        public RecipeCompleteDto(RecipeDto recipe, List<RecipeStepsDto> recipeSteps, List<RecipeIngredientDto> recipeIngredient, IEnumerable<IngredientConverterDto> ingredientConverter)
+        public RecipeCompleteDto(RecipeDto recipe, List<RecipeStepsDto> recipeSteps, IEnumerable<RecipeIngredientDto> recipeIngredient, IEnumerable<IngredientConverterDto> ingredientConverter)
         {
             this.Recipe = recipe;
             this.RecipeSteps = recipeSteps;

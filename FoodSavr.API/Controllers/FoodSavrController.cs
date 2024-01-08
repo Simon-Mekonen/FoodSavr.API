@@ -10,15 +10,15 @@ using System.Text.Json;
 namespace FoodSavr.API.Controllers
 {
     //[Authorize]
-    [Route("api/foodsavr")]
     [ApiController]
+    [Route("api/foodsavr")]
     public class FoodSavrController : ControllerBase
     {
         private readonly ILogger<FoodSavrController> _logger;
         private readonly IMailService _mailService;
         private readonly IFoodSavrRepository _FoodSavrRepository;
         private readonly IMapper _mapper;
-        const int maxIngredientPageSize = 20;
+        const int maxIngredientPageSize = 100;
 
         public FoodSavrController(
             ILogger<FoodSavrController> logger,
@@ -38,24 +38,11 @@ namespace FoodSavr.API.Controllers
 
         [Route("ingredients")]
         [HttpGet("GetIngredients")]
-        public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
-            string? searchQuery,
-            int pageNumber = 1,
-            int pageSize = 30) 
+        public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients()
         {
             try
             {
-                if (pageSize > maxIngredientPageSize) 
-                {
-                    pageSize = maxIngredientPageSize;
-                }
-
-                var (ingredientEntities, paginationMetadata) = await _FoodSavrRepository
-                    .GetIngredientsAsync(searchQuery, pageNumber, pageSize);
-
-                Response.Headers.Add("X-Pagination",
-                JsonSerializer.Serialize(paginationMetadata));
-
+                var ingredientEntities = await _FoodSavrRepository.GetIngredientsAsync();
                 return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
             }
             catch (Exception ex)
@@ -64,6 +51,36 @@ namespace FoodSavr.API.Controllers
                 return NotFound();
             }
         }
+
+        //// For pagination
+        //[Route("ingredients")]
+        //[HttpGet("GetIngredients")]
+        //public async Task<ActionResult<IEnumerable<IngredientDto>>> GetIngredients(
+        //    string? searchQuery,
+        //    int pageNumber = 1,
+        //    int pageSize = 100) 
+        //{
+        //    try
+        //    {
+        //        if (pageSize > maxIngredientPageSize) 
+        //        {
+        //            pageSize = maxIngredientPageSize;
+        //        }
+
+        //        var (ingredientEntities, paginationMetadata) = await _FoodSavrRepository
+        //            .GetIngredientsAsync(searchQuery, pageNumber, pageSize);
+
+        //        Response.Headers.Add("X-Pagination",
+        //        JsonSerializer.Serialize(paginationMetadata));
+
+        //        return Ok(_mapper.Map<IEnumerable<IngredientDto>>(ingredientEntities));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogInformation($"Unable to fetch GetIngredients. Error: {ex}");
+        //        return NotFound();
+        //    }
+        //}
 
         [Route("ingredient/{id}")]
         [HttpGet("{id}", Name = "GetIngredient")]
@@ -86,13 +103,17 @@ namespace FoodSavr.API.Controllers
             }
         }
 
-        [Route("RecipeMatches")]
-        [HttpGet("RecipeBlob")]
-        public async Task<ActionResult<IEnumerable<RecipeBlobDto>>> GetTest(
-            List<int> ingredients)
+        [Route("recipematches")]
+        [HttpGet(Name = "RecipeBlob")]
+        public async Task<ActionResult<IEnumerable<RecipeBlobDto>>> GetRecipeMatches([FromBody] List<int> ingredients)
         {
             try
             {
+                if (ingredients.Count == 0)
+                {
+                    ingredients = new List<int>{1,2,3,4,5,6};
+                }
+
                 var recipes = await _FoodSavrRepository.GetRecipesAsync(ingredients);
                 return Ok(recipes);
             }
@@ -115,12 +136,13 @@ namespace FoodSavr.API.Controllers
                     _logger.LogInformation($"Recipe with id {recipeId} was not found");
                     return NotFound();
                 }
-                var (recipe, recipeSteps, recipeIngredient, ingredientConverter) = await _FoodSavrRepository.GetRecipeAsync(recipeId, ingredients);
+                var (recipe, recipeSteps, recipeIngredient, ingredientConverter) = await _FoodSavrRepository.GetCompleteRecipeAsync(recipeId, ingredients);
 
                 var recipeComplete = new RecipeCompleteDto(
                     _mapper.Map<RecipeDto>(recipe),
                     _mapper.Map<List<RecipeStepsDto>>(recipeSteps),
-                    _mapper.Map<List<RecipeIngredientDto>>(recipeIngredient), ingredientConverter
+                    recipeIngredient, //SIMON: CHANGE TO USING DTO/ENTITY?
+                    ingredientConverter //SIMON: CHANGE TO USING DTO/ENTITY?
                     );
 
                 return Ok(recipeComplete);
@@ -132,7 +154,7 @@ namespace FoodSavr.API.Controllers
             }
         }
 
-        //Add verification for who can Post
+        //SIMON: Add verification for who can Post
         [Route("createingredient")]
         [HttpPost("PostIngredient")]
         public async Task<ActionResult<IngredientDto>> CreateIngredient(

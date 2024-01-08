@@ -1,5 +1,4 @@
 using FoodSavr.API.DbContexts;
-using FoodSavr.API.Models;
 using FoodSavr.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
@@ -13,17 +12,37 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("logs/ingredientInfo.text", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
+
 var builder = WebApplication.CreateBuilder(args);
 //builder.Logging.ClearProviders();
 //builder.Logging.AddConsole();
 builder.Host.UseSerilog();
 
 // Add services to the container.
-builder.Services.AddControllers(options =>
+builder.Services
+    .AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
-}).AddNewtonsoftJson()
-.AddXmlDataContractSerializerFormatters();
+})
+    .AddNewtonsoftJson()
+    .AddXmlDataContractSerializerFormatters()
+    .AddJsonOptions(options => 
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
+
+string AllowSpecificOrigins = "_allowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowSpecificOrigins,
+        policy =>
+        {
+            policy
+                .WithOrigins("http://localhost:5173/", "http://localhost:5173")
+                .AllowAnyHeader()
+                .AllowCredentials();
+        });
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -41,12 +60,13 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 //builder.Services.AddSingleton<IngredientDataStore>();
 //builder.Services.AddSingleton<IngredientCategoryDataStore>();
 
-builder.Services.AddDbContext<FoodSavrContext>(
+builder.Services.AddDbContext<FoodSavrDbContext>(
     dbContextOptions =>     dbContextOptions.UseSqlite(
         builder.Configuration["ConnectionStrings:FoodSavrDBConnectionString"]));
 
 // Creates the repository
 builder.Services.AddScoped<IFoodSavrRepository, FoodSavrRepository>();
+builder.Services.AddScoped<IIngredientConverterServices, IngredientConverterServices>();
 
 // Automapper Nuget
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -81,6 +101,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseCors(AllowSpecificOrigins);
 
 app.UseAuthentication();
 

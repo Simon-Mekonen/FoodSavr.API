@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FoodSavr.API.Migrations
 {
-    [DbContext(typeof(FoodSavrContext))]
+    [DbContext(typeof(FoodSavrDbContext))]
     partial class FoodSavrContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

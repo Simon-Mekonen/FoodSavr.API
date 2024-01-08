@@ -15,7 +15,6 @@ namespace FoodSavr.API.Profiles
 
             CreateMap<Entities.Recipe, Models.RecipeDto>();
             CreateMap<Entities.RecipeSteps, Models.RecipeStepsDto>(MemberList.Destination);
-            CreateMap<Entities.RecipeIngredient, Models.RecipeIngredientDto>();
         }
     }
 }

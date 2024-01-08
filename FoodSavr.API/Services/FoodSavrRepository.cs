@@ -5,38 +5,44 @@ using FoodSavr.API.Models;
 using FoodSavr.API.Models.Recipe;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
 
 namespace FoodSavr.API.Services
 {
     public class FoodSavrRepository : IFoodSavrRepository
     {
-        private readonly FoodSavrContext _context;
+        private readonly FoodSavrDbContext _dbContext;
         private readonly GetRecipeListController _recipeConnection;
+        private readonly IIngredientConverterServices _IngredientConverterServices;
 
-        public FoodSavrRepository(FoodSavrContext context) 
+        public FoodSavrRepository(
+            FoodSavrDbContext context,
+            IIngredientConverterServices IngredientConverterServices) 
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _dbContext = context ?? throw new ArgumentNullException(nameof(context));
+            _IngredientConverterServices = IngredientConverterServices ?? throw new ArgumentNullException(nameof(IngredientConverterServices));
         }
 
         public async Task<bool> SaveChangesAsync()
         {
-            return (await _context.SaveChangesAsync() >= 0);
+            return (await _dbContext.SaveChangesAsync() >= 0);
         }
 
+        // Ingredient
         public async Task<Ingredient> GetIngredientAsync(int id)
         {
-            return await _context.Ingredient.Where(i => i.Id == id).FirstOrDefaultAsync();
+            return await _dbContext.Ingredient.Where(i => i.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<IEnumerable<Ingredient>> GetIngredientsAsync()
         {
-            return await _context.Ingredient.OrderBy(i => i.Name).ToListAsync();
+            return await _dbContext.Ingredient.OrderBy(i => i.Name).ToListAsync();
         }
 
         public async Task<(IEnumerable<Ingredient>, PaginationMetaData)> GetIngredientsAsync(
             string? searchQuery, int pageNumber, int pageSize)
         {
-            var collection = _context.Ingredient as IQueryable<Ingredient>;
+            var collection = _dbContext.Ingredient as IQueryable<Ingredient>;
 
             if (!string.IsNullOrWhiteSpace(searchQuery))
             {
@@ -56,25 +62,26 @@ namespace FoodSavr.API.Services
 
             return (collectionToReturn, paginationMetadata);
         }
-
         public async Task<bool> IngredientExist(int id)
         {
-            return await _context.Ingredient.AnyAsync(i => i.Id == id);
+            return await _dbContext.Ingredient.AnyAsync(i => i.Id == id);
         }
 
         public async Task<bool> IngredientExist(string name)
         {
-            return await _context.Ingredient.AnyAsync(i => i.Name.ToLower() == name.ToLower());
+            return await _dbContext.Ingredient.AnyAsync(i => i.Name.ToLower() == name.ToLower());
         }
 
+        // Category
         public async Task<bool> CategoryExist(int id)
         {
-            return await _context.Category.AnyAsync(c => c.Id == id);
+            return await _dbContext.Category.AnyAsync(c => c.Id == id);
         }
 
+        // Recipe
         public async Task<IEnumerable<RecipeBlobDto>> GetRecipesAsync(List<int> ingredientId)
         {
-            var controller = new GetRecipeListController(_context);
+            var controller = new GetRecipeListController(_dbContext); //SIMON: remake to LINQ
             var result = controller.Index(ingredientId) as ViewResult;
 
             var recipeList = result.Model as List<RecipeBlobDto>;
@@ -84,33 +91,53 @@ namespace FoodSavr.API.Services
         public async Task<(
             Recipe,
             IEnumerable<RecipeSteps>,
-            IEnumerable<RecipeIngredient>,
+            IEnumerable<RecipeIngredientDto>,
             IEnumerable<IngredientConverterDto>)>
-            GetRecipeAsync(int recipeId, List<int> ingredients)
+            GetCompleteRecipeAsync(int recipeId, List<int> ingredients)
         {
-            var recipe = await _context.Recipe.Where(r => r.Id == recipeId).FirstOrDefaultAsync();
+            var recipe = await _dbContext.Recipe.Where(r => r.Id == recipeId).FirstOrDefaultAsync();
             var recipeSteps = await GetRecipeStepsAsync(recipeId);
-            var recipeIngredient = new RecipeIngredient[0]; // SQL query is needed
-            var ingredientConverter = new IngredientConverterDto[0]; // SQL query is needed
-
+            var recipeIngredient = await GetRecipeIngredientAsync(recipeId);
+            var ingredientConverter = await _IngredientConverterServices.GetRecipeIngredientConverterAsync(recipeId, ingredients);
+            
             return (recipe, recipeSteps, recipeIngredient, ingredientConverter);
         }
 
-        public async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
+        private async Task<IEnumerable<RecipeIngredientDto>> GetRecipeIngredientAsync(int recipeId)
         {
-            return await _context.RecipeSteps.Where(rs => rs.RecipeId == id).ToListAsync();
+            var query = from RI in _dbContext.RecipeIngredient
+                        join M in _dbContext.Measurement on RI.MeasurementId equals M.Id into measurementGroup
+                        from measurement in measurementGroup.DefaultIfEmpty()
+                        join I in _dbContext.Ingredient on RI.IngredientId equals I.Id
+                        where RI.RecipeId == recipeId
+                        orderby RI.Id
+                        select new RecipeIngredientDto()
+                        {
+                            IngredientId = RI.IngredientId,
+                            Quantity = RI.Quantity.HasValue ? (int)RI.Quantity : 0,
+                            Measurement = measurement.Measure,
+                            OriginalIngredient = I.Name
+                        };
+
+            var result = await query.ToListAsync();
+            return result;
+        }
+
+        private async Task<IEnumerable<RecipeSteps>> GetRecipeStepsAsync(int id)
+        {
+            return await _dbContext.RecipeSteps.Where(rs => rs.RecipeId == id).ToListAsync();
         }
 
 
         public async Task<bool> RecipeExist(int id)
         {
-            return await _context.Recipe.AnyAsync(i => i.Id == id);
+            return await _dbContext.Recipe.AnyAsync(i => i.Id == id);
         }
 
         public async Task<Ingredient> CreateIngredientAsync(Ingredient ingredient) 
         {
             var ingredientToSave = new Ingredient(ingredient.CategoryId, ingredient.Name);
-            await _context.Ingredient.AddAsync(ingredientToSave);
+            await _dbContext.Ingredient.AddAsync(ingredientToSave);
             return ingredientToSave;
         }
 
